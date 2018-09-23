@@ -33,9 +33,9 @@
 </div>
 
 <div class="container">
-  <section class="header">
-    <h1 class="title">ebrukaya.</h1>
-  </section>
+  <div class="row" id="header">
+    <h1 class="title"><a href="#">ebrukaya.</a></h1>
+  </div>
 </div>
 
 <div class="container">
