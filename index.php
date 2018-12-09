@@ -28,13 +28,13 @@
 
 <div class="container">
   <div class="row" id="navbar">
-    <div class="twelve columns"><a href="tr_TR">/tr</a></div>
+    <div class="twelve columns"><a href="/tr">/tr</a></div>
   </div>
 </div>
 
 <div class="container">
   <div class="row" id="header">
-    <h1 class="title"><a href="#">ebrukaya.</a></h1>
+    <h1 class="title"><a href="/">ebrukaya.</a></h1>
   </div>
 </div>
 

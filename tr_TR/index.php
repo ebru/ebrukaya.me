@@ -28,13 +28,13 @@
 
 <div class="container">
   <div class="row" id="navbar">
-    <div class="twelve columns"><a href="../">/en</a></div>
+    <div class="twelve columns"><a href="/">/en</a></div>
   </div>
 </div>
 
 <div class="container">
   <div class="row" id="header">
-    <h1 class="title"><a href="#">ebrukaya.</a></h1>
+    <h1 class="title"><a href="/tr">ebrukaya.</a></h1>
   </div>
 </div>
 
