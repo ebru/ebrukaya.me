@@ -25,31 +25,43 @@
 
 </head>
 <body>
-
+<!-- Language selection -->
 <div class="container">
-  <div class="row" id="navbar">
+  <div class="row" id="language">
     <div class="twelve columns"><a href="/">/en</a></div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row" id="header">
-    <h1 class="title"><a href="/tr">ebrukaya.</a></h1>
-  </div>
-</div>
-
-<div class="container">
   <div class="row">
+
+    <!-- Intro section -->
     <div class="seven columns">
-      <p><b>Merhaba!</b></p>
-      <p>Ben Ebru. İstanbul Üniversitesi Bilgisayar Mühendisliği mezunuyum ve bir dönem Estonya'da Tallinn Üniversitesi'nde, İnsan Bilgisayar Etkileşimi alanında değişim öğrencisi olarak yer aldım.</p>
-      <p>Yaklaşık bir senedir Sony'de Yazılım Mühendisi olarak çalışıyorum ve Sony Mobile'ın global sitelerinin yönetildiği yazılım ekibindeyim. Web tarafıyla yıllardır ilgili olmama rağmen—her şey çocukluğumda başladı ve bu muhtemelen hayatımın en güzel klişelerinden biri...</p>
-      <p>Geçen sene ayrıca, kişisel ilgi alanlarımdan biri olarak mobil geliştirme öğrenmeye ve boş zamanlarımda aklımdaki bir fikir için uygulama geliştirmeye başladım. Kısa bir süre önce de tamamlayıp app store üzerinde yayınladım. Hala çok yeni ve tam olarak ulaşmasını istediğim düzeyde olmasa da, umarım günden güne daha da geliştirmeye devam edeceğim.</p>
-      <p>Her zaman yeni bir şeyler öğrenmeye çalışmaya, yeni maceralara evet.</p>
+      <h3><b>Merhaba! Ben Ebru.</b></h3>
+      <h5>Sony'de Yazılım Mühendisi, sırt çantalı gezgin ve bir doğa aşığı 🍃</h5>
+      <p>İstanbul Üniversitesi Bilgisayar Mühendisliği'nden mezun oldum ve bir dönem Estonya'da Tallinn Üniversitesi'nde, İnsan Bilgisayar Etkileşimi alanında değişim öğrencisi olarak yer aldım.</p>
+      <p>Bir senedir Sony'de Yazılım Mühendisi olarak çalışıyorum ve Sony Mobile'ın global sitelerinin yönetildiği yazılım ekibindeyim. Kişisel olarak mobil geliştirme ile ilgiliyim ve bu yolculukta geliştirdiğim bir uygulamam da app store'da bulunmakta.</p>
+      <p>Her zaman yeni bir şeyler öğrenmeye, yeni maceralara evet.</p>
       <p><a href="https://www.linkedin.com/in/ebrukaya/" target="_blank"><img src="../images/social/linkedin.png" style="width: 30px; padding-right: 9px" /></a><a href="https://www.instagram.com/hayallerimdeben/" target="_blank"><img src="../images/social/instagram.png" style="width: 28px; padding-right: 10px" /></a><a href="https://www.github.com/ebrukye" target="_blank"><img src="../images/social/github.png" style="width: 28px" /></a></p>
     </div>
     <div class="five columns">
       <img src="../images/pp.jpg" width="100%" />
+    </div>
+
+    <!-- Menu section -->
+    <div class="twelve columns">
+    <div class="navbar-spacer"></div>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href="#experience">Deneyim</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#education">Eğitim</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#skills">Yetenekler</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#projects">Projeler</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#personal">Kişisel</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </div>
 </div>
