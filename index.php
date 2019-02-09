@@ -97,107 +97,112 @@
                         </tbody>
                     </table>
                 </div>
-                <!-- Education section -->
-                <div class="docs-section" id="education">
-                    <h3 class="docs-header">Education</h3>
-                    <div class="docs-example">
-                        <table class="u-full-width">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <b>Istanbul University</b>
-                                        <br> BSc, Computer Engineering
-                                    </td>
-                                    <td>2012 - 2016</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>Tallinn University</b>
-                                        <br> Exchange Student, Human-Computer Interaction
-                                    </td>
-                                    <td>2015 - 2016</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>Nişantaşı Anadolu Lisesi</b>
-                                        <br> High School Diploma
-                                    </td>
-                                    <td>2008 - 2012</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- Skills section -->
-                    <div class="docs-section" id="skills">
-                        <h3 class="docs-header">Skills</h3>I have always been so curious about whole software development cycle, therefore I am trying to improve myself in full-stack development.
-                        <table class="u-full-width">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <b>PHP, MySQL</b>
-                                    </td>
-                                    <td><span style="font-size: 29px"><b>++++++++</b><span style="color: #ccc">++</span></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>HTML, CSS</b>
-                                    </td>
-                                    <td><span style="font-size: 29px"><b>++++++++</b><span style="color: #ccc">++</span></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>JavaScript</b>
-                                    </td>
-                                    <td><span style="font-size: 29px"><b>+++++++</b><span style="color: #ccc">+++</span></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>Git</b>
-                                    </td>
-                                    <td><span style="font-size: 29px"><b>++++++++</b><span style="color: #ccc">++</span></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>REST API, Slim Framework</b>
-                                    </td>
-                                    <td><span style="font-size: 29px"><b>+++++++</b><span style="color: #ccc">+++</span></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>Swift, Firebase</b>
-                                    </td>
-                                    <td><span style="font-size: 29px"><b>+++++</b><span style="color: #ccc">+++++</span></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>Agile Development</b>
-                                    </td>
-                                    <td><span style="font-size: 29px"><b>+++++++++</b><span style="color: #ccc">+</span></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>UI Design</b>
-                                    </td>
-                                    <td><span style="font-size: 29px"><b>++++++</b><span style="color: #ccc">++++</span></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <br />
-                        <em><b>To-learn list:</b> React.js, React Native, Design Patterns, SOLID Principles, Laravel, TDD</em>
-                    </div>
-                    
+            </div>
+            <!-- Education section -->
+            <div class="docs-section" id="education">
+                <h3 class="docs-header">Education</h3>
+                <div class="docs-example">
+                    <table class="u-full-width">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <b>Istanbul University</b>
+                                    <br> BSc, Computer Engineering
+                                </td>
+                                <td>2012 - 2016</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Tallinn University</b>
+                                    <br> Exchange Student, Human-Computer Interaction
+                                </td>
+                                <td>2015 - 2016</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Nişantaşı Anadolu Lisesi</b>
+                                    <br> High School Diploma
+                                </td>
+                                <td>2008 - 2012</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+            </div>
+            <!-- Skills section -->
+            <div class="docs-section" id="skills">
+                <h3 class="docs-header">Skills</h3>I have always been so curious about whole software development cycle, therefore I am trying to improve myself in full-stack development.
+                <table class="u-full-width">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <b>PHP, MySQL</b>
+                            </td>
+                            <td><span style="font-size: 29px"><b>++++++++</b><span style="color: #ccc">++</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>HTML, CSS</b>
+                            </td>
+                            <td><span style="font-size: 29px"><b>++++++++</b><span style="color: #ccc">++</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>JavaScript</b>
+                            </td>
+                            <td><span style="font-size: 29px"><b>+++++++</b><span style="color: #ccc">+++</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Git</b>
+                            </td>
+                            <td><span style="font-size: 29px"><b>++++++++</b><span style="color: #ccc">++</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>REST API, Slim Framework</b>
+                            </td>
+                            <td><span style="font-size: 29px"><b>+++++++</b><span style="color: #ccc">+++</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Swift, Firebase</b>
+                            </td>
+                            <td><span style="font-size: 29px"><b>+++++</b><span style="color: #ccc">+++++</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Agile Development</b>
+                            </td>
+                            <td><span style="font-size: 29px"><b>+++++++++</b><span style="color: #ccc">+</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>UI Design</b>
+                            </td>
+                            <td><span style="font-size: 29px"><b>++++++</b><span style="color: #ccc">++++</span></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                <em><b>To-learn list:</b> React.js, React Native, Design Patterns, SOLID Principles, Laravel, TDD</em>
+            </div>
+            <!-- Projects section -->
+            <div class="docs-section" id="projects">
+              <h3 class="docs-header">Projects</h3>
+              <div class="docs-example">
+                  test
+              </div>
             </div>
         </div>
     </div>
 </body>
-
 </html>

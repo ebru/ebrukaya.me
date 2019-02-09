@@ -29,7 +29,7 @@
     letter-spacing: .2rem;
     font-weight: 600; }
 .docs-section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     margin-bottom: 0;}
 .value-img {
     display: block;
@@ -111,7 +111,7 @@
     .example-grid .columns {
       margin-bottom: 1.5rem; }
     .docs-section {
-      padding: 6rem 0; }
+      padding: 3.2rem 0; }
     .example-send-yourself-copy {
       float: right;
       margin-top: 12px; }
@@ -136,7 +136,8 @@
       background: #fff;
       z-index: 99;
       border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee; }
+      border-bottom: 1px solid #eee;
+      margin-bottom: 20px; }
     .navbar-spacer {
       display: none; }
     .navbar > .container {
