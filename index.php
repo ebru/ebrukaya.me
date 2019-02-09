@@ -23,6 +23,11 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+
 </head>
 <body>
 <!-- Language selection -->
@@ -63,7 +68,9 @@
         </div>
       </nav>
     </div>
+    
   </div>
+
 </div>
 
 </body>
