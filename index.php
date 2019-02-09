@@ -202,7 +202,7 @@
                 <tbody>
                   <tr>
                     <td>
-                      <b>Listpie</b>
+                      <span style="font-size: 18px"><b>Listpie</b></span>
                       <br> iOS Application, Mar 2017 – Sep 2018
                       <br>
                       <br>
@@ -216,7 +216,7 @@
                       <a class="button button-primary" href="https://itunes.apple.com/us/app/listpie/id1434060708" target="_blank">Go to Project</a>
                     </td>
                     <td>
-                      <img src="images/projects/listpie.jpg" width="100px" />
+                      <a href="https://itunes.apple.com/us/app/listpie/id1434060708" target="_blank"><img src="images/projects/listpie.jpg" width="100px" /></a>
                     </td>
                   </tr>
                 </tbody>
