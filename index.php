@@ -78,7 +78,7 @@
                                     <br>
                                     <ul>
                                         <ul>Built the new improved version of Search API, v2 that connects to Solr platform</ul>
-                                        <ul>Responsible for management/development of GTM project</ul>
+                                        <ul>Responsible for management/development of GTM project that sends data to Google Analytics</ul>
                                         <ul>Worked on maintenance of and adding new features to global web sites of Sony Mobile</ul>
                                     </ul>
                                 </td>
