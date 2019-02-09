@@ -162,7 +162,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <b>REST API</b>
+                                        <b>REST API, Slim Framework</b>
                                     </td>
                                     <td><span style="font-size: 29px"><b>+++++++</b><span style="color: #ccc">+++</span></span>
                                     </td>
