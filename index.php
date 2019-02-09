@@ -82,17 +82,17 @@
                                         <ul>Worked on maintenance of and adding new features to global web sites of Sony Mobile</ul>
                                     </ul>
                                 </td>
-                                <td>Nov 2017 - Present</td>
+                                <td>Nov 2017 – Present</td>
                             </tr>
                             <tr>
                                 <td><b>IT Intern</b>
                                     <br>BNP Paribas Cardif</td>
-                                <td>Jul 2015 - Aug 2015</td>
+                                <td>Jul 2015 – Aug 2015</td>
                             </tr>
                             <tr>
                                 <td><b>Software Development Intern</b>
                                     <br>Zet.com</td>
-                                <td>May 2014 - Aug 2014</td>
+                                <td>May 2014 – Aug 2014</td>
                             </tr>
                         </tbody>
                     </table>
@@ -109,21 +109,21 @@
                                     <b>Istanbul University</b>
                                     <br> BSc, Computer Engineering
                                 </td>
-                                <td>2012 - 2016</td>
+                                <td>2012 – 2016</td>
                             </tr>
                             <tr>
                                 <td>
                                     <b>Tallinn University</b>
                                     <br> Exchange Student, Human-Computer Interaction
                                 </td>
-                                <td>2015 - 2016</td>
+                                <td>2015 – 2016</td>
                             </tr>
                             <tr>
                                 <td>
                                     <b>Nişantaşı Anadolu Lisesi</b>
                                     <br> High School Diploma
                                 </td>
-                                <td>2008 - 2012</td>
+                                <td>2008 – 2012</td>
                             </tr>
                         </tbody>
                     </table>
@@ -196,11 +196,31 @@
                 <em><b>To-learn list:</b> React.js, React Native, Design Patterns, SOLID Principles, Laravel, TDD</em>
             </div>
             <!-- Projects section -->
-            <div class="docs-section" id="projects">
+            <div class="docs-section" id="projects" style="margin-top: 20px">
               <h3 class="docs-header">Projects</h3>
-              <div class="docs-example">
-                  test
-              </div>
+              <table class="u-full-width">
+                <tbody>
+                  <tr>
+                    <td>
+                      <b>Listpie</b>
+                      <br> iOS Application, Mar 2017 – Sep 2018
+                      <br>
+                      <br>
+                      This was my very first app that I have developed during my journey to learn mobile development as a personal interest.
+                      <br>
+                      <br> - Coded natively in Swift
+                      <br> - Used MVC pattern
+                      <br> - Firebase for database and authentication
+                      <br>
+                      <br>
+                      <a class="button button-primary" href="https://itunes.apple.com/us/app/listpie/id1434060708" target="_blank">Go to Project</a>
+                    </td>
+                    <td>
+                      <img src="images/projects/listpie.jpg" width="100px" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
         </div>
     </div>
