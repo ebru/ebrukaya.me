@@ -73,7 +73,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <b>Software Engineer</b>
+                                    <span style="font-size: 17px"><b>Software Engineer</b></span>
                                     <br> Sony
                                     <br>
                                     <ul>
@@ -85,12 +85,14 @@
                                 <td>Nov 2017 – Present</td>
                             </tr>
                             <tr>
-                                <td><b>IT Intern</b>
+                                <td>
+                                    <span style="font-size: 17px"><b>IT Intern</b></span>
                                     <br>BNP Paribas Cardif</td>
                                 <td>Jul 2015 – Aug 2015</td>
                             </tr>
                             <tr>
-                                <td><b>Software Development Intern</b>
+                                <td>
+                                    <span style="font-size: 17px"><b>Software Development Intern</b></span>
                                     <br>Zet.com</td>
                                 <td>May 2014 – Aug 2014</td>
                             </tr>
@@ -106,21 +108,21 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <b>Istanbul University</b>
+                                    <span style="font-size: 17px"><b>Istanbul University</b></span>
                                     <br> BSc, Computer Engineering
                                 </td>
                                 <td>2012 – 2016</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Tallinn University</b>
+                                    <span style="font-size: 17px"><b>Tallinn University</b></span>
                                     <br> Exchange Student, Human-Computer Interaction
                                 </td>
                                 <td>2015 – 2016</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Nişantaşı Anadolu Lisesi</b>
+                                    <span style="font-size: 17px"><b>Nişantaşı Anadolu Lisesi</b></span>
                                     <br> High School Diploma
                                 </td>
                                 <td>2008 – 2012</td>
@@ -202,7 +204,7 @@
                 <tbody>
                   <tr>
                     <td>
-                      <span style="font-size: 18px"><b>Listpie</b></span>
+                      <span style="font-size: 17px"><b>Listpie</b></span>
                       <br> iOS Application, Mar 2017 – Sep 2018
                       <br>
                       <br>
