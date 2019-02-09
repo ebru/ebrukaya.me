@@ -120,7 +120,7 @@
                                 <tr>
                                     <td>
                                         <b>Nişantaşı Anadolu Lisesi</b>
-                                        <br> High School
+                                        <br> High School Diploma
                                     </td>
                                     <td>2008 - 2012</td>
                                 </tr>
