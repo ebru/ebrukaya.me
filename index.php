@@ -208,7 +208,7 @@
                       <br> iOS Application, Mar 2017 – Sep 2018
                       <br>
                       <br>
-                      This was my very first app that I have developed during my journey to learn mobile development as a personal interest.
+                      This was my very first app that I have developed during my journey to learn mobile development as a personal interest in my free time.
                       <br>
                       <br> - Coded natively in Swift
                       <br> - Used MVC pattern
