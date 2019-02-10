@@ -14,14 +14,20 @@
 }
 
 #footer {
+    margin-top: 40px;
     padding-bottom: 30px;
     text-align: right; 
+}
+
+.divider {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }
 
 .container {
     max-width: 820px; }
 .header {
-    margin-top: 6rem;
+    margin-top: 6rem; 
     text-align: center; }
 .value-prop {
     margin-top: 1rem; }

@@ -235,6 +235,7 @@
                 <b>Collections:</b> postcard, flag patch from visited countries, paper money
               </p>
             </div>
+            <div class="divider"></div>
         </div>
     </div>
 
