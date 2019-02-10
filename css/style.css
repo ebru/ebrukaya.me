@@ -13,6 +13,10 @@
     text-decoration: none;
 }
 
+#footer {
+    padding-bottom: 30px;
+}
+
 .container {
     max-width: 820px; }
 .header {
