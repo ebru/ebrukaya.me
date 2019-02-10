@@ -224,6 +224,17 @@
                 </tbody>
               </table>
             </div>
+            <!-- Personal section -->
+            <div class="docs-section" id="personal">
+              <h3 class="docs-header">Personal</h3>
+              <em><p style="font-size:18px">"It doesn’t interest me what you do for a living. I want to know what you ache for – and if you dare to dream of meeting your heart’s longing. It doesn’t interest me how old you are. I want to know if you will risk looking like a fool – for love – for your dreams – for the adventure of being alive."</p>
+              <p style="text-align:right">– Oriah Mountain Dreamer</p></em>
+              <p>
+                <b>Personality type:</b> <a href="https://www.16personalities.com/enfp-personality" target="_blank">ENFP</a>
+                <br>
+                <b>Collections:</b> postcard, flag patch from visited countries, paper money
+              </p>
+            </div>
         </div>
     </div>
 
