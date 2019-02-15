@@ -147,7 +147,7 @@
                             <td>
                                 <b>HTML, CSS</b>
                             </td>
-                            <td><span style="font-size: 29px"><b>++++++++</b><span style="color: #ccc">++</span></span>
+                            <td><span style="font-size: 29px"><b>+++++++++</b><span style="color: #ccc">+</span></span>
                             </td>
                         </tr>
                         <tr>
@@ -166,7 +166,14 @@
                         </tr>
                         <tr>
                             <td>
-                                <b>REST API, Slim Framework</b>
+                                <b>REST API</b>
+                            </td>
+                            <td><span style="font-size: 29px"><b>++++++++</b><span style="color: #ccc">++</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>OOP, Unit Testing</b>
                             </td>
                             <td><span style="font-size: 29px"><b>+++++++</b><span style="color: #ccc">+++</span></span>
                             </td>
