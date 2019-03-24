@@ -239,7 +239,9 @@
               <p>
                 <b>Personality type:</b> <a href="https://www.16personalities.com/enfp-personality" target="_blank">ENFP</a>
                 <br>
-                <b>Collections:</b> postcard, flag patch from visited countries, paper money
+                <b>Collections:</b> postcard, flag patch and paper money from visited countries
+                <br>
+                <b>Music:</b> dire straits, jungle, paradis, sohn... // me on <a href="https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw" target="_blank"><img style="vertical-align:middle" src="images/social/spotify.png" width="28px"/></a>
               </p>
             </div>
             <div class="divider"></div>
@@ -250,7 +252,7 @@
         <div class="container">
             <div class="row" id="footer">
                 <div class="twelve columns">2019 – <b>Ebru Kaya</b>
-                <br> ebru[at]ebrukaya.me 📮</div>
+                <br>ebru[at]ebrukaya.me 📮</div>
             </div>
         </div>
     </footer>
