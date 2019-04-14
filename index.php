@@ -202,7 +202,7 @@
                     </tbody>
                 </table>
                 <br />
-                <em><b>To-learn list:</b> React.js, React Native, Design Patterns, SOLID Principles, Laravel, TDD</em>
+                <em><b>To-really-learn list:</b> Docker, TDD, AWS, React.js, Design Patterns, SOLID Principles, Laravel, React Native</em>
             </div>
             <!-- Projects section -->
             <div class="docs-section" id="projects" style="margin-top: 20px">
