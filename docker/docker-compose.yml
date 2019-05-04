@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    container_name: web
+    image: nginx:1.15-alpine
+    ports:
+      - 80:80
+    volumes:
+      - ./../:/srv/gits/web
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - php
+
+  php:
+    container_name: php
+    image: php:7.2-fpm-alpine
+    volumes:
+      - ./../:/srv/gits/web
