@@ -14,6 +14,6 @@ services:
 
   php:
     container_name: php
-    image: php:7.2-fpm-alpine
+    build: ./..
     volumes:
       - ./../:/srv/gits/web
