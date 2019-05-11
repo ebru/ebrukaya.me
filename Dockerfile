@@ -14,4 +14,4 @@ COPY docker/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["/bin/bash", "-c", "sudo service php7.0-fpm start && nginx -g 'daemon off;'"]
