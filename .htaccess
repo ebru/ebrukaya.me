@@ -13,3 +13,6 @@ RewriteRule ^hayallerimdeben$ src/projects/hayallerimdeben.php
 RewriteRule ^listpie/terms$ src/projects/terms.php
 
 RewriteRule ^tr$ src/tr_TR/index.php
+RewriteRule ^/$ src/index.php
+
+DirectoryIndex src/index.php
