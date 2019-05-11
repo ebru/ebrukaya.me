@@ -1,13 +1,15 @@
 RewriteEngine on
 
 RewriteCond %{HTTP_HOST} !^www\.ebrukaya\.me
-RewriteRule (.*) https://www.ebrukaya.me/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !src/
+RewriteRule (.*) /src/$1 [L]
 
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
-RewriteRule ^listpie$ projects/listpie.php
-RewriteRule ^hayallerimdeben$ projects/hayallerimdeben.php
-RewriteRule ^listpie/terms$ projects/terms.php
+RewriteRule ^listpie$ src/projects/listpie.php
+RewriteRule ^hayallerimdeben$ src/projects/hayallerimdeben.php
+RewriteRule ^listpie/terms$ src/projects/terms.php
 
-RewriteRule ^tr$ tr_TR/index.php
+RewriteRule ^tr$ src/tr_TR/index.php
