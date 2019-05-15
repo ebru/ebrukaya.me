@@ -3,7 +3,9 @@ version: '3'
 services:
   web:
     container_name: web
-    build: ./docker/nginx
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
     ports:
       - 80:80
     depends_on:
