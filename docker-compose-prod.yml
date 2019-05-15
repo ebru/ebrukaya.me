@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web:
+    container_name: web
+    build: ./docker/nginx
+    ports:
+      - 80:80
+    depends_on:
+      - php-fpm
+
+  php-fpm:
+    container_name: php-fpm
+    build:
+      context: .
+      dockerfile: docker/php-fpm/Dockerfile

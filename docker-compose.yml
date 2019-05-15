@@ -3,17 +3,16 @@ version: '3'
 services:
   web:
     container_name: web
-    image: nginx:1.15-alpine
+    build: ./nginx
     ports:
       - 80:80
     volumes:
-      - ./../src:/srv/gits/web
       - ./nginx/conf.d/default-dev.conf:/etc/nginx/conf.d/default.conf
     depends_on:
-      - php
+      - php-fpm
 
-  php:
-    container_name: php
-    image: php:7.2-fpm-alpine
+  php-fpm:
+    container_name: php-fpm
+    build: ./php-fpm
     volumes:
       - ./../src:/srv/gits/web
