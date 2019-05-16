@@ -4,8 +4,8 @@ services:
   web:
     container_name: web
     build:
-      context: ./
-      dockerfile: docker/nginx/Dockerfile
+      context: .././
+      dockerfile: docker/images/nginx/Dockerfile
     ports:
       - 80:80
     depends_on:
@@ -14,5 +14,5 @@ services:
   php-fpm:
     container_name: php-fpm
     build:
-      context: ./
-      dockerfile: docker/php-fpm/Dockerfile
+      context: .././
+      dockerfile: docker/images/php-fpm/Dockerfile
