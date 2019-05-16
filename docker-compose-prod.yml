@@ -4,7 +4,7 @@ services:
   web:
     container_name: web
     build:
-      context: .
+      context: ./
       dockerfile: docker/nginx/Dockerfile
     ports:
       - 80:80
@@ -14,5 +14,5 @@ services:
   php-fpm:
     container_name: php-fpm
     build:
-      context: .
+      context: ./
       dockerfile: docker/php-fpm/Dockerfile
