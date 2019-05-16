@@ -3,6 +3,7 @@ version: '3'
 services:
   web:
     container_name: web
+    image: ebrukayame_web
     build:
       context: .././
       dockerfile: docker/images/nginx/Dockerfile
@@ -13,6 +14,7 @@ services:
 
   php-fpm:
     container_name: php-fpm
+    image: ebrukayame_php-fpm
     build:
       context: .././
       dockerfile: docker/images/php-fpm/Dockerfile
