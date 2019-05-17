@@ -16,11 +16,11 @@
             <p>I am currently working at Sony as a Software Engineer. I have been there for a year and in the team of global web sites of Sony Mobile. Personally interested in mobile development and have an app published on the app store.</p>
             <p>Always eager to learn, saying yes to new adventures.</p>
             <p>
-                <a href="https://www.linkedin.com/in/ebrukaya/" target="_blank"><img src="images/social/linkedin.png" style="width: 30px; padding-right: 9px" /></a><a href="https://www.github.com/ebrukye" target="_blank"><img src="images/social/github.png" style="width: 28px" /></a>
+                <a href="https://www.linkedin.com/in/ebrukaya/" target="_blank"><img src="assets/images/social/linkedin.png" style="width: 30px; padding-right: 9px" /></a><a href="https://www.github.com/ebrukye" target="_blank"><img src="assets/images/social/github.png" style="width: 28px" /></a>
             </p>
         </div>
         <div class="five columns">
-            <img src="images/pp.jpg" width="100%" />
+            <img src="assets/images/pp.jpg" width="100%" />
         </div>
         <!-- Menu section -->
         <div class="twelve columns">
@@ -199,7 +199,7 @@
                     <a class="button button-primary" href="https://itunes.apple.com/us/app/listpie/id1434060708" target="_blank">Go to Project</a>
                 </td>
                 <td>
-                    <a href="https://itunes.apple.com/us/app/listpie/id1434060708" target="_blank"><img src="images/projects/listpie.jpg" width="100px" /></a>
+                    <a href="https://itunes.apple.com/us/app/listpie/id1434060708" target="_blank"><img src="assets/images/projects/listpie.jpg" width="100px" /></a>
                 </td>
                 </tr>
             </tbody>
@@ -215,7 +215,7 @@
             <br>
             <b>Collections:</b> postcard, flag patch and paper money from visited countries
             <br>
-            <b>Music:</b> dire straits, jungle, paradis, sohn... // me on <a href="https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw" target="_blank"><img style="vertical-align:middle" src="images/social/spotify.png" width="28px"/></a>
+            <b>Music:</b> dire straits, jungle, paradis, sohn... // me on <a href="https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw" target="_blank"><img style="vertical-align:middle" src="assets/images/social/spotify.png" width="28px"/></a>
             </p>
         </div>
         <div class="divider"></div>

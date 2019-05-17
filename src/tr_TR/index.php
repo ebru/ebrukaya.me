@@ -16,17 +16,17 @@
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <!-- CSS
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/skeleton.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/skeleton.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
     
     <!-- Scripts
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../js/site.js"></script>
+    <script src="../assets/js/site.js"></script>
 </head>
 
 <body>
@@ -50,7 +50,7 @@
         <p><a href="https://www.linkedin.com/in/ebrukaya/" target="_blank"><img src="../images/social/linkedin.png" style="width: 30px; padding-right: 9px" /></a><a href="https://www.github.com/ebrukye" target="_blank"><img src="../images/social/github.png" style="width: 28px" /></a></p>
       </div>
       <div class="five columns">
-        <img src="../images/pp.jpg" width="100%" />
+        <img src="../assets/images/pp.jpg" width="100%" />
       </div>
 
       <!-- Menu section -->
