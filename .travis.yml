@@ -2,32 +2,9 @@ language: php
 php:
   - '7.2'
 
-services:
-  - docker
-
-before_install:
-  - sudo add-apt-repository ppa:jonathonf/python-3.6
-  - sudo apt-get update
-  - sudo apt-get install python3.6
-  - python3.6
-
-  # Do AWS login for ECR.
-  - pip3 install --user awscli
-  - export PATH=$PATH:$HOME/.local/bin
-  - eval $(aws ecr get-login --region $AWS_DEFAULT_REGION)
-
 before_script:
   - composer self-update
   - composer install --no-interaction --prefer-source --dev
   
 script: 
   - ./vendor/bin/phpunit tests
-
-after_success:
-  - docker-compose --version
-  - cd docker
-  - docker-compose -f docker-compose-prod.yml up -d --build
-  - docker tag ebrukayame_web:latest $IMAGE_REPOS_BASE_URL/ebrukayame_web:latest
-  - docker push $IMAGE_REPOS_BASE_URL/ebrukayame_web:latest
-  - docker tag ebrukayame_php-fpm:latest $IMAGE_REPOS_BASE_URL/ebrukayame_php-fpm:latest
-  - docker push $IMAGE_REPOS_BASE_URL/ebrukayame_php-fpm:latest 
