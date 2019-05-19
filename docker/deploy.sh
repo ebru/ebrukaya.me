@@ -5,8 +5,6 @@ export PATH=$PATH:$HOME/.local/bin
 # login AWS ECR
 eval $(aws ecr get-login --region eu-west-1)
 
-cd docker
-
 # build the docker images and push to image repositories
 docker-compose -f docker-compose-prod.yml up -d --build
 
