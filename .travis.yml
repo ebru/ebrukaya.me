@@ -6,13 +6,11 @@ services:
   - docker
 
 before_install:
-  # Travis uses an older docker-composer (v1.4.2), we need to update it.
-  - docker-compose --version
-  - sudo rm /usr/local/bin/docker-compose
-  - curl -L https://github.com/docker/compose/releases/download/1.8.0-rc2/docker-compose-`uname -s`-`uname -m` > docker-compose
-  - chmod +x docker-compose
-  - sudo mv docker-compose /usr/local/bin
-
+  - pip install pyOpenSSL ndg-httpsclient pyasn1
+  - sudo pip install pyOpenSSL cryptography idna certifi --upgrade
+  - sudo pip install urllib3[secure] --upgrade
+  - sudo pip install requests[security] --upgrade
+  
   # Do AWS login for ECR.
   - pip install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
