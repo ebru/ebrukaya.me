@@ -7,7 +7,7 @@ services:
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get install python
+  - sudo apt-get install python3
 
 before_script:
   - composer self-update
@@ -25,4 +25,4 @@ after_success:
   - docker tag ebrukayame_web:latest $IMAGE_REPOS_BASE_URL/ebrukayame_web:latest
   - docker push $IMAGE_REPOS_BASE_URL/ebrukayame_web:latest
   - docker tag ebrukayame_php-fpm:latest $IMAGE_REPOS_BASE_URL/ebrukayame_php-fpm:latest
-  - docker push $IMAGE_REPOS_BASE_URL/ebrukayame_php-fpm:latest
+  - docker push $IMAGE_REPOS_BASE_URL/ebrukayame_php-fpm:latest 
