@@ -1,8 +1,9 @@
-# install AWS SDK
+#!/usr/bin/env bash
+
+docker --version
 pip install --user awscli
 export PATH=$PATH:$HOME/.local/bin
 
-# login AWS ECR
 eval $(aws ecr get-login --region eu-west-1)
 
 # build the docker images and push to image repositories
