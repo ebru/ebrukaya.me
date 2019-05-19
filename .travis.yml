@@ -13,7 +13,9 @@ before_script:
   
 script: 
   - ./vendor/bin/phpunit tests
-  - eval $(aws ecr get-login --region eu-west-1)
+  - eval $(aws ecr get-login --region $AWS_DEFAULT_REGION)
+
+after_success:
   - cd docker
   - docker-compose -f docker-compose-prod.yml up -d --build
   - docker tag ebrukayame_web:latest $IMAGE_REPOS_BASE_URL/ebrukayame_web:latest
