@@ -47,7 +47,7 @@
         <p>İstanbul Üniversitesi Bilgisayar Mühendisliği'nden mezun oldum ve bir dönem Estonya'da Tallinn Üniversitesi'nde, İnsan Bilgisayar Etkileşimi alanında değişim öğrencisi olarak yer aldım.</p>
         <p>Bir senedir Sony'de Yazılım Mühendisi olarak çalışıyorum ve Sony Mobile'ın global sitelerinin yönetildiği yazılım ekibindeyim. Kişisel olarak mobil geliştirme ile ilgiliyim ve bu yolculukta geliştirdiğim bir uygulamam da app store'da bulunmakta.</p>
         <p>Her zaman yeni bir şeyler öğrenmeye, yeni maceralara evet.</p>
-        <p><a href="https://www.linkedin.com/in/ebrukaya/" target="_blank"><img src="../images/social/linkedin.png" style="width: 30px; padding-right: 9px" /></a><a href="https://www.github.com/ebrukye" target="_blank"><img src="../images/social/github.png" style="width: 28px" /></a></p>
+        <p><a href="https://www.linkedin.com/in/ebrukaya/" target="_blank"><img src="../assets/images/social/linkedin.png" style="width: 30px; padding-right: 9px" /></a><a href="https://www.github.com/ebrukye" target="_blank"><img src="../assets/images/social/github.png" style="width: 28px" /></a> <a href="https://www.medium.com/@ebrukye" target="_blank"><img src="../assets/images/social/medium.png" style="width: 30px; padding-left: 6px;" /></a></p>
       </div>
       <div class="five columns">
         <img src="../assets/images/pp.jpg" width="100%" />

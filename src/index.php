@@ -16,7 +16,7 @@
             <p>I am currently working at Sony as a Software Engineer. I have been there for a year and in the team of global web sites of Sony Mobile. Personally interested in mobile development and have an app published on the app store.</p>
             <p>Always eager to learn, saying yes to new adventures.</p>
             <p>
-                <a href="https://www.linkedin.com/in/ebrukaya/" target="_blank"><img src="assets/images/social/linkedin.png" style="width: 30px; padding-right: 9px" /></a><a href="https://www.github.com/ebrukye" target="_blank"><img src="assets/images/social/github.png" style="width: 28px" /></a>
+                <a href="https://www.linkedin.com/in/ebrukaya/" target="_blank"><img src="assets/images/social/linkedin.png" style="width: 30px; padding-right: 9px" /></a><a href="https://www.github.com/ebrukye" target="_blank"><img src="assets/images/social/github.png" style="width: 28px" /></a> <a href="https://www.medium.com/@ebrukye" target="_blank"><img src="assets/images/social/medium.png" style="width: 30px; padding-left: 6px;" /></a>
             </p>
         </div>
         <div class="five columns">
