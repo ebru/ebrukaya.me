@@ -5,6 +5,10 @@ php:
 services:
   - docker
 
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install python
+
 before_script:
   - composer self-update
   - composer install --no-interaction --prefer-source --dev
