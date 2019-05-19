@@ -1,7 +1,18 @@
 language: php
 php:
   - '7.2'
+
+services:
+  - docker
+
 before_script:
   - composer self-update
   - composer install --no-interaction --prefer-source --dev
+  
 script: ./vendor/bin/phpunit tests
+
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: master
