@@ -6,14 +6,12 @@ services:
   - docker
 
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install python3.6
+  - pip install --user awscli
+  - export PATH=$PATH:$HOME/.local/bin
 
 before_script:
   - composer self-update
   - composer install --no-interaction --prefer-source --dev
-  - pip3 install --user awscli
-  - export PATH=$PATH:$HOME/.local/bin
   
 script: 
   - ./vendor/bin/phpunit tests
