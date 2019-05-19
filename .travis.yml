@@ -2,19 +2,17 @@ language: php
 php:
   - '7.2'
 
-dist: xenial  
-python:
-  - '3.6'
-
 services:
   - docker
 
 before_install:
-  - sudo pip install urllib3[secure] --upgrade
-  - sudo pip install requests[security] --upgrade
+  - sudo add-apt-repository ppa:deadsnakes/ppa
+  - sudo apt-get update
+  - sudo apt-get install python3.6
+  - python3.6
 
   # Do AWS login for ECR.
-  - pip install --user awscli
+  - pip3 install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
   - eval $(aws ecr get-login --region $AWS_DEFAULT_REGION)
 
