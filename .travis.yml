@@ -6,9 +6,6 @@ services:
   - docker
 
 before_install:
-  - pip install --upgrade pip
-  - pip install pyOpenSSL ndg-httpsclient pyasn1
-  - sudo pip install pyOpenSSL cryptography idna certifi --upgrade
   - sudo pip install urllib3[secure] --upgrade
   - sudo pip install requests[security] --upgrade
 
