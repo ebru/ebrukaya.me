@@ -6,8 +6,22 @@ services:
   - docker
 
 before_install:
+  # Update docker-engine.
+  - sudo apt-get update
+  - sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-engine
+
+  # Travis uses an older docker-composer (v1.4.2), we need to update it.
+  - docker-compose --version
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/1.8.0-rc2/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+  - docker-compose --version
+
+  # Do AWS login for ECR.
   - pip install --user awscli
   - export PATH=$PATH:$HOME/.local/bin
+  - eval $(aws ecr get-login --region $AWS_DEFAULT_REGION)
 
 before_script:
   - composer self-update
@@ -15,7 +29,6 @@ before_script:
   
 script: 
   - ./vendor/bin/phpunit tests
-  - eval $(aws ecr get-login --region $AWS_DEFAULT_REGION)
 
 after_success:
   - cd docker
