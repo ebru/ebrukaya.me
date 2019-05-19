@@ -13,6 +13,6 @@ script: ./vendor/bin/phpunit tests
 
 deploy:
   provider: script
-  script: bash deploy.sh
+  script: bash ./docker/deploy.sh
   on:
     branch: master
