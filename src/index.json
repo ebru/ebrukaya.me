@@ -1,0 +1,146 @@
+{
+    "title": "Hi! I'm Ebru.",
+    "snippet": "Software Engineer at Sony, backpacker and lover of nature 🍃",
+    "description": "I graduated from Istanbul University with a degree in Computer Engineering and was an exchange student specialized in Human-Computer Interaction at Tallinn University in Estonia. \nI am currently working at Sony as a Software Engineer. I have been there for a year and in the team of global web sites of Sony Mobile. Personally interested in mobile development and have an app published on the app store. \nAlways eager to learn, saying yes to new adventures.",
+    "social": {
+        "linkedin": "https://www.linkedin.com/in/ebrukaya/",
+        "github": "https://github.com/ebrukye",
+        "medium": "https://www.medium.com/@ebrukye"
+    },
+    "fields": {
+        "experience": {
+            "description": "",
+            "items": [
+                {
+                    "title": "Software Engineer",
+                    "company": "Sony",
+                    "description": "<ul>\r\n<ul>Built the new improved version of Search API, v2 that connects to Solr platform<\/ul>\r\n<ul>Responsible for management\/development of GTM project that sends data to Google Analytics<\/ul>\r\n<ul>Worked on maintenance of and adding new features to global web sites of Sony Mobile<\/ul>\r\n<\/ul>",
+                    "start_date": "Nov 2017",
+                    "end_date": "Present"
+                },
+                {
+                    "title": "IT Intern",
+                    "company": "BNP Paribas Cardif",
+                    "description": "",
+                    "start_date": "Jul 2015",
+                    "end_date": "Aug 2015"
+                },
+                {
+                    "title": "Software Development Intern",
+                    "company": "Zet.com",
+                    "description": "",
+                    "start_date": "May 2014",
+                    "end_date": "Aug 2014"
+                }
+            ]
+        },
+        "education": {
+            "description": "",
+            "items" : [ 
+                {
+                    "degree": "BSc",
+                    "field_of_study": "Computer Engineering",
+                    "school": "Istanbul University",
+                    "start_year": "2012",
+                    "end_year": "2016"
+                },
+                {
+                    "degree": "Exchange Student",
+                    "field_of_study": "Human-Computer Interaction",
+                    "school": "Tallinn University",
+                    "start_year": "2015",
+                    "end_year": "2016"
+                },
+                {
+                    "degree": "High School Diploma",
+                    "field_of_study": "",
+                    "school": "Nişantaşı Anadolu Lisesi",
+                    "start_year": "2008",
+                    "end_year": "2012"
+                }
+            ]
+        },
+        "skills": {
+            "description": "I have always been so curious about whole software development cycle, therefore I am trying to improve myself in full-stack development.",
+            "items": [ 
+                {
+                    "title": "PHP, MySQL",
+                    "level": 8
+                },
+                {
+                    "title": "HTML, CSS",
+                    "level": 9
+                },
+                {
+                    "title": "JavaScript",
+                    "level": 7
+                },
+                {
+                    "title": "Git",
+                    "level": 8
+                },
+                {
+                    "title": "REST API",
+                    "level": 8
+                },
+                {
+                    "title": "OOP, Unit Testing",
+                    "level": 7
+                },
+                {
+                    "title": "Swift, Firebase",
+                    "level": 5
+                },
+                {
+                    "title": "Agile Development",
+                    "level": 9
+                },
+                {
+                    "title": "UI Design",
+                    "level": 6
+                }
+            ],
+            "to_learn": [
+                "Docker", 
+                "TDD", 
+                "AWS", 
+                "React.js", 
+                "Design Patterns", 
+                "SOLID Principles", 
+                "Laravel", 
+                "React Native"
+            ]
+        },
+        "projects": {
+            "description": "",
+            "items": [
+                {
+                    "title": "Listpie",
+                    "type": "iOS Application",
+                    "description": "This was the very first app that I have developed during my journey to learn mobile development as a personal interest in my free time.\r\n<br>\r\n<br> - Coded natively in Swift\r\n<br> - Used MVC pattern\r\n<br> - Firebase for database and authentication",
+                    "link": "https://itunes.apple.com/us/app/listpie/id1434060708",
+                    "image": "/images/projects/listpie.jpg",
+                    "start_date": "Mar 2017",
+                    "end_date": "Sep 2018"
+                }
+            ]
+        },
+        "personal": {
+            "description": "<em><p style=\"font-size:18px\">\"It doesn\u2019t interest me what you do for a living. I want to know what you ache for \u2013 and if you dare to dream of meeting your heart\u2019s longing. It doesn\u2019t interest me how old you are. I want to know if you will risk looking like a fool \u2013 for love \u2013 for your dreams \u2013 for the adventure of being alive.\"<\/p>\r\n<p style=\"text-align:right\">\u2013 Oriah Mountain Dreamer<\/p><\/em>",
+            "personality_type": "ENFP-T",
+            "collections": [
+                "postcard",
+                "flag patch and paper money from visited countries"
+            ],
+            "music": {
+                "spotify": "https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw",
+                "items": [
+                    "dire straits",
+                    "jungle",
+                    "paradis",
+                    "sohn"
+                ]
+            }
+        }
+    }
+}
