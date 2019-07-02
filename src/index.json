@@ -80,53 +80,52 @@
             "description": "I have always been so curious about whole software development cycle, therefore I am trying to improve myself in full-stack development.",
             "items": [
                 {
-                    "title": "PHP, MySQL",
+                    "title": "<b>PHP, MySQL</b> <br /> <em>(Laravel, Slim)</em>",
                     "level": 8
                 },
                 {
-                    "title": "HTML, CSS",
-                    "level": 9
-                },
-                {
-                    "title": "JavaScript",
+                    "title": "<b>HTML, CSS, JavaScript</b>",
                     "level": 7
                 },
                 {
-                    "title": "Git",
+                    "title": "<b>Git, Terminal</b>",
                     "level": 8
                 },
                 {
-                    "title": "REST API",
-                    "level": 8
-                },
-                {
-                    "title": "OOP, Unit Testing",
-                    "level": 7
-                },
-                {
-                    "title": "Swift, Firebase",
-                    "level": 5
-                },
-                {
-                    "title": "Agile Development",
-                    "level": 9
-                },
-                {
-                    "title": "UI Design",
+                    "title": "<b>Docker, CI/CD</b>",
                     "level": 6
+                },
+                {
+                    "title": "<b>REST API</b>",
+                    "level": 8
+                },
+                {
+                    "title": "<b>OOP, Test-Driven Development</b>",
+                    "level": 7
+                },
+                {
+                    "title": "<b>Agile Development</b> <br /> <em>(Scrum, Kanban)</em>",
+                    "level": 8
+                },
+                {
+                    "title": "<b>UI Design</b>",
+                    "level": 7
+                },
+                {
+                    "title": "<b>iOS Development</b> <br /> <em>(Swift, Firebase)</em>",
+                    "level": 5
                 }
             ],
             "to_learn": {
-                "title": "To-really-learn list",
+                "title": "To-learn list",
                 "items": [
-                    "Docker",
-                    "TDD",
                     "AWS",
-                    "React.js",
+                    "Symfony",
                     "Design Patterns",
-                    "SOLID Principles",
-                    "Laravel",
-                    "React Native"
+                    "React",
+                    "React Native",
+                    "Data Structures",
+                    "System Design"
                 ]
             }
         },

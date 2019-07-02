@@ -85,11 +85,11 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
         <div class="docs-section" id="<?= $pageData['fields']['skills']['slug'] ?>">
             <h3 class="docs-header"><?= $pageData['fields']['skills']['title'] ?></h3>
             <?= $pageData['fields']['skills']['description'] ?>
-            <table class="u-full-width">
+            <table class="u-full-width" style="margin-top:15px;">
                 <?php foreach ($pageData['fields']['skills']['items'] as $skill) : ?>
                 <tr>
                     <td>
-                        <b><?= $skill['title'] ?></b>
+                        <?= $skill['title'] ?>
                     </td>
                     <td>
                         <span style="font-size: 29px">
