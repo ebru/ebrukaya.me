@@ -1,14 +1,26 @@
 {
     "title": "Hi! I'm Ebru.",
     "snippet": "Software Engineer at Sony, backpacker and lover of nature 🍃",
-    "description": "I graduated from Istanbul University with a degree in Computer Engineering and was an exchange student specialized in Human-Computer Interaction at Tallinn University in Estonia. \nI am currently working at Sony as a Software Engineer. I have been there for a year and in the team of global web sites of Sony Mobile. Personally interested in mobile development and have an app published on the app store. \nAlways eager to learn, saying yes to new adventures.",
+    "description": "<p>I graduated from Istanbul University with a degree in Computer Engineering and was an exchange student specialized in Human-Computer Interaction at Tallinn University in Estonia.</p><p>I am currently working at Sony as a Software Engineer. I have been there for a year and in the team of global web sites of Sony Mobile. Personally interested in mobile development and have an app published on the app store.</p><p>Always eager to learn, saying yes to new adventures.</p>",
+    "pp": "assets/images/pp.jpg",
     "social": {
-        "linkedin": "https://www.linkedin.com/in/ebrukaya/",
-        "github": "https://github.com/ebrukye",
-        "medium": "https://www.medium.com/@ebrukye"
+        "linkedin": {
+            "url": "https://www.linkedin.com/in/ebrukaya/",
+            "icon": "assets/images/social/linkedin.png"
+        },
+        "github": {
+            "url": "https://www.github.com/ebrukye",
+            "icon": "assets/images/social/github.png"
+        },
+        "medium": {
+            "url": "https://www.medium.com/@ebrukye",
+            "icon": "assets/images/social/medium.png"
+        }
     },
     "fields": {
         "experience": {
+            "title": "Experience",
+            "slug": "experience",
             "description": "",
             "items": [
                 {
@@ -35,8 +47,10 @@
             ]
         },
         "education": {
+            "title": "Education",
+            "slug": "education",
             "description": "",
-            "items" : [ 
+            "items": [
                 {
                     "degree": "BSc",
                     "field_of_study": "Computer Engineering",
@@ -61,8 +75,10 @@
             ]
         },
         "skills": {
+            "title": "Skills",
+            "slug": "skills",
             "description": "I have always been so curious about whole software development cycle, therefore I am trying to improve myself in full-stack development.",
-            "items": [ 
+            "items": [
                 {
                     "title": "PHP, MySQL",
                     "level": 8
@@ -100,47 +116,54 @@
                     "level": 6
                 }
             ],
-            "to_learn": [
-                "Docker", 
-                "TDD", 
-                "AWS", 
-                "React.js", 
-                "Design Patterns", 
-                "SOLID Principles", 
-                "Laravel", 
-                "React Native"
-            ]
+            "to_learn": {
+                "title": "To-really-learn list",
+                "items": [
+                    "Docker",
+                    "TDD",
+                    "AWS",
+                    "React.js",
+                    "Design Patterns",
+                    "SOLID Principles",
+                    "Laravel",
+                    "React Native"
+                ]
+            }
         },
         "projects": {
+            "title": "Projects",
+            "slug": "projects",
             "description": "",
             "items": [
                 {
                     "title": "Listpie",
                     "type": "iOS Application",
                     "description": "This was the very first app that I have developed during my journey to learn mobile development as a personal interest in my free time.\r\n<br>\r\n<br> - Coded natively in Swift\r\n<br> - Used MVC pattern\r\n<br> - Firebase for database and authentication",
-                    "link": "https://itunes.apple.com/us/app/listpie/id1434060708",
-                    "image": "/images/projects/listpie.jpg",
+                    "url": "https://itunes.apple.com/us/app/listpie/id1434060708",
+                    "image": "assets/images/projects/listpie.jpg",
                     "start_date": "Mar 2017",
                     "end_date": "Sep 2018"
                 }
             ]
         },
         "personal": {
+            "title": "Personal",
+            "slug": "personal",
             "description": "<em><p style=\"font-size:18px\">\"It doesn\u2019t interest me what you do for a living. I want to know what you ache for \u2013 and if you dare to dream of meeting your heart\u2019s longing. It doesn\u2019t interest me how old you are. I want to know if you will risk looking like a fool \u2013 for love \u2013 for your dreams \u2013 for the adventure of being alive.\"<\/p>\r\n<p style=\"text-align:right\">\u2013 Oriah Mountain Dreamer<\/p><\/em>",
-            "personality_type": "ENFP-T",
-            "collections": [
-                "postcard",
-                "flag patch and paper money from visited countries"
-            ],
-            "music": {
-                "spotify": "https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw",
-                "items": [
-                    "dire straits",
-                    "jungle",
-                    "paradis",
-                    "sohn"
-                ]
-            }
+            "chapters": [
+                {
+                    "title": "Personality type",
+                    "value": "<a href='https://www.16personalities.com/enfp-personality' target='_blank'>ENFP-T</a>"
+                },
+                {
+                    "title": "Collections",
+                    "value": "postcard, flag patch and paper money from visited countries"
+                },
+                {
+                    "title": "Music",
+                    "value": "dire straits, jungle, paradis, sohn... // me on <a href='https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw' target='_blank'><img style='vertical-align:middle' src='assets/images/social/spotify.png' width='28px'/></a>"
+                }
+            ]
         }
     }
 }
