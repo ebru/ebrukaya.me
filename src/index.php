@@ -1,4 +1,12 @@
-<?php include('header.php'); ?>
+<?php 
+if (1 == $_GET['json']) {
+    header('Content-Type: application/json');
+
+    $pageJson = file_get_contents('index.json', 1);
+    die($pageJson);
+}
+include('header.php');
+?>
     
 <!-- Language selection -->
 <div class="container">
