@@ -89,7 +89,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                 <?php foreach ($pageData['fields']['skills']['items'] as $skill) : ?>
                 <tr>
                     <td>
-                        <b><?= $skill['title'] ?></b>
+                        <?= $skill['title'] ?>
                     </td>
                     <td>
                         <span style="font-size: 29px">
