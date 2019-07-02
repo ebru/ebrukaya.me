@@ -117,7 +117,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                 <?php foreach ($pageData['fields']['projects']['items'] as $project) : ?>
                 <tr>
                     <td>
-                        <span style="font-size: 17px"><b><?= $project['title'] ?></b></span>
+                        <span style="font-size: 17px;"><b><?= $project['title'] ?></b></span>
                         <br> <?= $project['type'] ?>, <?= $project['start_date'] ?> – <?= $project['end_date'] ?>
                         <br>
                         <br>

@@ -130,7 +130,7 @@
             }
         },
         "projects": {
-            "title": "Projects",
+            "title": "Side Projects",
             "slug": "projects",
             "description": "",
             "items": [
@@ -142,10 +142,19 @@
                     "image": "assets/images/projects/listpie.jpg",
                     "start_date": "Mar 2017",
                     "end_date": "Sep 2018"
+                },
+                {
+                    "title": "MUKAVVA",
+                    "type": "Design Brand",
+                    "description": "This was a design brand that we created together with my two close friends in a very amateur way, an adventure by the inspiration that we take from nature and our travels.\r\n<br>\r\n<br> - Designed and manufactured handmade crafts.\r\n<br> - Formed a company to sell our products legally online.\r\n<br> - Was responsible for all the steps from designing and creating to selling and the managing.",
+                    "url": "https://instagram.com/mukavvaco",
+                    "image": "assets/images/projects/mukavva.jpg",
+                    "start_date": "Mar 2017",
+                    "end_date": "Oct 2018"
                 }
             ]
         },
-        "personal": {
+        "personal": { 
             "title": "Personal",
             "slug": "personal",
             "description": "<em><p style=\"font-size:18px\">\"It doesn\u2019t interest me what you do for a living. I want to know what you ache for \u2013 and if you dare to dream of meeting your heart\u2019s longing. It doesn\u2019t interest me how old you are. I want to know if you will risk looking like a fool \u2013 for love \u2013 for your dreams \u2013 for the adventure of being alive.\"<\/p>\r\n<p style=\"text-align:right\">\u2013 Oriah Mountain Dreamer<\/p><\/em>",
