@@ -4,7 +4,7 @@ This is my personal website. I am adding new sections along the way of the journ
 
 ![Scheme](src/assets/images/homepage.png)
 
-## latest
+## updates
 #### May '19
 - **Docker** has been added to tech stack.
 
