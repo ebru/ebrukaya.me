@@ -5,9 +5,9 @@ This is my personal website. I am adding new sections along the way of the journ
 ![Scheme](src/assets/images/homepage.png)
 
 ## latest
-#### May 19
+#### May '19
 - **Docker** has been added to tech stack.
 
-#### July 19
+#### Jul '19
 - Page rendering has been changed dynamically as getting data from a json file.
 - **Deployment** has been automated through cPanel while fetching from Github repo directly.
