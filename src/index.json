@@ -92,7 +92,7 @@
                     "level": 8
                 },
                 {
-                    "title": "<b>Docker, CI/CD</b>",
+                    "title": "<b>Docker, CI/CD</b> <br /> <em>(Jenkins, TravisCI)</em>",
                     "level": 6
                 },
                 {
