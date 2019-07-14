@@ -77,7 +77,7 @@
         "skills": {
             "title": "Skills",
             "slug": "skills",
-            "description": "I have always been so curious about the whole software development cycle, therefore I am trying to improve myself in full stack development.",
+            "description": "I have always been so curious about the whole software development cycle, therefore I improve myself in full stack development.",
             "items": [
                 {
                     "title": "<b>PHP, MySQL</b> <br /> <em>(Laravel, Slim)</em>",
@@ -155,7 +155,7 @@
                 {
                     "title": "Hayallerimde Ben",
                     "type": "Storytelling",
-                    "description": "An online storytelling project that I started to share my experiences through my bucket list journey between ages 18 and 25.\r\n<br>\r\n<br> - Had a personal blog and Youtube channel which has 35k+ subscribers about to try to live life to the fullest and travel stories\r\n<br> - Lived in different cultures and have gained a different point of view in each of them",
+                    "description": "An online storytelling project that I started to share my experiences through my bucket list journey between ages 18 and 25.\r\n<br>\r\n<br> - Had a personal blog and Youtube channel which has 30k+ subscribers about to try to live life to the fullest and travel stories\r\n<br> - Lived in different cultures and have gained a different point of view in each of them",
                     "url": "https://www.hayallerimdeben.com/",
                     "image": "assets/images/projects/hayallerimdeben.jpg",
                     "start_date": "Jan 2013",
