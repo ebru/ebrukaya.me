@@ -86,11 +86,11 @@
             "description": "I have always been so curious about the whole software development cycle, therefore I improve myself in full stack development.",
             "items": [
                 {
-                    "title": "<b>PHP, MySQL</b> <br /> <em>(Laravel, Slim)</em>",
+                    "title": "<b><span style='border-bottom: 3px solid #474A8A'>PHP</span>, MySQL</b> <br /> <em>(Laravel, Slim)</em>",
                     "level": 8
                 },
                 {
-                    "title": "<b>HTML, CSS, JavaScript</b>",
+                    "title": "<b>HTML, CSS, <span style='border-bottom: 3px solid #F0DB4F'>JavaScript</span></b>",
                     "level": 7
                 },
                 {
@@ -98,7 +98,7 @@
                     "level": 8
                 },
                 {
-                    "title": "<b>Docker, CI/CD</b> <br /> <em>(Jenkins, TravisCI)</em>",
+                    "title": "<b><span style='border-bottom: 3px solid #0db7ed'>Docker</span>, CI/CD</b> <br /> <em>(Jenkins, TravisCI)</em>",
                     "level": 6
                 },
                 {
