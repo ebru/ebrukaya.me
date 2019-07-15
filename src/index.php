@@ -92,17 +92,15 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                         <?= $skill['title'] ?>
                     </td>
                     <td>
-                        <span style="font-size: 29px">
                         <?php 
                         for ($i = 0; $i < 10; $i++) {
                             if ($i < $skill['level']) {
-                                echo "<b>+</b>";
+                                echo '<span class="level-plus active">+</span>';
                             } else {
-                                echo "<span style='color: #ccc'>+</span>";
+                                echo '<span class="level-plus">+</span>';
                             }
                         }
                         ?>
-                        </span>
                     </td>
                 </tr>
                 <?php endforeach; ?>

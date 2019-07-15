@@ -323,9 +323,28 @@ li {
   width: 120px;
 }
 
+.level-plus {
+  font-size: 30px;
+  color: #ccc;
+}
+
+.level-plus.active {
+  color: #000;
+  font-weight: bold;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   .project-image {
     width: 140px;
+  }
+  .level-plus {
+    font-size: 32px;
+    color: #ccc;
+  }
+  
+  .level-plus.active {
+    color: #000;
+    font-weight: bold;
   }
 }
