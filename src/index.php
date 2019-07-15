@@ -127,7 +127,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                         <a class="button button-primary" href="<?= $project['url'] ?>" target="_blank">Go to Project</a>
                     </td>
                     <td>
-                        <a href="<?= $project['url'] ?>" target="_blank"><img src="<?= $project['image'] ?>" width="140px" /></a>
+                        <a href="<?= $project['url'] ?>" target="_blank"><img src="<?= $project['image'] ?>" class="project-image" /></a>
                     </td>
                 </tr>
                 <?php endforeach; ?>

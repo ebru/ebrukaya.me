@@ -135,7 +135,7 @@
             "description": "",
             "items": [
                 {
-                    "title": "Listpie",
+                    "title": "Listpie - create & discover lists",
                     "type": "iOS Application",
                     "description": "This was the very first app that I have developed during my journey to learn mobile development as a personal interest in my free time.\r\n<br>\r\n<br> - Coded natively in Swift\r\n<br> - Used MVC pattern\r\n<br> - Firebase for database and authentication",
                     "url": "https://itunes.apple.com/us/app/listpie/id1434060708",
