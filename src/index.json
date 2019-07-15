@@ -26,6 +26,7 @@
                 {
                     "title": "Software Engineer",
                     "company": "Sony",
+                    "image": "assets/images/companies/sony.png",
                     "description": "<ul>\r\n<ul>Works on adding new features to and the maintenance of global web sites of Sony Mobile<\/ul>\r\n<ul>Built the new improved version of Search API, v2 that connects to Solr platform<\/ul>\r\n<ul>Worked on management/development of GTM project that sends data to Google Analytics<\/ul>\r\n<\/ul>",
                     "start_date": "Nov 2017",
                     "end_date": "Present"
@@ -33,6 +34,7 @@
                 {
                     "title": "IT Intern",
                     "company": "BNP Paribas Cardif",
+                    "image": "",
                     "description": "",
                     "start_date": "Jul 2015",
                     "end_date": "Aug 2015"
@@ -40,6 +42,7 @@
                 {
                     "title": "Software Development Intern",
                     "company": "Zet.com",
+                    "image": "",
                     "description": "",
                     "start_date": "May 2014",
                     "end_date": "Aug 2014"
@@ -55,6 +58,7 @@
                     "degree": "BSc",
                     "field_of_study": "Computer Engineering",
                     "school": "Istanbul University",
+                    "image": "assets/images/schools/iu.png",
                     "start_year": "2012",
                     "end_year": "2016"
                 },
@@ -62,6 +66,7 @@
                     "degree": "Exchange Student",
                     "field_of_study": "Human-Computer Interaction",
                     "school": "Tallinn University",
+                    "image": "assets/images/schools/tlu.jpg",
                     "start_year": "2015",
                     "end_year": "2016"
                 },
@@ -69,6 +74,7 @@
                     "degree": "High School Diploma",
                     "field_of_study": "",
                     "school": "Nişantaşı Anadolu Lisesi",
+                    "image": "assets/images/schools/nal.jpg",
                     "start_year": "2008",
                     "end_year": "2012"
                 }

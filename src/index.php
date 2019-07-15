@@ -54,11 +54,13 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                     <tr>
                         <td>
                             <span style="font-size: 19px"><b><?= $experience['title'] ?></b></span>
-                            <br> <?= $experience['company'] ?>
+                            <br> <?= $experience['company'] ?>, <?= $experience['start_date'] ?> – <?= $experience['end_date'] ?>
                             <br>
                             <?= $experience['description'] ?>
                         </td>
-                        <td><?= $experience['start_date'] ?> – <?= $experience['end_date'] ?></td>
+                        <td>
+                            <img src="<?= $experience['image'] ?>" class="experience-image" />
+                        </td>
                     </tr>
                     <?php endforeach; ?>
                 </table>
@@ -73,9 +75,11 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                     <tr>
                         <td>
                             <span style="font-size: 19px"><b><?= $education['school'] ?></b></span>
-                            <br><?= $education['degree'] ?>, <?= $education['field_of_study'] ?>
+                            <br><?= $education['degree'] ?>, <?= $education['field_of_study'] ?>, <?= $education['start_year'] ?> – <?= $education['end_year'] ?>
                         </td>
-                        <td><?= $education['start_year'] ?> – <?= $education['end_year'] ?></td>
+                        <td>
+                            <img src="<?= $education['image'] ?>" class="school-image" />
+                        </td>
                     </tr>
                     <?php endforeach; ?>
                 </table>
