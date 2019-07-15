@@ -20,11 +20,11 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
     <div class="row">
         <!-- Intro section -->
         <div class="seven columns">
-            <h3><b><?= $pageData['title'] ?></b></h3>
-            <h5><?= $pageData['snippet'] ?></h5>
+            <h2><b><?= $pageData['title'] ?></b></h2>
+            <h4><?= $pageData['snippet'] ?></h4>
             <?= $pageData['description'] ?>
             <p>
-                <a href="<?= $pageData['social']['linkedin']['url'] ?>" target="_blank"><img src="<?= $pageData['social']['linkedin']['icon'] ?>" style="width: 30px; padding-right: 9px" /></a><a href="<?= $pageData['social']['github']['url'] ?>" target="_blank"><img src="<?= $pageData['social']['github']['icon'] ?>" style="width: 28px" /></a> <a href="<?= $pageData['social']['medium']['url'] ?>" target="_blank"><img src="<?= $pageData['social']['medium']['icon'] ?>" style="width: 30px; padding-left: 6px;" /></a>
+                <a href="<?= $pageData['social']['linkedin']['url'] ?>" target="_blank"><img src="<?= $pageData['social']['linkedin']['icon'] ?>" style="width: 34px; padding-right: 9px" /></a><a href="<?= $pageData['social']['github']['url'] ?>" target="_blank"><img src="<?= $pageData['social']['github']['icon'] ?>" style="width: 32px" /></a> <a href="<?= $pageData['social']['medium']['url'] ?>" target="_blank"><img src="<?= $pageData['social']['medium']['icon'] ?>" style="width: 34px; padding-left: 6px;" /></a>
             </p>
         </div>
         <div class="five columns">
@@ -53,7 +53,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                     <?php foreach ($pageData['fields']['experience']['items'] as $experience) : ?>
                     <tr>
                         <td>
-                            <span style="font-size: 17px"><b><?= $experience['title'] ?></b></span>
+                            <span style="font-size: 19px"><b><?= $experience['title'] ?></b></span>
                             <br> <?= $experience['company'] ?>
                             <br>
                             <?= $experience['description'] ?>
@@ -72,7 +72,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                     <?php foreach ($pageData['fields']['education']['items'] as $education) : ?>
                     <tr>
                         <td>
-                            <span style="font-size: 17px"><b><?= $education['school'] ?></b></span>
+                            <span style="font-size: 19px"><b><?= $education['school'] ?></b></span>
                             <br><?= $education['degree'] ?>, <?= $education['field_of_study'] ?>
                         </td>
                         <td><?= $education['start_year'] ?> – <?= $education['end_year'] ?></td>
@@ -117,7 +117,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                 <?php foreach ($pageData['fields']['projects']['items'] as $project) : ?>
                 <tr>
                     <td>
-                        <span style="font-size: 17px;"><b><?= $project['title'] ?></b></span>
+                        <span style="font-size: 20px;"><b><?= $project['title'] ?></b></span>
                         <br> <?= $project['type'] ?>, <?= $project['start_date'] ?> – <?= $project['end_date'] ?>
                         <br>
                         <br>
@@ -127,7 +127,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
                         <a class="button button-primary" href="<?= $project['url'] ?>" target="_blank">Go to Project</a>
                     </td>
                     <td>
-                        <a href="<?= $project['url'] ?>" target="_blank"><img src="<?= $project['image'] ?>" width="100px" /></a>
+                        <a href="<?= $project['url'] ?>" target="_blank"><img src="<?= $project['image'] ?>" width="140px" /></a>
                     </td>
                 </tr>
                 <?php endforeach; ?>

@@ -170,7 +170,7 @@
             "chapters": [
                 {
                     "title": "Personality type",
-                    "value": "<a href='https://www.16personalities.com/enfp-personality' target='_blank'>ENFP-T</a>"
+                    "value": "<a href='https://www.16personalities.com/enfp-personality' target='_blank'><strong>ENFP-T</strong></a>"
                 },
                 {
                     "title": "Collections",
@@ -178,7 +178,7 @@
                 },
                 {
                     "title": "Music",
-                    "value": "dire straits, jungle, paradis, sohn... // me on <a href='https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw' target='_blank'><img style='vertical-align:middle' src='assets/images/social/spotify.png' width='28px'/></a>"
+                    "value": "dire straits, jungle, paradis, sohn... // me on <a href='https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw' target='_blank'><img style='vertical-align:middle' src='assets/images/social/spotify.png' width='29px'/></a>"
                 }
             ]
         }
