@@ -83,7 +83,7 @@
         "skills": {
             "title": "Skills",
             "slug": "skills",
-            "description": "I have always been so curious about the whole software development cycle, therefore I improve myself in full stack development.",
+            "description": "I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life. Therefore I enjoy my time to improve myself in full-stack development.",
             "items": [
                 {
                     "title": "<b><span style='border-bottom: 3px solid #474A8A'>PHP</span>, MySQL</b> <br /> <em>(Laravel, Slim)</em>",
