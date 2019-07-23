@@ -94,16 +94,16 @@
                     "level": 7
                 },
                 {
+                    "title": "<b><span style='border-bottom: 3px solid #306998'>Python</span>, <span style='border-bottom: 3px solid #FF9900'>AWS</span> Serverless</b>",
+                    "level": 6
+                },
+                {
                     "title": "<b>Git, Terminal</b>",
                     "level": 8
                 },
                 {
                     "title": "<b><span style='border-bottom: 3px solid #0db7ed'>Docker</span>, CI/CD</b> <br /> <em>(Jenkins, TravisCI)</em>",
                     "level": 6
-                },
-                {
-                    "title": "<b>REST API</b>",
-                    "level": 8
                 },
                 {
                     "title": "<b>OOP, Test-Driven Development</b>",
@@ -114,7 +114,7 @@
                     "level": 8
                 },
                 {
-                    "title": "<b>UI Design</b>",
+                    "title": "<b>UI & REST API Design</b>",
                     "level": 7
                 },
                 {
@@ -125,7 +125,6 @@
             "to_learn": {
                 "title": "To-learn list",
                 "items": [
-                    "AWS",
                     "Symfony",
                     "Design Patterns",
                     "React",
