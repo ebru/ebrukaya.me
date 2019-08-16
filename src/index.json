@@ -86,11 +86,11 @@
             "description": "I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life. Therefore I enjoy spending my time to improve myself in full-stack development.",
             "items": [
                 {
-                    "title": "<b><span style='border-bottom: 3px solid #474A8A'>PHP</span>, MySQL</b> <br /> <em>(Laravel, Slim)</em>",
+                    "title": "<b><span style='border-bottom: 3px solid #474A8A'>PHP</span>, MySQL</b> <br /> <em>(Laravel)</em>",
                     "level": 8
                 },
                 {
-                    "title": "<b>HTML, CSS, <span style='border-bottom: 3px solid #F0DB4F'>JavaScript</span></b>",
+                    "title": "<b>HTML, CSS, <span style='border-bottom: 3px solid #F0DB4F'>JavaScript</span></b> <br /> <em>(React, Node.js, Express)</em>",
                     "level": 7
                 },
                 {
@@ -125,12 +125,12 @@
             "to_learn": {
                 "title": "To-learn list",
                 "items": [
+                    "MongoDB",
+                    "GraphQL",
                     "Symfony",
-                    "Design Patterns",
-                    "React",
+                    "PWA",
                     "React Native",
-                    "Data Structures",
-                    "System Design"
+                    "Design Patterns in Depth"
                 ]
             }
         },
