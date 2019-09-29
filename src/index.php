@@ -36,7 +36,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
         <div class="section-title career">💻 Career</div>
         <span>Currently</span>
         <ul class="current-projects">
-            <li>Working as a software engineer at <strong>Sony</strong> for 2 years.</li>
+            <li>Working as a software engineer at <strong>Sony</strong>, have been there for 2 years.</li>
         </ul>
         <span>Past</span>
         <ul class="past-projects">
@@ -56,7 +56,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
             <li>I'm currently focused on <tech style="border-bottom: 3px solid #F0DB4F">Javascript</tech> with <tech>React</tech>, <tech style="border-bottom: 3px solid #83BA63">Node.js</tech> with <tech>Express</tech>, <tech style="border-bottom: 3px solid #0db7ed">Docker</tech> for containerization and <tech style="border-bottom: 3px solid #FF9900">AWS</tech> services to build full-stack applications.</li>
             <li>I have some knowledge on <tech>CI/CD</tech> with <tech>Jenkins</tech></li>
             <li>I use <tech>Git</tech> and <tech>Terminal</tech></li>
-            <li>I try to do <tech>Test-Driven Development</tech> if there is an efficient case to do.</li>
+            <li>I try to do <tech>Test-Driven Development</tech> if there is an efficient case to use.</li>
             <li>I'm familiar with <tech>Agile Methodologies</tech> using <tech>Scrum</tech> and <tech>Kanban</tech></li>
             <li>I have some experience on building, publishing an iOS app using <tech style="border-bottom: 3px solid #fd9426">Swift</tech> and <tech>Firebase</tech></li>
             <div class="to-learn-list">

@@ -2,7 +2,7 @@
 
 This is my personal website. I am adding new sections along the way of the journey of growing both professionally and personally.
 
-![Scheme](src/assets/images/homepage.png)
+![Scheme](src/assets/images/ebrukayame-v2.gif)
 
 ## updates
 #### May '19
