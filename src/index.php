@@ -33,7 +33,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
         </ul>
     </div>
     <div class="section">
-        <div class="section-title career">💻 Career</div>
+        <div class="section-title career">💻 The Journey</div>
         <span>Present</span>
         <ul class="current-projects">
             <li>Working as a Software Engineer at <strong>Sony</strong> since November of 2017.</li>
@@ -46,6 +46,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
             <li>2015 – IT Intern at <strong>BNP Paribas Cardif</strong>.</li>
             <li>2014 – Software Development Intern at <strong>Zet.com</strong>.</li>
             <li>2012 – Graduated from <strong>Nişantaşı Anadolu Lisesi</strong> with high school diploma.</li>
+            <li>2005 – My interest in software development has started in elementary school while trying to design a website from free providers back then.</li>
         </ul>
     </div>
     <div class="section">
