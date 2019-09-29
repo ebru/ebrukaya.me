@@ -21,7 +21,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
     </div>
     <div class="section">
         <div class="section-title projects">👩🏻‍💻 Side Projects</div>
-        <span>Currently</span>
+        <span>Present</span>
         <ul class="current-projects">
             <li>🎧 Working on <strong><a href="https://github.com/ebru/euphony" target="_blank">Euphony</a></strong>, a little side project to improve my React, Node.js, Docker and AWS knowledge.</li>
         </ul>
@@ -34,17 +34,17 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
     </div>
     <div class="section">
         <div class="section-title career">💻 Career</div>
-        <span>Currently</span>
+        <span>Present</span>
         <ul class="current-projects">
-            <li>Working as a software engineer at <strong>Sony</strong>, have been there for 2 years.</li>
+            <li>Working as a Software Engineer at <strong>Sony</strong> since November of 2017.</li>
         </ul>
         <span>Past</span>
         <ul class="past-projects">
             <li>2017 – Took a gap year after graduation before starting my professional career.</li>
             <li>2016 – Graduated from <strong>Istanbul University</strong> with a degree in Computer Engineering.</li>
-            <li>2015 – Exchange student at <strong>Tallinn University</strong> in Estonia.</li>
-            <li>2015 – IT intern at <strong>BNP Paribas Cardif</strong>.</li>
-            <li>2014 – Software development intern at <strong>Zet.com</strong>.</li>
+            <li>2015 – Exchange Student at <strong>Tallinn University</strong> in Estonia.</li>
+            <li>2015 – IT Intern at <strong>BNP Paribas Cardif</strong>.</li>
+            <li>2014 – Software Development Intern at <strong>Zet.com</strong>.</li>
             <li>2012 – Graduated from <strong>Nişantaşı Anadolu Lisesi</strong> with high school diploma.</li>
         </ul>
     </div>
@@ -54,7 +54,7 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
             <li>My main technology stack has been <tech style="border-bottom: 3px solid #474A8A">PHP</tech>, <tech>MySQL</tech>, <tech>HTML</tech> and <tech>CSS</tech> so far</li>
             <li>I have also worked with <tech style="border-bottom: 3px solid #306998">Python</tech> and <tech>AWS Serverless</tech> to build some projects</li>
             <li>I'm currently focused on <tech style="border-bottom: 3px solid #F0DB4F">Javascript</tech> with <tech>React</tech>, <tech style="border-bottom: 3px solid #83BA63">Node.js</tech> with <tech>Express</tech>, <tech style="border-bottom: 3px solid #0db7ed">Docker</tech> for containerization and <tech style="border-bottom: 3px solid #FF9900">AWS</tech> services to build full-stack applications</li>
-            <li>I have some knowledge on <tech>CI/CD</tech> with <tech>Jenkins</tech></li>
+            <li>I have some knowledge on <tech>CI/CD</tech> with <tech style="border-bottom: 3px solid #d24939">Jenkins</tech></li>
             <li>I use <tech>Git</tech> and <tech>Terminal</tech></li>
             <li>I try to do <tech>Test-Driven Development</tech> if there is an efficient case to use</li>
             <li>I'm familiar with <tech>Agile Methodologies</tech> using <tech>Scrum</tech> and <tech>Kanban</tech></li>
