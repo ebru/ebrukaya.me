@@ -1,11 +1,10 @@
 </body>
 
 <footer>
-    <div class="container">
-        <div class="row" id="footer">
-            <div class="twelve columns">2019 – <b>Ebru Kaya</b>
-            <br>ebru[at]ebrukaya.me 📮</div>
-        </div>
+    <div class="footer">
+        2019 – <strong>Ebru Kaya</strong>
+        <br>ebru[at]ebrukaya.me 📮
     </div>
 </footer>
+
 </html>
