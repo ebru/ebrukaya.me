@@ -29,24 +29,24 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
         <ul class="past-projects">
             <li>✔️ Built <strong><a href="https://apps.apple.com/us/app/listpie/id1434060708" target="_blank">Listpie</a></strong>, the very first app that I have developed during my journey to learn mobile development as a personal interest in my free time.</li>
             <li>🧶 Co-founded <strong><a href="https://www.instagram.com/mukavvaco/" target="_blank">MUKAVVA</a></strong>, a design brand that we created together with my two close friends in a very amateur way, an adventure inspired by nature and our travels...</li>
-            <li>🚀 Created <strong><a href="https://www.youtube.com/user/hayallerimdeben" target="_blank">Hayallerimde Ben</a></strong>, an online storytelling project that I started to share my experiences through my bucket list journey between ages 18 and 25.</li>
+            <li>🚀 Created <strong><a href="https://www.youtube.com/user/hayallerimdeben" target="_blank">Hayallerimde Ben</a></strong>, a storytelling project that I started to share my experiences through my bucket list journey between ages 18 and 25.</li>
         </ul>
     </div>
     <div class="section">
         <div class="section-title career">💻 The Journey</div>
         <span>Present</span>
         <ul class="current-projects">
-            <li>Working as a Software Engineer at <strong>Sony</strong> since November of 2017.</li>
+            <li>🕹 Working as a Software Engineer at <strong>Sony</strong> since November of 2017.</li>
         </ul>
         <span>Past</span>
         <ul class="past-projects">
-            <li>2017 – Took a gap year after graduation before starting my professional career.</li>
-            <li>2016 – Graduated from <strong>Istanbul University</strong> with a degree in Computer Engineering.</li>
-            <li>2015 – Exchange Student at <strong>Tallinn University</strong> in Estonia.</li>
-            <li>2015 – IT Intern at <strong>BNP Paribas Cardif</strong>.</li>
-            <li>2014 – Software Development Intern at <strong>Zet.com</strong>.</li>
-            <li>2012 – Graduated from <strong>Nişantaşı Anadolu Lisesi</strong> with high school diploma.</li>
-            <li>2005 – My interest in software development has started in my early ages while trying to design a website from free providers and I've built many, many others later on.</li>
+            <li>🚞 Took a gap year after graduation before starting my professional career.</li>
+            <li>🎓 Graduated from <strong>Istanbul University</strong> with a degree in Computer Engineering in 2016.</li>
+            <li>🇪🇪 Exchange Student at <strong>Tallinn University</strong> in Estonia between 2015 and 2016.</li>
+            <li>💾 IT Intern at <strong>BNP Paribas Cardif</strong> in 2015.</li>
+            <li>🛒 Software Development Intern at <strong>Zet.com</strong> in 2014.</li>
+            <li>🐴 Graduated from <strong>Nişantaşı Anadolu Lisesi</strong> with high school diploma in 2012.</li>
+            <li>🐣 My interest in software development has started in my early ages while trying to design a website from free providers and I've built many, many others later on.</li>
         </ul>
     </div>
     <div class="section">
