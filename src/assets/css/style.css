@@ -127,12 +127,12 @@ tech {
   font-weight: 600;
   font-size: 16px;
   border-radius: 3px;
-  padding: 5px 10px;
+  padding: 3px 8px;
   background: #f7f7f7;
 }
 
 .skills {
-  line-height: 2.6;
+  line-height: 2.5;
 }
 
 .to-learn-list {
