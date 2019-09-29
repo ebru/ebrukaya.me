@@ -1,7 +1,7 @@
 {
-    "title": "Hi! I'm Ebru.",
+    "title": "Hi, I'm Ebru.",
     "snippet": "Software Engineer at Sony, backpacker and lover of nature 🍃",
-    "description": "<p>I graduated from Istanbul University with a degree in Computer Engineering and was an exchange student specialized in Human-Computer Interaction at Tallinn University in Estonia.</p><p>I am currently working at Sony as a Software Engineer. I have been there for a year and in the team of global web sites of Sony Mobile. Personally interested in mobile development and have an app published on the app store.</p><p>Always eager to learn, saying yes to new adventures.</p>",
+    "description": "I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life. Therefore I enjoy spending my time to improve myself in full-stack development.",
     "pp": "assets/images/pp.jpg",
     "social": {
         "linkedin": {
@@ -183,7 +183,7 @@
                 },
                 {
                     "title": "Music",
-                    "value": "dire straits, jungle, paradis, sohn... // me on <a href='https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw' target='_blank'><img style='vertical-align:middle' src='assets/images/social/spotify.png' width='29px'/></a>"
+                    "value": "dire straits, jungle, paradis, sohn... // me on <a href='https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw' target='_blank'><img style='vertical-align:middle' src='assets/images/social/spotify.png' width='26px'/></a>"
                 }
             ]
         }
