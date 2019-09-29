@@ -41,11 +41,11 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
         <span>Past</span>
         <ul class="past-projects">
             <li>🚞 Took a gap year after graduation before starting my professional career.</li>
-            <li>🎓 Graduated from <strong>Istanbul University</strong> with a degree in Computer Engineering in 2016.</li>
-            <li>🇪🇪 Exchange Student at <strong>Tallinn University</strong> in Estonia between 2015 and 2016.</li>
-            <li>💾 IT Intern at <strong>BNP Paribas Cardif</strong> in 2015.</li>
-            <li>🛒 Software Development Intern at <strong>Zet.com</strong> in 2014.</li>
-            <li>🐴 Graduated from <strong>Nişantaşı Anadolu Lisesi</strong> with high school diploma in 2012.</li>
+            <li>🎓 Graduated from <strong>Istanbul University</strong> with a degree in Computer Engineering. <em class="year-date">(2016)</em></li>
+            <li>🇪🇪 Exchange Student at <strong>Tallinn University</strong> in Estonia. <em class="year-date">(2015)</em></li>
+            <li>💾 IT Intern at <strong>BNP Paribas Cardif</strong>. <em class="year-date">(2015)</em></li>
+            <li>🛒 Software Development Intern at <strong>Zet.com</strong>. <em class="year-date">(2014)</em></li>
+            <li>🐴 Graduated from <strong>Nişantaşı Anadolu Lisesi</strong> with high school diploma. <em class="year-date">(2012)</em></li>
             <li>🐣 My interest in software development has started in my early ages while trying to design a website from free providers and I've built many, many others later on.</li>
         </ul>
     </div>

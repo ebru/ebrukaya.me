@@ -142,3 +142,8 @@ tech {
   font-style: italic;
   border-left: 3px solid #ddd;
 }
+
+.year-date {
+  color: #888;
+  font-size: 15px;
+}
