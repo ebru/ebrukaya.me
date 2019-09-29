@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
 body {
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -57,7 +57,7 @@ li {
 
 .section-title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
   padding: 10px 20px;
   border-bottom: 4px solid #f7f7f7;
@@ -84,7 +84,7 @@ li {
 }
 
 .quote {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .social {
