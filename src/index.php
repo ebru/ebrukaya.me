@@ -50,13 +50,26 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
     </div>
     <div class="section">
         <div class="section-title tech-stack">🛠 Technology Stack</div>
-        test
+        <ul class="skills">
+            <li>My main technology stack has been <tech style="border-bottom: 3px solid #474A8A">PHP</tech>, <tech>MySQL</tech>, <tech>HTML</tech> and <tech>CSS</tech> so far.</li>
+            <li>I have also worked with <tech style="border-bottom: 3px solid #306998">Python</tech> and <tech>AWS Serverless</tech> to build some projects.</li>
+            <li>I'm currently focused on <tech style="border-bottom: 3px solid #F0DB4F">Javascript</tech> with <tech>React</tech>, <tech style="border-bottom: 3px solid #83BA63">Node.js</tech> with <tech>Express</tech>, <tech style="border-bottom: 3px solid #0db7ed">Docker</tech> for containerization and <tech style="border-bottom: 3px solid #FF9900">AWS</tech> services to build full-stack applications.</li>
+            <li>I have some knowledge on <tech>CI/CD</tech> with <tech>Jenkins</tech></li>
+            <li>I use <tech>Git</tech> and <tech>Terminal</tech></li>
+            <li>I try to do <tech>Test-Driven Development</tech> if there is an efficient case to do.</li>
+            <li>I'm familiar with <tech>Agile Methodologies</tech> using <tech>Scrum</tech> and <tech>Kanban</tech></li>
+            <li>I have some experience on building, publishing an iOS app using <tech style="border-bottom: 3px solid #fd9426">Swift</tech> and <tech>Firebase</tech></li>
+            <div class="to-learn-list">
+                <strong>To-learn list</strong>
+                <li>MongoDB, GraphQL, Symfony, PWA, React Native, Design Patterns in Depth</li>
+            </div>
+        </ul>
     </div>
     <div class="section">
         <div class="section-title personal">🌄 Personal</div>
         <p class="quote">
             "It doesn’t interest me what you do for a living. I want to know what you ache for – and if you dare to dream of meeting your heart’s longing. It doesn’t interest me how old you are. I want to know if you will risk looking like a fool – for love – for your dreams – for the adventure of being alive."
-            <p style="text-align: right;">– Oriah Mountain Dreamer</p>
+            <p style="text-align: right; font-style: italic">– Oriah Mountain Dreamer</p>
         </p>
         <?php foreach ($pageData['fields']['personal']['chapters'] as $chapter) : ?>
             <strong><?= $chapter['title'] ?>:</strong> <?= $chapter['value'] ?>

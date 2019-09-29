@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
 body {
   font-size: 17px;
+  line-height: 1.7;
   font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -67,7 +68,7 @@ li {
 
 .container {
   padding: 80px 0;
-  max-width: 750px;
+  max-width: 740px;
 }
 
 .section {
@@ -120,4 +121,24 @@ li {
   margin-top: 60px;
   padding-top: 20px;
   text-align: right;
+}
+
+tech {
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background: #f7f7f7;
+}
+
+.skills {
+  line-height: 2.6;
+}
+
+.to-learn-list {
+  font-size: 16px;
+  margin-top: 20px;
+  padding-left: 20px;
+  font-style: italic;
+  border-left: 3px solid #ddd;
 }
