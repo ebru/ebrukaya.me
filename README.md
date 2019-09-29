@@ -1,4 +1,4 @@
-# Hi! I'm Ebru.
+# Hi, I'm Ebru.
 
 This is my personal website. I'm adding new sections along the way of the journey of growing both professionally and personally.
 
