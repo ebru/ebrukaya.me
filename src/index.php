@@ -61,9 +61,9 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
             <li>I'm familiar with <tech>Agile Methodologies</tech> using <tech>Scrum</tech> and <tech>Kanban</tech></li>
             <li>I have some experience on building, publishing an iOS app using <tech style="border-bottom: 3px solid #fd9426">Swift</tech> and <tech>Firebase</tech></li>
             <div class="to-learn-list">
-                <strong>To-learn list</strong>
+                <strong>Currently learning</strong>
                 <br />
-                MongoDB, GraphQL, Symfony, PWA, React Native, Design Patterns in Depth
+                MongoDB, GraphQL
             </div>
         </ul>
     </div>
