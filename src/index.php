@@ -44,8 +44,6 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
             <li>🚞 Took a gap year after graduation before starting my professional career.</li>
             <li>🎓 Graduated from <strong>Istanbul University</strong> with a degree in Computer Engineering. <em class="year-date">(2016)</em></li>
             <li>🇪🇪 Exchange Student at <strong>Tallinn University</strong> in Estonia. <em class="year-date">(2015)</em></li>
-            <li>💾 IT Intern at <strong>BNP Paribas Cardif</strong>. <em class="year-date">(2015)</em></li>
-            <li>🛒 Software Development Intern at <strong>Zet.com</strong>. <em class="year-date">(2014)</em></li>
             <li>🐴 Graduated from <strong>Nişantaşı Anadolu Lisesi</strong> with high school diploma. <em class="year-date">(2012)</em></li>
             <li>🐣 My interest in software development has started in my early ages while trying to design a website from free providers and I've built many, many others later on.</li>
         </ul>

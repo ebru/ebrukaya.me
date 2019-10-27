@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap');
+
 body {
   font-size: 17px;
   line-height: 1.7;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 a {
@@ -124,7 +125,7 @@ li {
 }
 
 tech {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 16px;
   border-radius: 3px;
   padding: 3px 8px;
