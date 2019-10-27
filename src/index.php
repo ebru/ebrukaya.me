@@ -27,9 +27,9 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
         </ul>
         <span>Past</span>
         <ul class="past-projects">
-            <li>✔️ Built <strong><a href="https://apps.apple.com/us/app/listpie/id1434060708" target="_blank">Listpie</a></strong>, the very first app that I have developed during my journey to learn mobile development as a personal interest in my free time.</li>
-            <li>🧶 Co-founded <strong><a href="https://www.instagram.com/mukavvaco/" target="_blank">MUKAVVA</a></strong>, a design brand that we created together with my two close friends in a very amateur way, an adventure inspired by nature and our travels...</li>
-            <li>🚀 Created <strong><a href="https://www.youtube.com/user/hayallerimdeben" target="_blank">Hayallerimde Ben</a></strong>, a storytelling project that I started to share my experiences through my bucket list journey between ages 18 and 25.</li>
+            <li>✔️ Built <strong><a href="https://apps.apple.com/us/app/listpie/id1434060708" target="_blank">Listpie</a></strong>, the very first app that I have developed during my journey to learn mobile development as a personal interest in my free time. <em class="year-date">(2018)</em></li>
+            <li>🧶 Co-founded <strong><a href="https://www.instagram.com/mukavvaco/" target="_blank">MUKAVVA</a></strong>, a design brand that we created together with my two close friends in a very amateur way, an adventure inspired by nature and our travels... <em class="year-date">(2018)</em></li>
+            <li>🚀 Created <strong><a href="https://www.youtube.com/user/hayallerimdeben" target="_blank">Hayallerimde Ben</a></strong>, a storytelling project that I started to share my experiences through my bucket list journey between ages 18 and 25. <em class="year-date">(2013)</em></li>
         </ul>
     </div>
     <div class="section">
@@ -79,4 +79,3 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
     </div>
     <?php include('footer.php'); ?>
 </div>
-
