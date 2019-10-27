@@ -36,7 +36,8 @@ $pageData = json_decode(file_get_contents('index.json', 1), 1);
         <div class="section-title career">💻 The Journey</div>
         <span>Present</span>
         <ul class="current-projects">
-            <li>🕹 Working as a Software Engineer at <strong>Sony</strong> since November of 2017.</li>
+            <li>🕹 Working at <strong>Sony</strong> since November of 2017.</li>
+            <li>Senior Software Engineer <em class="year-date">(Oct 2019 – present)</em>, Software Engineer <em class="year-date">(Nov 2017 – Oct 2019)</em></li>
         </ul>
         <span>Past</span>
         <ul class="past-projects">
