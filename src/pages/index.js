@@ -12,7 +12,7 @@ import Footer from './../components/footer/footer.component'
 export default () => {
   return (
     <Layout>
-      <SEO title='Home' />
+      <SEO />
       <div>
         <SnippetCard />
         <SideProjectsCard />
