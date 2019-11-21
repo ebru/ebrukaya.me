@@ -24,7 +24,7 @@ const SideProjectsCard = () => {
 			<SubTitle>Past</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='check' emoji='✔️' /> Built <CustomLink targetUrl='https://apps.apple.com/us/app/listpie/id1434060708'>Listpie</CustomLink>,
+					<CustomEmoji label='check' emoji='✔️' /> Built <CustomLink targetUrl='https://github.com/ebru/listpie'>Listpie</CustomLink>,
 					the very first app that I have developed during my journey to learn mobile development as a personal interest in my free time. <Date>(2018)</Date></Item>
 				<Item>
 					<CustomEmoji label='knitting' emoji='🧶' /> Co-founded <CustomLink targetUrl='https://www.instagram.com/mukavvaco/'>MUKAVVA</CustomLink>,
