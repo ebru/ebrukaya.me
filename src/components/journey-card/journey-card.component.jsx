@@ -18,12 +18,14 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='joystick' emoji='🕹' /> Working at <BoldText>Sony</BoldText> since November of 2017.</Item>
-				<Item>
-					Senior Software Engineer  <Date>(Oct 2019 – present)</Date>, Software Engineer <Date>(Nov 2017 – Oct 2019)</Date></Item>
+					<CustomEmoji label='motobike' emoji='🛵' /> Working as a Full Stack Developer at <BoldText>Getir</BoldText> since December of 2019.</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
+				<Item>
+					<CustomEmoji label='joystick' emoji='🕹' /> Software Engineer at <BoldText>Sony</BoldText>.</Item>
+				<Item>
+					Senior Software Engineer  <Date>(Oct 2019 – Nov 2019)</Date>, Software Engineer <Date>(Nov 2017 – Oct 2019)</Date></Item>
 				<Item>
 					<CustomEmoji label='train' emoji='🚞' /> Took a gap year after graduation before starting my professional career.</Item>
 				<Item>

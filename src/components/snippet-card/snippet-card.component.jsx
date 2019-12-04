@@ -13,7 +13,7 @@ const SnippetCard = () => {
 	return (
 		<>
 			<Title>Hi, I'm Ebru.</Title>
-			<Snippet>Software Engineer at Sony, backpacker and lover of nature <CustomEmoji label='leaf' emoji='🍃' /></Snippet>
+			<Snippet>Full Stack Developer at Getir, backpacker and lover of nature <CustomEmoji label='leaf' emoji='🍃' /></Snippet>
 			<Description>
 				I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life.
 				Therefore I enjoy spending my time to improve myself in full stack development.
