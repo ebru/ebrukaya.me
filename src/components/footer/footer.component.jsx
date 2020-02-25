@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <>
             <FooterDiv>
-                2019 – <strong>Ebru Kaya</strong>
+                2020 – <strong>Ebru Kaya</strong>
                 <br />ebru[at]ebrukaya.me <CustomEmoji label='mailbox' emoji='📮' />
             </FooterDiv>
         </>

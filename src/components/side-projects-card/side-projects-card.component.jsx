@@ -15,14 +15,11 @@ const SideProjectsCard = () => {
 	return (
 		<>
 			<SectionTitle><CustomEmoji label='working' emoji='👩🏻‍💻'></CustomEmoji> Side Projects</SectionTitle>
-			<SubTitle>Present</SubTitle>
-			<ItemList>
-				<Item>
-					<CustomEmoji label='headphone' emoji='🎧' /> Working on <CustomLink targetUrl='https://github.com/ebru/euphony'>Euphony</CustomLink>,
-					a little side project to improve my React, Node.js, Docker and AWS knowledge. <Date>(2019)</Date></Item>
-			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
+				<Item>
+					<CustomEmoji label='headphone' emoji='🎧' /> Built <CustomLink targetUrl='https://github.com/ebru/euphony'>Euphony</CustomLink>,
+					a little side project to improve my React, Node.js, Docker and AWS knowledge. <Date>(2019)</Date></Item>
 				<Item>
 					<CustomEmoji label='check' emoji='✔️' /> Built <CustomLink targetUrl='https://github.com/ebru/listpie'>Listpie</CustomLink>,
 					the very first app that I have developed during my journey to learn mobile development as a personal interest in my free time. <Date>(2018)</Date></Item>
