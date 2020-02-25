@@ -4,8 +4,7 @@ import styled from 'styled-components'
 
 import {
   SectionTitle,
-  PersonalList,
-  Item
+  PersonalList
 } from './../section-card/section-card.styles'
 
 import CustomEmoji from './../custom-emoji/custom-emoji.component'
