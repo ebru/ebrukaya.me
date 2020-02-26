@@ -2,7 +2,7 @@
 
 This is my personal website. I'm adding new sections along the way of the journey of growing both professionally and personally.
 
-![Scheme](src/images/v2.gif)
+![Scheme](src/images/v2.2.gif)
 
 ## updates
 #### Nov '19
