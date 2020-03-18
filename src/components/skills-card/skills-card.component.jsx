@@ -33,13 +33,10 @@ const SkillsCard = () => {
 					I love to do <Tech>Test-Driven Development</Tech> if there is an efficient case to use.
 				</Item>
 				<Item>
-					I use <Tech>Git</Tech>, <Tech>Terminal</Tech> and have some experience on <Tech>CI/CD</Tech> with <Tech style={{ borderBottom: '3px solid #d24939' }}>Jenkins</Tech>
-				</Item>
-				<Item>
 					I'm familiar with <Tech>Agile Methodologies</Tech> using <Tech>Scrum</Tech> and <Tech>Kanban</Tech>
 				</Item>
 				<Item>
-					I have some experience on building, publishing an iOS app using <Tech style={{ borderBottom: '3px solid #fd9426' }}>Swift</Tech> and <Tech>Firebase</Tech>
+					I use <Tech>Git</Tech>, <Tech>Terminal</Tech> and have some experience on <Tech>CI/CD</Tech> with <Tech style={{ borderBottom: '3px solid #d24939' }}>Jenkins</Tech>
 				</Item>
 			</StackList>
 			<CurrentLearning>
