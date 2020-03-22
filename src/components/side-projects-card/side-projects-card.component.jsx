@@ -29,7 +29,7 @@ const SideProjectsCard = () => {
 				</div>
 				<div className={classes.flexSecondItem}>
 					<div>
-						<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> Working on <CustomLink targetUrl='https://bucketmap.co'>Bucketmap</CustomLink>, a project to list some bucket list ideas to discover around the world. <Date>(2020)</Date>
+						<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> Working on <CustomLink targetUrl='https://bucketmap.co'>Bucketmap</CustomLink>, a project to map some bucket list ideas to discover around the world. <Date>(2020)</Date>
 						<br /> Here is <a data-tip='pretty soon' style={{ textDecoration: 'underline' }} href='javacript:void(0)' rel='noopener noreferrer'>the story</a>.
 						<ReactTooltip place='bottom' effect='solid' />
 					</div>

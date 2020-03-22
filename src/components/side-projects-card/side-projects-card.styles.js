@@ -46,6 +46,7 @@ const useStyles = createUseStyles({
   itemImage: {
     borderRadius: 4,
     minWidth: 100,
+    maxWidth: 100,
     width: 100,
     height: 62,
     objectFit: 'cover',
