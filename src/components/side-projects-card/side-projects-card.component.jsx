@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactTooltip from 'react-tooltip'
 import {
 	SectionTitle,
 	SubTitle,
@@ -64,7 +65,8 @@ const SideProjectsCard = () => {
 						style={{ marginRight: 15 }}
 					>
 						<CustomEmoji label='explore' emoji='🤿' /> Working on <CustomLink targetUrl='https://bucketmap.co'>Bucketmap</CustomLink>, a project to list the things to do around the world before you die. <Date>(2020)</Date>
-						<br /> Here is <a style={{ textDecoration: 'underline' }} href='/' rel='noopener noreferrer'>the story</a>.
+						<br /> Here is <a data-tip='pretty soon' style={{ textDecoration: 'underline' }} href='javacript:void(0)' rel='noopener noreferrer'>the story</a>.
+						<ReactTooltip place='bottom'  effect='solid' />
 					</div>
 					<CustomLink targetUrl='https://bucketmap.co'>
 						<img
