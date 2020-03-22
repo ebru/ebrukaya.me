@@ -20,6 +20,7 @@
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-helmet": "5.2.1",
+    "react-jss": "10.1.1",
     "react-tooltip": "^4.1.2",
     "styled-components": "4.4.1"
   },

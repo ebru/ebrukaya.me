@@ -41,7 +41,7 @@ const SkillsCard = () => {
 			</StackList>
 			<CurrentLearning>
 				<BoldText>Currently learning: </BoldText>
-				React Native, GraphQL with Prisma, Apollo
+				React Native, GraphQL with Apollo, Prisma
       </CurrentLearning>
 		</>
 	)

@@ -33,14 +33,14 @@ progress {
 }
 
 a {
-  color: #444;
+  color: #222;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #707070;
+  color: #555;
   outline-width: 0;
 }
 
