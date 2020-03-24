@@ -45,7 +45,7 @@ const PostSnippet = styled.p`
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO title='Journal' />
+      <SEO title='Journal' description='I write sometimes.' />
       <div>
         <BlogLink to='/'>
           <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>
