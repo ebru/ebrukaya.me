@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactTooltip from 'react-tooltip'
 import {
 	SectionTitle,
 	SubTitle,
@@ -30,8 +29,8 @@ const SideProjectsCard = () => {
 				<div className={classes.flexSecondItem}>
 					<div>
 						<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> Working on <CustomLink targetUrl='https://bucketmap.co'>Bucketmap</CustomLink>, a project to map some bucket list ideas to discover around the world. <Date>(2020)</Date>
-						<br /> Here is <a data-tip='pretty soon' style={{ textDecoration: 'underline' }} href='javacript:void(0)' rel='noopener noreferrer'>the story</a>.
-						<ReactTooltip place='bottom' effect='solid' />
+						<br /> Here is <a style={{ textDecoration: 'underline' }} href='https://medium.com/@ebrukye/a-journey-of-making-a-little-side-project-d18088271876' target='_blank' rel='noopener noreferrer'>the story</a>.
+		
 					</div>
 					<CustomLink targetUrl='https://bucketmap.co'>
 						<img
