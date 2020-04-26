@@ -20,7 +20,7 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<span className={classes.presentEmoji}><CustomEmoji label='motobike' emoji='🛵' /></span> <span className={classes.presentText}>Working as a Full Stack Developer at <CustomLink targetUrl='https://getir.com/'>Getir</CustomLink> since December of 2019.</span>
+					<span className={classes.presentEmoji}><CustomEmoji label='motobike' emoji='🛵' /></span> <span className={classes.presentText}>Working as a Full Stack Developer at <CustomLink targetUrl='https://getir.com/en/'>Getir</CustomLink> since December of 2019.</span>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>

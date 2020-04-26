@@ -10,6 +10,7 @@ import {
 } from './snippet-card.styles'
 
 import CustomIcon from './../custom-icon/custom-icon.component'
+import CustomLink from './../custom-link/custom-link.component'
 import CustomEmoji from './../custom-emoji/custom-emoji.component'
 
 import LinkedinLogo from './../../images/social/linkedin.png'
@@ -22,7 +23,7 @@ const SnippetCard = () => {
 		<MainContainer>
 			<div>
 				<Title>Hi, I'm Ebru.</Title>
-				<Snippet>Full Stack Developer at Getir, backpacker and lover of nature <CustomEmoji label='leaf' emoji='🍃' /></Snippet>
+				<Snippet>Full Stack Developer at <CustomLink targetUrl='https://getir.com/en/'>Getir</CustomLink>, backpacker and lover of nature <CustomEmoji label='leaf' emoji='🍃' /></Snippet>
 				<Description>
 					I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life.
 					Therefore I enjoy spending my time to improve myself in full stack development.

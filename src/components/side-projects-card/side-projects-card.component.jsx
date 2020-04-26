@@ -28,7 +28,7 @@ const SideProjectsCard = () => {
 				</div>
 				<div className={classes.flexSecondItem}>
 					<div>
-						<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> Working on <CustomLink targetUrl='https://bucketmap.co'>Bucketmap</CustomLink>, a project to map some bucket list ideas to discover around the world. <Date>(2020)</Date>
+						<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> <CustomLink targetUrl='https://bucketmap.co'>Bucketmap</CustomLink>, a project to map some bucket list ideas to discover around the world. <Date>(2020)</Date>
 						<br /> Here is <a style={{ textDecoration: 'underline' }} href='https://medium.com/@ebrukye/a-journey-of-making-a-little-side-project-d18088271876' target='_blank' rel='noopener noreferrer'>the story</a>.
 		
 					</div>

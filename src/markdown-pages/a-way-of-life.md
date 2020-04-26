@@ -10,7 +10,7 @@ The Last Samurai is one of the movies that I have watched with my father while I
 
 <iframe src="https://open.spotify.com/embed/track/6DHYWelHYuynVVPv2m58wl" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-I think the Far East is one of the cultures that fascinate me the most. I have never been there, but the feeling I get even only from that sound is just simply amazing.
+I think the Far East is one of the cultures that fascinates me the most. I have never been there, but the feeling I get even only from that sound is just simply amazing.
 
 > "Too many mind... no mind."
 
