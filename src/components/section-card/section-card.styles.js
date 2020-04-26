@@ -66,4 +66,5 @@ export const CurrentLearning = styled.div`
 `
 
 export const Quote = styled.p`
+    font-size: 19px;
 `
