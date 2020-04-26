@@ -9,8 +9,8 @@ import {
 
 import CustomEmoji from './../custom-emoji/custom-emoji.component'
 
-const BlogLink = styled(Link)`
-  text-decoration: none;
+const SeeMoreLink = styled(Link)`
+  text-decoration: underline;
 `
 const PostTitle = styled.h2`
   margin-bottom: 7px;
@@ -36,16 +36,16 @@ const BlogCard = ({ data }) => {
         {
           data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
-              <BlogLink to={node.fields.slug}>
+              <Link to={node.fields.slug}>
                 <PostTitle>{node.frontmatter.title}</PostTitle>
-              </BlogLink>
+              </Link>
               <PostDate>{node.frontmatter.date}</PostDate>
               <PostSnippet>{node.excerpt}</PostSnippet>
             </div>
           ))
         }
       </PersonalList>
-      <BlogLink to='/journal'>see all on the journal</BlogLink>
+      <SeeMoreLink to='/journal'>see all on the journal</SeeMoreLink>
 		</>
   )
 }
