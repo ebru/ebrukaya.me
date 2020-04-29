@@ -8,11 +8,18 @@ How the quarantine is going? I have recently been watching a lot of movies. I st
 
 I have made it so far, even better than I guessed at that time. Nobody would imagine the time we are living these days anyway. I use **<a href='https://www.notion.so' target='_blank'>Notion</a>** to track them all, but I also wanted to have a little space here to add the ones that made me feel somehow different than others.
 
+
 *Ordered by release date descending.*
 
 | Movie |  Year | IMDB Rating |   |
 |-------|-------|-------------|---|
 | **<a href='https://www.imdb.com/title/tt3907584/' target='_blank'>All the Bright Places</a>** | 2020 | 6.5 | |
+
+"That even the ugliest of places can be beautiful, as long as you take the time to look.
+That it's okay to get lost, as long as you find your way back."
+
+|       |       |             |   |
+|-------|-------|-------------|---|
 | **<a href='https://www.imdb.com/title/tt2584384/' target='_blank'>Jojo Rabbit</a>** | 2019 | 7.9 | |
 | **<a href='https://www.imdb.com/title/tt7286456/' target='_blank'>Joker</a>** | 2019 | 8.5 | |
 | **<a href='https://www.imdb.com/title/tt4729430/' target='_blank'>Klaus</a>** | 2019 | 8.2 | `Animation` |
@@ -57,3 +64,18 @@ I have made it so far, even better than I guessed at that time. Nobody would ima
 | **<a href='https://www.imdb.com/title/tt0110413/' target='_blank'>Léon: The Professional</a>** | 1994 | 8.5 | |
 | **<a href='https://www.imdb.com/title/tt0095327/' target='_blank'>Grave of the Fireflies</a>** | 1988 | 8.5 | `Animation` |
 | **<a href='https://www.imdb.com/title/tt0073486/' target='_blank'>One Flew Over the Cuckoo's Nest</a>** | 1975 | 8.7 | |
+
+<style>
+  table th:first-of-type {
+      width: 500px;
+  }
+  table th:nth-of-type(2) {
+      width: 100px;
+  }
+  table th:nth-of-type(3) {
+      width: 100px;
+  }
+  table th:nth-of-type(4) {
+      width: 100px;
+  }
+</style>
