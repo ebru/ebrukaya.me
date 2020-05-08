@@ -30,18 +30,12 @@ const SkillsCard = () => {
 					I have some knowledge on <Tech style={{ borderBottom: '3px solid #0db7ed' }}>Docker</Tech> for containerization and <Tech style={{ borderBottom: '3px solid #ff9900' }}>AWS</Tech> services to build full stack applications.
 				</Item>
 				<Item>
-					I love to do <Tech>Test-Driven Development</Tech> if there is an efficient case to use.
-				</Item>
-				<Item>
 					I'm familiar with <Tech>Agile Methodologies</Tech> using <Tech>Scrum</Tech> and <Tech>Kanban</Tech>
-				</Item>
-				<Item>
-					I use <Tech>Git</Tech>, <Tech>Terminal</Tech> and have some experience on <Tech>CI/CD</Tech> with <Tech style={{ borderBottom: '3px solid #d24939' }}>Jenkins</Tech>
 				</Item>
 			</StackList>
 			<CurrentLearning>
 				<BoldText>Currently learning: </BoldText>
-				React Native, GraphQL with Apollo, Prisma
+				React Native, PostgreSQL
       </CurrentLearning>
 		</>
 	)
