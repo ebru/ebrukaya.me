@@ -16,6 +16,7 @@ import CustomEmoji from './../custom-emoji/custom-emoji.component'
 import LinkedinLogo from './../../images/social/linkedin.png'
 import GithubLogo from './../../images/social/github.png'
 import MediumLogo from './../../images/social/medium.png'
+import TwitterLogo from './../../images/social/twitter.png'
 import PP from './../../images/pp.png'
 
 const SnippetCard = () => {
@@ -41,6 +42,10 @@ const SnippetCard = () => {
 						targetUrl='https://www.medium.com/@ebrukye'
 						imageSource={MediumLogo}
 						altDescription='medium' />
+					<CustomIcon
+						targetUrl='https://twitter.com/ebrukye'
+						imageSource={TwitterLogo}
+						altDescription='twitter' />
 				</SocialIcons>
 			</div>
 			<ImageContainer>
