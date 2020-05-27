@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactTooltip from 'react-tooltip'
 import {
 	SectionTitle,
 	SubTitle,
@@ -7,6 +8,7 @@ import {
 	Date
 } from './../section-card/section-card.styles'
 import BucketmapImg from '../../images/bucketmap.jpg'
+import TemettuImg from '../../images/temettu.jpg'
 import CustomEmoji from './../custom-emoji/custom-emoji.component'
 import CustomLink from './../custom-link/custom-link.component'
 import useStyles from './side-projects-card.styles'
@@ -21,16 +23,22 @@ const SideProjectsCard = () => {
 			<div className={classes.flexContainer}>
 				<div className={classes.flexFirstItem}>
 					<div>
-						<span className={classes.presentEmoji}><CustomEmoji label='question' emoji='🦊' /></span> In progress.
-						<br /> This will be the second project of this year. I go with React Native this time to gain a little hands on experience.
+						<span className={classes.presentEmoji}><CustomEmoji label='investment' emoji='💸' /></span> <CustomLink targetUrl='https://temettu.app'>Temettü</CustomLink>, a mobile app that helps you to track the dividend payments of your stock investments. <Date>(2020)</Date>
+						<br /> Here is <a data-tip='pretty soon' style={{ textDecoration: 'underline' }} href='javacript:void(0)'>the story</a>.
+						<ReactTooltip place='bottom' effect='solid' />
 					</div>
-					<div className={classes.imagePlaceholder}>/?</div>
+					<CustomLink targetUrl='https://temettu.app'>
+						<img
+							className={classes.itemImage}
+							src={TemettuImg}
+							alt='temettu'
+						/>
+					</CustomLink>
 				</div>
 				<div className={classes.flexSecondItem}>
 					<div>
 						<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> <CustomLink targetUrl='https://bucketmap.co'>Bucketmap</CustomLink>, a project to map some bucket list ideas to discover around the world. <Date>(2020)</Date>
 						<br /> Here is <a style={{ textDecoration: 'underline' }} href='https://medium.com/@ebrukye/a-journey-of-making-a-little-side-project-d18088271876' target='_blank' rel='noopener noreferrer'>the story</a>.
-		
 					</div>
 					<CustomLink targetUrl='https://bucketmap.co'>
 						<img
