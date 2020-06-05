@@ -19,7 +19,6 @@ That it's okay to get lost, as long as you find your way back."</span>
 |       |       |             |   |
 |-------|-------|-------------|---|
 | **<a href='https://www.imdb.com/title/tt2584384/' target='_blank'>Jojo Rabbit</a>** | 2019 | 7.9 | |
-| **<a href='https://www.imdb.com/title/tt7286456/' target='_blank'>Joker</a>** | 2019 | 8.5 | |
 | **<a href='https://www.imdb.com/title/tt4729430/' target='_blank'>Klaus</a>** | 2019 | 8.2 | `Animation` |
 | **<a href='https://www.imdb.com/title/tt3281548/' target='_blank'>Little Women</a>** | 2019 | 7.9 | |
 | **<a href='https://www.imdb.com/title/tt8613070/' target='_blank'>Portrait of a Lady on Fire</a>** | 2019 | 8.2 | |
@@ -28,6 +27,7 @@ That it's okay to get lost, as long as you find your way back."</span>
 | **<a href='https://www.imdb.com/title/tt2543164/' target='_blank'>Arrival</a>** | 2016 | 7.9 | |
 | **<a href='https://www.imdb.com/title/tt3553976/' target='_blank'>Captain Fantastic</a>** | 2016 | 7.9 | |
 | **<a href='https://www.imdb.com/title/tt4911940/' target='_blank'>Goodbye Berlin</a>** | 2016 | 7.0 | |
+| **<a href='https://www.imdb.com/title/tt4276820/' target='_blank'>The Founder</a>** | 2016 | 7.2 | |
 | **<a href='https://www.imdb.com/title/tt2948356/' target='_blank'>Zootopia</a>** | 2016 | 8.0 | `Animation` |
 | **<a href='https://www.imdb.com/title/tt2096673/' target='_blank'>Inside Out</a>** | 2015 | 8.2 | `Animation` |
 | **<a href='https://www.imdb.com/title/tt1798684/' target='_blank'>Southpaw</a>** | 2015 | 7.4 | |
