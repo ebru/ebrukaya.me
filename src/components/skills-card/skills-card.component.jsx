@@ -35,7 +35,7 @@ const SkillsCard = () => {
 			</StackList>
 			<CurrentLearning>
 				<BoldText>Currently learning: </BoldText>
-				React Native, PostgreSQL
+				React Native
       </CurrentLearning>
 		</>
 	)
