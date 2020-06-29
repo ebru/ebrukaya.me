@@ -53,7 +53,7 @@ That it's okay to get lost, as long as you find your way back."</span>
 | **<a href='https://www.imdb.com/title/tt2194499/' target='_blank'>About Time</a>** | 2013 | 7.8 | |
 | **<a href='https://www.imdb.com/title/tt1798709/' target='_blank'>Her</a>** | 2013 | 8.0 | |
 | **<a href='https://www.imdb.com/title/tt1217209/' target='_blank'>Brave</a>** | 2012 | 7.1 | `Animation` |
-| **<a href='https://www.imdb.com/title/tt1392170/' target='_blank'>The Hunger Games</a>** | 2012 | 7.2 | |
+| **<a href='https://www.imdb.com/title/tt1392170/' target='_blank'>The Hunger Games Series</a>** | 2012 | 7.2 | |
 — <a href='https://open.spotify.com/track/416MsJxvxSKY96DCmbJIRs?si=7eXEoV3IRrS4eLdBjSSD1w' style='font-style: italic' target='_blank'>the hanging tree by james newton howard, jennifer lawrence</a>
 
 |       |       |             |   |
@@ -80,7 +80,7 @@ That it's okay to get lost, as long as you find your way back."</span>
 
 |       |       |             |   |
 |-------|-------|-------------|---|
-| **<a href='https://www.imdb.com/title/tt0241527/' target='_blank'>Harry Potter</a>** | 2001 | 7.6 | |
+| **<a href='https://www.imdb.com/title/tt0241527/' target='_blank'>Harry Potter Series</a>** | 2001 | 7.6 | |
 — <a href='https://open.spotify.com/track/1PPTlPJqKuL0fdoTmzwXJy?si=ph5TkXpARwCE-2yBVKoeXA' style='font-style: italic' target='_blank'>a window to the past by john williams</a>
 
 |       |       |             |   |
@@ -103,6 +103,7 @@ That it's okay to get lost, as long as you find your way back."</span>
 |       |       |             |   |
 |-------|-------|-------------|---|
 | **<a href='https://www.imdb.com/title/tt0095327/' target='_blank'>Grave of the Fireflies</a>** | 1988 | 8.5 | `Animation` |
+| **<a href='https://www.imdb.com/title/tt0088847/' target='_blank'>The Breakfast Club</a>** | 1985 | 7.9 | |
 | **<a href='https://www.imdb.com/title/tt0073486/' target='_blank'>One Flew Over the Cuckoo's Nest</a>** | 1975 | 8.7 | |
 
 
