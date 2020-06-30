@@ -11,7 +11,7 @@ export const Title = styled.h1`
 
 export const Snippet = styled.h3`
     font-weight: 600;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 1.5em;
 `
 

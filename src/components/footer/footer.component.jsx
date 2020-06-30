@@ -9,7 +9,7 @@ const Footer = () => {
         <>
             <FooterDiv>
                 2020 – <strong>Ebru Kaya</strong>
-                <br />ebru[at]ebrukaya.me <CustomEmoji label='mailbox' emoji='📮' />
+                <br /><a href="mailto:ebru@ebrukaya.me">ebru[at]ebrukaya.me</a> <CustomEmoji label='mailbox' emoji='📮' />
             </FooterDiv>
         </>
     )
