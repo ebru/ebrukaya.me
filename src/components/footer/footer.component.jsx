@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <>
             <FooterDiv>
-                2020 – <strong>Ebru Kaya</strong>
+                © 2020 <strong>Ebru Kaya</strong>
                 <br /><a href="mailto:ebru@ebrukaya.me">ebru[at]ebrukaya.me</a> <CustomEmoji label='mailbox' emoji='📮' />
             </FooterDiv>
         </>
