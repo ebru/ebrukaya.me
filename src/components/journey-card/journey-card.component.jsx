@@ -9,6 +9,7 @@ import {
 } from './../section-card/section-card.styles'
 import CustomEmoji from './../custom-emoji/custom-emoji.component'
 import CustomLink from '../custom-link/custom-link.component'
+import TemettuImg from '../../images/temettu.jpg'
 import useStyles from './journey-card.styles'
 
 const JourneyCard = () => {
@@ -20,7 +21,22 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<span className={classes.presentEmoji}><CustomEmoji label='craft' emoji='🎡' /></span> <span className={classes.presentText}>Running a little design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since July of 2020.</span>
+					<span className={classes.presentText}>Running a little design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since July of 2020.</span>
+					<div className={classes.productsTitle}>
+						Currently working on
+					</div>
+					<div className={classes.currentProjects}>
+						<div>
+							<span className={classes.presentEmoji}><CustomEmoji label='investment' emoji='💸' /></span> <CustomLink targetUrl='https://temettu.app'>Temettü</CustomLink>, a mobile app that helps you to follow the dividend calendar and track the dividend payments of your stock investments. <Date>(2020)</Date>
+						</div>
+						<CustomLink targetUrl='https://temettu.app'>
+							<img
+								className={classes.itemImage}
+								src={TemettuImg}
+								alt='temettu'
+							/>
+						</CustomLink>
+					</div>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>

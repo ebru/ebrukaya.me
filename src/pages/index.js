@@ -17,8 +17,8 @@ export default ({ data }) => {
       <SEO description="Hi, I'm Ebru. Full Stack Developer at Getir, backpacker and lover of nature. This is my personal website. I'm adding new sections along the way of the journey of growing both professionally and personally." />
       <div>
         <SnippetCard />
-        <SideProjectsCard />
         <JourneyCard />
+        <SideProjectsCard />
         <SkillsCard />
         <PersonalCard />
         <BlogCard data={data}/>
