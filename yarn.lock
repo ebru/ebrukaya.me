@@ -5383,7 +5383,7 @@ gatsby-page-utils@^0.0.28:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-jss@^2.2.0:
+gatsby-plugin-jss@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-jss/-/gatsby-plugin-jss-2.2.0.tgz#1a90340c47da5a0615b1caf653810e76ef9e35cd"
   integrity sha512-EiHQh8ZfrvqxfjS6CP52BN9bAi0r3C/ASQG9BU5dj1xU83WG7X3AaZk8QYfwFQ2UTNMoKPzoKRCnMCFVDCtEuA==
@@ -10404,7 +10404,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-tooltip@^4.1.2:
+react-tooltip@4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.1.2.tgz#bc9f8620759518f6ef294198d082097e968d549c"
   integrity sha512-AXQ5uumN/ZpPO6mlPrV52S1As1OOHhyp3pinWFEtTlpKojS8+CL5r/n0oiO8GR5hWqrvEONU34NEF01N2ODwqg==

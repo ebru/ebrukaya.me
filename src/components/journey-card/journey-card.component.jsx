@@ -21,7 +21,7 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<span className={classes.presentText}>Running a little design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since July of 2020.</span>
+					<span className={classes.presentText}>Running a little design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since June of 2020.</span>
 					<div className={classes.productsTitle}>
 						Currently working on
 					</div>
