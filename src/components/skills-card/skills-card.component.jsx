@@ -17,11 +17,10 @@ const SkillsCard = () => {
 			<SectionTitle><CustomEmoji label='tool' emoji='🛠' /> Technology Stack</SectionTitle>
 			<StackList>
 				<Item>
-					I'm currently focused on <Tech style={{ borderBottom: '3px solid #f0db4f' }}>JavaScript</Tech> with React, <Tech style={{ borderBottom: '3px solid #83ba63' }}>Node.js</Tech> with
-          Apollo and <Tech style={{ borderBottom: '3px solid #e535ab' }}>GraphQL</Tech>
+					I'm currently focused on <Tech style={{ borderBottom: '3px solid #f0db4f' }}>JavaScript</Tech> with <Tech style={{ borderBottom: '3px solid #60dafb' }}>React</Tech> on the front end, <Tech style={{ borderBottom: '3px solid #83ba63' }}>Node.js</Tech> on the back end preferably with <Tech style={{ borderBottom: '3px solid #e535ab' }}>GraphQL</Tech> or old good friend <Tech>REST</Tech>
 				</Item>
 				<Item>
-					My main technology stack has been <Tech style={{ borderBottom: '3px solid #474a8a' }}>PHP</Tech>, <Tech>MySQL</Tech>, <Tech>HTML</Tech> and <Tech>CSS</Tech> so far.
+					My main technology stack has been <Tech style={{ borderBottom: '3px solid #474a8a' }}>PHP</Tech>, <Tech>MySQL</Tech>, <Tech>HTML</Tech> and <Tech>CSS</Tech> at the beginning.
 				</Item>
 				<Item>
 					I have also worked with <Tech style={{ borderBottom: '3px solid #306998' }}>Python</Tech> and <Tech>AWS Serverless</Tech> to build some projects.
@@ -31,6 +30,9 @@ const SkillsCard = () => {
 				</Item>
 				<Item>
 					I'm familiar with <Tech>Agile Methodologies</Tech> using <Tech>Scrum</Tech> and <Tech>Kanban</Tech>
+				</Item>
+				<Item>
+					I might have a bit sense of <Tech>UI/UX Design</Tech> as well.
 				</Item>
 			</StackList>
 			<CurrentLearning>
