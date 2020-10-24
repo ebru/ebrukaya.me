@@ -18,8 +18,8 @@ export default ({ data }) => {
       <div>
         <SnippetCard />
         <JourneyCard />
-        <SideProjectsCard />
         <SkillsCard />
+        <SideProjectsCard />
         <PersonalCard />
         <BlogCard data={data}/>
         <Footer />
