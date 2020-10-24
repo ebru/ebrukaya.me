@@ -23,7 +23,7 @@ const JourneyCard = () => {
 				<Item>
 					<span className={classes.presentText}>Running a little design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since June of 2020.</span>
 					<div className={classes.productsTitle}>
-						Currently working on
+						Current
 					</div>
 					<div className={classes.currentProjects}>
 						<div>
@@ -37,6 +37,9 @@ const JourneyCard = () => {
 							/>
 						</CustomLink>
 					</div>
+				</Item>
+				<Item>
+					Working on freelance projects. <a style={{ textDecoration: "underline" }} href="mailto:ebru@ebrukaya.me?subject=Freelance">Hire me</a>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>

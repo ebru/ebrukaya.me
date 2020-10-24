@@ -27,7 +27,7 @@ const SnippetCard = () => {
 				<Snippet>Founder at <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink>, backpacker and lover of nature <CustomEmoji label='leaf' emoji='🍃' /></Snippet>
 				<Description>
 					I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life.
-					Therefore I enjoy spending my time to improve myself in full stack development.
+					Therefore I enjoy spending my time improving myself in full stack development.
 			</Description>
 				<SocialIcons>
 					<CustomIcon
