@@ -41,6 +41,9 @@ const JourneyCard = () => {
 				<Item>
 					Working on freelance projects. <a style={{ textDecoration: "underline" }} href="mailto:ebru@ebrukaya.me?subject=Freelance">Hire me</a>
 				</Item>
+				<Item>
+					Investing in stocks.
+				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>

@@ -32,7 +32,7 @@ const SkillsCard = () => {
 					I'm familiar with <Tech>Agile Methodologies</Tech> using <Tech>Scrum</Tech> and <Tech>Kanban</Tech>
 				</Item>
 				<Item>
-					I might have a bit sense of <Tech>UI/UX Design</Tech> as well.
+					I might also have a bit sense of <Tech>UI/UX Design</Tech>
 				</Item>
 			</StackList>
 			<CurrentLearning>
