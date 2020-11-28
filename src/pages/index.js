@@ -14,7 +14,7 @@ import Footer from './../components/footer/footer.component'
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO description="Hi, I'm Ebru. Full Stack Developer at Getir, backpacker and lover of nature. This is my personal website. I'm adding new sections along the way of the journey of growing both professionally and personally." />
+      <SEO description="Hi, I'm Ebru. Founder at Noe Crafts, backpacker and lover of nature. This is my personal website. I'm adding new sections along the way of the journey of growing both professionally and personally." />
       <div>
         <SnippetCard />
         <JourneyCard />
