@@ -8,7 +8,8 @@ const Footer = () => {
     return (
         <>
             <FooterDiv>
-                © 2020 <strong>Ebru Kaya</strong>
+                © {new Date().getFullYear() + " "}
+                Ebru Kaya
                 <br /><a href="mailto:ebru@ebrukaya.me">ebru[at]ebrukaya.me</a> <CustomEmoji label='mailbox' emoji='📮' />
             </FooterDiv>
         </>
