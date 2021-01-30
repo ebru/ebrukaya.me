@@ -22,9 +22,9 @@ const SideProjectsCard = () => {
 				<Item>
 					<div className={classes.flexSecondItem}>
 						<div>
-							<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> Built <CustomLink targetUrl='https://bucketmap.co'>Bucketmap</CustomLink>, a project to map some bucket list ideas to discover around the world. Here is <a style={{ textDecoration: 'underline' }} href='https://medium.com/@ebrukye/a-journey-of-making-a-little-side-project-d18088271876' target='_blank' rel='noopener noreferrer'>the story</a>. <Date>(2020)</Date>
+							<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> Built <CustomLink targetUrl='https://bucketmap.netlify.app'>Bucketmap</CustomLink>, a project to map some bucket list ideas to discover around the world. Here is <a style={{ textDecoration: 'underline' }} href='https://medium.com/@ebrukye/a-journey-of-making-a-little-side-project-d18088271876' target='_blank' rel='noopener noreferrer'>the story</a>. <Date>(2020)</Date>
 					</div>
-						<CustomLink targetUrl='https://bucketmap.co'>
+						<CustomLink targetUrl='https://bucketmap.netlify.app'>
 							<img
 								className={classes.itemImage}
 								src={BucketmapImg}

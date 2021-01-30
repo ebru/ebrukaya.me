@@ -17,13 +17,7 @@ const SkillsCard = () => {
 			<SectionTitle><CustomEmoji label='tool' emoji='🛠' /> Technology Stack</SectionTitle>
 			<StackList>
 				<Item>
-					I'm currently focused on <Tech style={{ borderBottom: '3px solid #f0db4f' }}>JavaScript</Tech> with <Tech style={{ borderBottom: '3px solid #60dafb' }}>React</Tech> on the front end, <Tech style={{ borderBottom: '3px solid #83ba63' }}>Node.js</Tech> on the back end preferably with <Tech style={{ borderBottom: '3px solid #e535ab' }}>GraphQL</Tech> or old good friend <Tech>REST</Tech>
-				</Item>
-				<Item>
-					My main technology stack has been <Tech style={{ borderBottom: '3px solid #474a8a' }}>PHP</Tech>, <Tech>MySQL</Tech>, <Tech>HTML</Tech> and <Tech>CSS</Tech> at the beginning.
-				</Item>
-				<Item>
-					I have also worked with <Tech style={{ borderBottom: '3px solid #306998' }}>Python</Tech> and <Tech>AWS Serverless</Tech> to build some projects.
+					I'm currently focused on <Tech style={{ borderBottom: '3px solid #f0db4f' }}>JavaScript</Tech> with <Tech style={{ borderBottom: '3px solid #60dafb' }}>React</Tech> and <Tech style={{ borderBottom: '3px solid #60dafb' }}>React Native</Tech> on the front end, <Tech style={{ borderBottom: '3px solid #83ba63' }}>Node.js</Tech> on the back end preferably with <Tech style={{ borderBottom: '3px solid #e535ab' }}>GraphQL</Tech> or old good friend <Tech>REST</Tech>
 				</Item>
 				<Item>
 					I have some knowledge on <Tech style={{ borderBottom: '3px solid #0db7ed' }}>Docker</Tech> for containerization and <Tech style={{ borderBottom: '3px solid #ff9900' }}>AWS</Tech> services to build full stack applications.
@@ -37,7 +31,7 @@ const SkillsCard = () => {
 			</StackList>
 			<CurrentLearning>
 				<BoldText>Currently learning: </BoldText>
-				React Native
+				Figma, UI/UX design in depth
       </CurrentLearning>
 		</>
 	)
