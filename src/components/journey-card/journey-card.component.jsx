@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import styled from 'styled-components'
 import {
 	SectionTitle,
 	SubTitle,
@@ -12,8 +13,19 @@ import CustomLink from '../custom-link/custom-link.component'
 import TemettuImg from '../../images/temettu.jpg'
 import useStyles from './journey-card.styles'
 
+const SeeMoreLink = styled.div`
+	text-decoration: underline;
+	cursor: pointer;
+	&:hover {
+    color: #555;
+  	outline-width: 0;
+  }
+`
+
 const JourneyCard = () => {
 	const classes = useStyles()
+
+	const [loadedMore, setLoadedMore] = useState(false)
 
 	return (
 		<>
@@ -61,18 +73,23 @@ const JourneyCard = () => {
 				<Item>
 					<CustomEmoji label='train' emoji='🚞' /> Took a gap year after graduation before starting my professional career.
 				</Item>
-				<Item>
-					<CustomEmoji label='graduation' emoji='🎓' /> Graduated from <BoldText>Istanbul University</BoldText> with a degree in Computer Engineering. <Date>(2016)</Date>
-				</Item>
-				<Item>
-					<CustomEmoji label='estonia' emoji='🇪🇪' /> Exchange Student at <BoldText>Tallinn University</BoldText> in Estonia. <Date>(2015)</Date>
-				</Item>
-				<Item>
-					<CustomEmoji label='horse' emoji='🐴' /> Graduated from <BoldText>Nişantaşı Anadolu Lisesi</BoldText> with high school diploma. <Date>(2012)</Date>
-				</Item>
-				<Item>
-					<CustomEmoji label='newborn' emoji='🐣' /> My interest in software development has started in my early ages while trying to design a website from free providers and I've built many, many others later on.
-				</Item>
+				{!loadedMore && <SeeMoreLink onClick={() => setLoadedMore(true)}>load more</SeeMoreLink>}
+				{loadedMore && (
+					<>
+						<Item>
+							<CustomEmoji label='graduation' emoji='🎓' /> Graduated from <BoldText>Istanbul University</BoldText> with a degree in Computer Engineering. <Date>(2016)</Date>
+						</Item>
+						<Item>
+							<CustomEmoji label='estonia' emoji='🇪🇪' /> Exchange Student at <BoldText>Tallinn University</BoldText> in Estonia. <Date>(2015)</Date>
+						</Item>
+						<Item>
+							<CustomEmoji label='horse' emoji='🐴' /> Graduated from <BoldText>Nişantaşı Anadolu Lisesi</BoldText> with high school diploma. <Date>(2012)</Date>
+						</Item>
+						<Item>
+							<CustomEmoji label='newborn' emoji='🐣' /> My interest in software development has started in my early ages while trying to design a website from free providers and I've built many, many others later on.
+						</Item>
+					</>
+				)}
 			</ItemList>
 		</>
 	)
