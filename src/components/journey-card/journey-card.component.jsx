@@ -10,7 +10,7 @@ import {
 } from './../section-card/section-card.styles'
 import CustomEmoji from './../custom-emoji/custom-emoji.component'
 import CustomLink from '../custom-link/custom-link.component'
-import TemettuImg from '../../images/temettu.jpg'
+import NoeImg from '../../images/noe.jpg'
 import useStyles from './journey-card.styles'
 
 const SeeMoreLink = styled.div`
@@ -33,27 +33,25 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<span className={classes.presentText}>Running a little design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since June of 2020.</span>
-					<div className={classes.productsTitle}>
-						Products
-					</div>
-					<div className={classes.currentProjects}>
+					<div className={classes.flexSecondItem}>
 						<div>
-							<span className={classes.presentEmoji}><CustomEmoji label='investment' emoji='💸' /></span> <CustomLink targetUrl='https://temettu.app'>Temettü</CustomLink>, a mobile app that helps you to follow the dividend calendar and track the dividend payments of your stock investments. <Date>(2020)</Date>
+							<span className={classes.presentText}>Running a design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since June of 2020.</span>
 						</div>
-						<CustomLink targetUrl='https://temettu.app'>
+						<CustomLink targetUrl='https://noecrafts.com'>
 							<img
 								className={classes.itemImage}
-								src={TemettuImg}
-								alt='temettu'
+								src={NoeImg}
+								alt='noe'
 							/>
 						</CustomLink>
 					</div>
 				</Item>
 				<Item>
-					<span className={classes.presentText}>
-						Working on freelance software projects. <a style={{ textDecoration: "underline" }} href="mailto:ebru@ebrukaya.me?subject=Freelance">Hire me</a>
-					</span>
+					<div className={classes.item}>
+						<span className={classes.presentText}>
+							Working on freelance software projects. <a style={{ textDecoration: "underline" }} href="mailto:ebru@ebrukaya.me?subject=Freelance">Hire me</a>
+						</span>
+					</div>
 				</Item>
 				<Item>
 					<span className={classes.presentText}>Investing in stocks.</span>

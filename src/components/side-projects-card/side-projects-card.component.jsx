@@ -24,7 +24,7 @@ const SideProjectsCard = () => {
 						<div>
 							<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> Built <CustomLink targetUrl='https://bucketmap.netlify.app'>Bucketmap</CustomLink>, a project to map some bucket list ideas to discover around the world. Here is <a style={{ textDecoration: 'underline' }} href='https://medium.com/@ebrukye/a-journey-of-making-a-little-side-project-d18088271876' target='_blank' rel='noopener noreferrer'>the story</a>. <Date>(2020)</Date>
 					</div>
-						<CustomLink targetUrl='https://bucketmap.netlify.app'>
+						<CustomLink targetUrl='https://ebrukye.medium.com/a-journey-of-making-a-little-side-project-d18088271876'>
 							<img
 								className={classes.itemImage}
 								src={BucketmapImg}
@@ -32,14 +32,6 @@ const SideProjectsCard = () => {
 							/>
 						</CustomLink>
 					</div>
-				</Item>
-				<Item>
-					<CustomEmoji label='headphone' emoji='🎧' /> Built <CustomLink targetUrl='https://github.com/ebru/euphony'>Euphony</CustomLink>,
-					a little side project to improve my React, Node.js, Docker and AWS knowledge. <Date>(2019)</Date>
-				</Item>
-				<Item>
-					<CustomEmoji label='check' emoji='✔️' /> Built <CustomLink targetUrl='https://github.com/ebru/listpie'>Listpie</CustomLink>,
-					the very first app that I have developed during my journey to learn mobile development as a personal interest in my free time. <Date>(2018)</Date>
 				</Item>
 				<Item>
 					<CustomEmoji label='knitting' emoji='🧶' /> Co-founded <CustomLink targetUrl='https://www.instagram.com/mukavvaco/'>MUKAVVA</CustomLink>,
