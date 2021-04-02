@@ -11,6 +11,7 @@ I have made it so far, even better than I guessed at that time. Nobody would ima
 
 | Movie |  Year | IMDB Rating |   |
 |-------|-------|-------------|---|
+| **<a href='https://www.imdb.com/title/tt5198068/' target='_blank'>Wolfwalkers</a>** | 2020 | 8.1 | `Animation` |
 | **<a href='https://www.imdb.com/title/tt3907584/' target='_blank'>All the Bright Places</a>** | 2020 | 6.5 | |
 
 <span style='font-style: italic'>"That even the ugliest of places can be beautiful, as long as you take the time to look.
