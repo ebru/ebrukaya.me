@@ -48,13 +48,8 @@ const JourneyCard = () => {
 				</Item>
 				<Item>
 					<div className={classes.item}>
-						<span className={classes.presentText}>
-							Working on freelance software projects. <a style={{ textDecoration: "underline" }} href="mailto:ebru@ebrukaya.me?subject=Freelance">Hire me</a>
-						</span>
+						<span className={classes.presentText}>Investing in stocks.</span>
 					</div>
-				</Item>
-				<Item>
-					<span className={classes.presentText}>Investing in stocks.</span>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
