@@ -30,8 +30,8 @@ const SkillsCard = () => {
 				</Item>
 			</StackList>
 			<CurrentLearning>
-				<BoldText>Currently learning: </BoldText>
-				Figma, UI/UX design in depth
+				<BoldText>Currently interested in: </BoldText>
+				Blockchain
       </CurrentLearning>
 		</>
 	)
