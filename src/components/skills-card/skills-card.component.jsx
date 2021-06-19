@@ -31,7 +31,7 @@ const SkillsCard = () => {
 			</StackList>
 			<CurrentLearning>
 				<BoldText>Currently interested in: </BoldText>
-				Blockchain
+				Graphic Design
       </CurrentLearning>
 		</>
 	)
