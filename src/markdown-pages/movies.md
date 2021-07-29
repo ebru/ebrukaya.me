@@ -67,6 +67,7 @@ That it's okay to get lost, as long as you find your way back."</span>
 |-------|-------|-------------|---|
 | **<a href='https://www.imdb.com/title/tt1454029/' target='_blank'>The Help</a>** | 2011 | 8.1 | |
 | **<a href='https://www.imdb.com/title/tt1462758/' target='_blank'>Buried</a>** | 2010 | 7.0 | |
+| **<a href='https://www.imdb.com/title/tt0817177/' target='_blank'>Flipped</a>** | 2010 | 7.7 | |
 | **<a href='https://www.imdb.com/title/tt0472033/' target='_blank'>9</a>** | 2009 | 7.1 | `Animation` |
 | **<a href='https://www.imdb.com/title/tt0758758/' target='_blank'>Into the Wild</a>** | 2007 | 8.1 | |
 | **<a href='https://www.imdb.com/title/tt0825232/' target='_blank'>The Bucket List</a>** | 2007 | 7.4 | |
