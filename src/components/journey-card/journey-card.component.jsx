@@ -33,6 +33,9 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
+					<span className={classes.presentText}>Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink>. <Date>(Jan 2022 – )</Date></span>
+				</Item>
+				<Item>
 					<div className={classes.flexSecondItem}>
 						<div>
 							<span className={classes.presentText}>Running a design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since June of 2020.</span>

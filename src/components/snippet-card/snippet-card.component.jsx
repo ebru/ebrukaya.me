@@ -24,7 +24,7 @@ const SnippetCard = () => {
 		<MainContainer>
 			<div>
 				<Title>Hi, I'm Ebru.</Title>
-				<Snippet>Founder at <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink>, backpacker and lover of nature <CustomEmoji label='leaf' emoji='🍃' /></Snippet>
+				<Snippet>Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink> <br /> Founder at <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> <CustomEmoji label='leaf' emoji='🍃' /></Snippet>
 				<Description>
 					I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life.
 					Therefore I enjoy spending my time improving myself in full stack development.
