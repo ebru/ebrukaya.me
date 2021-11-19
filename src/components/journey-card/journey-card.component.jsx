@@ -33,7 +33,7 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<span className={classes.presentText}>Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink>. <Date>(Jan 2022 – )</Date></span>
+					<span className={classes.presentText}>Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink>. <Date>(Nov 2021 – )</Date></span>
 				</Item>
 				<Item>
 					<div className={classes.flexSecondItem}>
