@@ -27,7 +27,7 @@ const SnippetCard = () => {
 				<Snippet>Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink> <br /> Founder at <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> <CustomEmoji label='leaf' emoji='🍃' /></Snippet>
 				<Description>
 					I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life.
-					Therefore I enjoy spending my time improving myself in full stack development.
+					Therefore I enjoy spending my time improving myself in full stack development while mostly focusing on the frontend.
 			</Description>
 				<SocialIcons>
 					<CustomIcon

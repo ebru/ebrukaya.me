@@ -17,7 +17,7 @@ const SkillsCard = () => {
 			<SectionTitle><CustomEmoji label='tool' emoji='🛠' /> Technology Stack</SectionTitle>
 			<StackList>
 				<Item>
-					I'm currently focused on <Tech style={{ borderBottom: '3px solid #f0db4f' }}>JavaScript</Tech> with <Tech style={{ borderBottom: '3px solid #60dafb' }}>React</Tech> and <Tech style={{ borderBottom: '3px solid #60dafb' }}>React Native</Tech> on the front end, <Tech style={{ borderBottom: '3px solid #83ba63' }}>Node.js</Tech> on the back end preferably with <Tech style={{ borderBottom: '3px solid #e535ab' }}>GraphQL</Tech> or old good friend <Tech>REST</Tech>
+					I'm currently focused on <Tech style={{ borderBottom: '3px solid #f0db4f' }}>JavaScript</Tech>, <Tech style={{ borderBottom: '3px solid #007acc' }}>TypeScript</Tech> with <Tech style={{ borderBottom: '3px solid #60dafb' }}>React</Tech> and <Tech style={{ borderBottom: '3px solid #60dafb' }}>React Native</Tech> on the frontend, <Tech style={{ borderBottom: '3px solid #83ba63' }}>Node.js</Tech> on the backend with <Tech>REST</Tech> / <Tech style={{ borderBottom: '3px solid #e535ab' }}>GraphQL</Tech>
 				</Item>
 				<Item>
 					I have some knowledge on <Tech style={{ borderBottom: '3px solid #0db7ed' }}>Docker</Tech> for containerization and <Tech style={{ borderBottom: '3px solid #ff9900' }}>AWS</Tech> services to build full stack applications.
@@ -30,8 +30,8 @@ const SkillsCard = () => {
 				</Item>
 			</StackList>
 			<CurrentLearning>
-				<BoldText>Currently interested in: </BoldText>
-				Graphic Design
+				<BoldText>Currently learning: </BoldText>
+				Business for Developers
       </CurrentLearning>
 		</>
 	)
