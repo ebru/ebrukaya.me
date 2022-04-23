@@ -104,6 +104,7 @@ That it's okay to get lost, as long as you find your way back."</span>
 
 |       |       |             |   |
 |-------|-------|-------------|---|
+| **<a href='https://www.imdb.com/title/tt0107048/' target='_blank'>Groundhog Day</a>** | 1993 | 8.1 | |
 | **<a href='https://www.imdb.com/title/tt0095327/' target='_blank'>Grave of the Fireflies</a>** | 1988 | 8.5 | `Animation` |
 | **<a href='https://www.imdb.com/title/tt0088847/' target='_blank'>The Breakfast Club</a>** | 1985 | 7.9 | |
 | **<a href='https://www.imdb.com/title/tt0073486/' target='_blank'>One Flew Over the Cuckoo's Nest</a>** | 1975 | 8.7 | |
