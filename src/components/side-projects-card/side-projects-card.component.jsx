@@ -20,7 +20,7 @@ const SideProjectsCard = () => {
 			<SubTitle>Present</SubTitle>
 			      <ItemList>
 				<Item>
-				  <CustomEmoji label='bird' emoji='🐦' /> Co-building <CustomLink targetUrl='https://assistivecards.com/wingo/'>Wingo</CustomLink>,
+				  <CustomEmoji label='bird' emoji='🐦' /> Co-Building <CustomLink targetUrl='https://assistivecards.com/wingo/'>Wingo</CustomLink>,
 				  a daily planner for kids. <Date>(2022)</Date>
 				</Item>
 			      </ItemList>
