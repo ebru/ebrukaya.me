@@ -17,6 +17,13 @@ const SideProjectsCard = () => {
 	return (
 		<>
 			<SectionTitle><CustomEmoji label='working' emoji='👩🏻‍💻'></CustomEmoji> Side Projects</SectionTitle>
+			<SubTitle>Present</SubTitle>
+			      <ItemList>
+				<Item>
+				  <CustomEmoji label='bird' emoji='🐦' /> Co-building <CustomLink targetUrl='https://assistivecards.com/wingo/'>Wingo</CustomLink>,
+				  a daily planner for kids. <Date>(2022)</Date>
+				</Item>
+			      </ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
 				<Item>
