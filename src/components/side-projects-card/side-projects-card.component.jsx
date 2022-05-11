@@ -17,6 +17,13 @@ const SideProjectsCard = () => {
 	return (
 		<>
 			<SectionTitle><CustomEmoji label='working' emoji='👩🏻‍💻'></CustomEmoji> Side Projects</SectionTitle>
+			<SubTitle>Present</SubTitle>
+			      <ItemList>
+				<Item>
+				  <CustomEmoji label='bird' emoji='🐦' /> Co-Building <CustomLink targetUrl='https://assistivecards.com/wingo/'>Wingo</CustomLink>,
+				  a daily planner for kids. <Date>(2022)</Date>
+				</Item>
+			      </ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
 				<Item>
@@ -38,7 +45,7 @@ const SideProjectsCard = () => {
 					</div>
 				</Item>
 				<Item>
-					<CustomEmoji label='knitting' emoji='🧶' /> Co-founded <CustomLink targetUrl='https://www.instagram.com/mukavvaco/'>MUKAVVA</CustomLink>,
+					<CustomEmoji label='knitting' emoji='🧶' /> Co-Founded <CustomLink targetUrl='https://www.instagram.com/mukavvaco/'>MUKAVVA</CustomLink>,
 					a design brand that we created together with my two close friends in a very amateur way, an adventure inspired by nature and our travels... <Date>(2018)</Date>
 				</Item>
 				<Item>
