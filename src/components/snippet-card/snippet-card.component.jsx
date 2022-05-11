@@ -28,10 +28,10 @@ const SnippetCard = () => {
 				<Description>
 					I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life.
 					Therefore I enjoy spending my time improving myself in full stack development while mostly focusing on the frontend.
-			</Description>
+				</Description>
 				<SocialIcons>
 					<CustomIcon
-						targetUrl='https://www.linkedin.com/in/ebrukaya/'
+						targetUrl='https://www.linkedin.com/in/ebrukaya'
 						imageSource={LinkedinLogo}
 						altDescription='linkedin' />
 					<CustomIcon
