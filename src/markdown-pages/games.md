@@ -1,12 +1,14 @@
 ---
 title: 'the games.'
-date: '2022-08-18'
-description: 'How the quarantine is going? I have recently been watching a lot of movies.'
+date: '2022-08-17'
+description: 'I have recently been playing a lot of games.'
 ---
 
-How the quarantine is going? I have recently been watching a lot of movies. I started a list at the beginning of this year, I was going to watch at least one movie each week...
+This week I have been on sick leave and not productive at all since I somehow managed to catch a cold after a lake trip, but there is no reason to not have anything good that can come out of this. What I enjoy the most without spending that much energy... making lists!
 
-I have made it so far, even better than I guessed at that time. Nobody would imagine the time we are living these days anyway. I use **<a href='https://www.notion.so' target='_blank'>Notion</a>** to track them all, but I also wanted to have a little space here to add the ones that made me feel somehow different than others.
+I have always been so interested in games up to a point but after the pandemic, my interest has significantly increased and I am simply in love with playing especially story-driven games. They are another level of experience to me but I also enjoy different types.
+
+Here are some video and board games that I enjoyed playing a lot, and I will be adding new ones along the way.
 
 
 ## video games 🎮
