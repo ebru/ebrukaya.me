@@ -1,5 +1,5 @@
 ---
-title: 'dreamers and realists.'
+title: 'dreamers and realists'
 date: '2020-08-03'
 description: 'There are dreamers and there are realists in this world. You would think the dreamers would find the dreamers and the realists would find the realists, but more often than not, the opposite is true.'
 ---

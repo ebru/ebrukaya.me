@@ -1,5 +1,5 @@
 ---
-title: 'making a side project.'
+title: 'making a side project'
 date: '2020-03-29'
 description: 'One evening I have come up with this little idea to bring to life, meet Bucketmap.'
 ---

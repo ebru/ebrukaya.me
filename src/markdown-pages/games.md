@@ -1,5 +1,5 @@
 ---
-title: 'the games.'
+title: 'the games'
 date: '2022-08-17'
 description: 'I have recently been playing a lot of games.'
 ---

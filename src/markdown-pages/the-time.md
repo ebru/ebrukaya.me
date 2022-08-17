@@ -1,5 +1,5 @@
 ---
-title: 'the time.'
+title: 'the time'
 date: '2019-12-02'
 description: '2019 nearly comes to an end. This year I have read 25 books, and I think the one I loved the most is Momo by Michael Ende.'
 ---

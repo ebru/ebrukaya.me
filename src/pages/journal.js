@@ -30,6 +30,8 @@ const PostTitle = styled.h2`
   margin-bottom: 5px;
   color: #333;
   font-size: 27px;
+  background-color: #f8f8f8;
+  display: table;
 `
 
 const PostDate = styled.p`

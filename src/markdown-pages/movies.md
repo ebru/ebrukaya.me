@@ -1,5 +1,5 @@
 ---
-title: 'the movies.'
+title: 'the movies'
 date: '2020-04-26'
 description: 'How the quarantine is going? I have recently been watching a lot of movies.'
 ---
