@@ -59,6 +59,7 @@ const PersonalCard = () => {
 				</Item>
 
 				<Item><BoldText>Movies:</BoldText> <BlogLink to='/movies'>the ones</BlogLink> that made me feel somehow different than others</Item>
+				<Item><BoldText>Games:</BoldText> I love especially story-driven games a lot! here are <BlogLink to='/games'>some</BlogLink> that I enjoyed playing so far</Item>
 			</PersonalList>
 		</>
 	)
