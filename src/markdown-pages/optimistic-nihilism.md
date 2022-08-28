@@ -1,7 +1,7 @@
 ---
 title: 'optimistic nihilism'
 date: '2022-08-28'
-description: 'There is some comfort in the emptiness of the sea, no past, no future. – the last samurai'
+description: 'Today I was feeling a little bit overwhelmed mentally and investigating the idea of nothing matters but actually anything can matter for you, aka. optimistic nihilism.'
 ---
 
 <img src="../images/blog/optimistic-nihilism-2.png" />
