@@ -57,6 +57,14 @@ module.exports = {
           head: true
         },
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://ebrukaya.me',
+        sitemap: 'https://ebrukaya.me/sitemap/sitemap-index.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
     }
   ],
 }
