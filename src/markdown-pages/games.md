@@ -29,6 +29,7 @@ Here are some video and board games that I enjoyed playing a lot, and I will be 
 
 |       |       |             |   |
 |-------|-------|-------------|---|
+| **<a href='https://www.metacritic.com/game/playstation-4/detroit-become-human' target='_blank'>Detroit: Become Human</a>** | 2018 | 78% | `PS4` |
 | **<a href='https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild' target='_blank'>The Legend of Zelda: Breath of the Wild</a>** | 2017 | 97% | `Switch` |
 | **<a href='https://www.metacritic.com/game/playstation-4/inside' target='_blank'>Inside</a>** | 2016 | 91% | `PS4` |
 | **<a href='https://www.metacritic.com/game/switch/kentucky-route-zero-tv-edition' target='_blank'>Kentucky Route Zero</a>** <br> TV Edition | 2013 | 87% | `Xbox` |
