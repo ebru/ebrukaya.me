@@ -32,8 +32,8 @@ export default ({ data }) => {
 		<Layout>
 			<SEO title={post.frontmatter.title} />
 			<div>
-				<BlogLink to='/journal'>
-					<BackToBlogText>{'← back to journal'}</BackToBlogText>
+				<BlogLink to='/'>
+					<BackToBlogText>{'← back to homepage'}</BackToBlogText>
 				</BlogLink>
 				<PostTitle>{post.frontmatter.title}</PostTitle>
 				<PostDate>{post.frontmatter.date}, by <BlogLink to='/'>ebru</BlogLink></PostDate>

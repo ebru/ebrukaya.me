@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const SectionTitle = styled.div`
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-top: 60px;
     padding: 10px 20px;
-    border-bottom: 4px solid #413f3f;
+    border-bottom: 2px solid #f8f8f8;
     @media (max-width: 768px) {
         font-size: 22px;
     }
