@@ -1,6 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-
+import {graphql} from 'gatsby'
 import Layout from './../components/layout'
 import SEO from './../components/seo'
 import SnippetCard from './../components/snippet-card/snippet-card.component'
@@ -17,10 +16,10 @@ export default ({ data }) => {
       <SEO description="Hi, I'm Ebru. Founder at Noe Crafts, backpacker and lover of nature. This is my personal website. I'm adding new sections along the way of the journey of growing both professionally and personally." />
       <div>
         <SnippetCard />
-        <JourneyCard />
+        {/* <JourneyCard />
         <SkillsCard />
         <SideProjectsCard />
-        <PersonalCard />
+        <PersonalCard /> */}
         <BlogCard data={data}/>
         <Footer />
       </div>
