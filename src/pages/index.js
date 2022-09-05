@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Layout from './../components/layout'
 import SEO from './../components/seo'
 import SnippetCard from './../components/snippet-card/snippet-card.component'
-import PersonalCard from './../components/personal-card/personal-card.component'
 import BlogCard from './../components/blog-card/blog-card.component'
 import Footer from './../components/footer/footer.component'
 
@@ -50,9 +49,6 @@ export default ({ data }) => {
           </BlogLink>
         </NavLinks>
         <SnippetCard />
-        {/*
-        
-        <PersonalCard /> */}
         <BlogCard data={data} />
         <Footer />
       </div>

@@ -23,7 +23,6 @@ const BlogLink = styled(Link)`
 const PersonalCard = () => {
 	return (
 		<>
-			<SectionTitle><CustomEmoji label='nature' emoji='🌄' /> Personal</SectionTitle>
 			<Quote>
 				"It doesn’t interest me what you do for a living. I want to know what you ache for – and if you dare to dream of meeting your heart’s longing.
 				It doesn’t interest me how old you are. I want to know if you will risk looking like a fool – for love – for your dream – for the adventure of being alive." <ItalicText style={{ fontSize: '18px', color: '#888' }}>– Oriah Mountain Dreamer</ItalicText>
