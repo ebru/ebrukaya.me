@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-	SectionTitle,
 	SubTitle,
 	ItemList,
 	Item,
@@ -16,7 +15,6 @@ const SideProjectsCard = () => {
 
 	return (
 		<>
-			<SectionTitle><CustomEmoji label='working' emoji='👩🏻‍💻'></CustomEmoji> Side Projects</SectionTitle>
 			<SubTitle>Present</SubTitle>
 				<ItemList>
 					<Item>
