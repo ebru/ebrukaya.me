@@ -1,7 +1,5 @@
 import React from 'react'
-
 import {
-	SectionTitle,
 	StackList,
 	Item,
 	Tech,
@@ -9,12 +7,10 @@ import {
 	BoldText
 } from './../section-card/section-card.styles'
 
-import CustomEmoji from './../custom-emoji/custom-emoji.component'
 
 const SkillsCard = () => {
 	return (
 		<>
-			<SectionTitle><CustomEmoji label='tool' emoji='🛠' /> Technology Stack</SectionTitle>
 			<StackList>
 				<Item>
 					I'm currently focused on <Tech style={{ borderBottom: '3px solid #f0db4f' }}>JavaScript</Tech>, <Tech style={{ borderBottom: '3px solid #007acc' }}>TypeScript</Tech> with <Tech style={{ borderBottom: '3px solid #60dafb' }}>React</Tech> and <Tech style={{ borderBottom: '3px solid #60dafb' }}>React Native</Tech> on the frontend, <Tech style={{ borderBottom: '3px solid #83ba63' }}>Node.js</Tech> on the backend with <Tech>REST</Tech> / <Tech style={{ borderBottom: '3px solid #e535ab' }}>GraphQL</Tech>

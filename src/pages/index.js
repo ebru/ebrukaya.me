@@ -5,7 +5,6 @@ import Layout from './../components/layout'
 import SEO from './../components/seo'
 import SnippetCard from './../components/snippet-card/snippet-card.component'
 import SideProjectsCard from './../components/side-projects-card/side-projects-card.component'
-import SkillsCard from './../components/skills-card/skills-card.component'
 import PersonalCard from './../components/personal-card/personal-card.component'
 import BlogCard from './../components/blog-card/blog-card.component'
 import Footer from './../components/footer/footer.component'
@@ -39,7 +38,7 @@ export default ({ data }) => {
             journey
           </BlogLink>
           <Divider>·</Divider>
-          <BlogLink to='/stack'>
+          <BlogLink to='/tech-stack'>
             tech stack
           </BlogLink>
           <Divider>·</Divider>
@@ -52,8 +51,7 @@ export default ({ data }) => {
           </BlogLink>
         </NavLinks>
         <SnippetCard />
-        {/* <JourneyCard />
-        <SkillsCard />
+        {/*
         <SideProjectsCard />
         <PersonalCard /> */}
         <BlogCard data={data} />
