@@ -1,26 +1,62 @@
 import React from 'react'
-import {graphql} from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import styled from 'styled-components'
 import Layout from './../components/layout'
 import SEO from './../components/seo'
 import SnippetCard from './../components/snippet-card/snippet-card.component'
 import SideProjectsCard from './../components/side-projects-card/side-projects-card.component'
-import JourneyCard from './../components/journey-card/journey-card.component'
 import SkillsCard from './../components/skills-card/skills-card.component'
 import PersonalCard from './../components/personal-card/personal-card.component'
 import BlogCard from './../components/blog-card/blog-card.component'
 import Footer from './../components/footer/footer.component'
+
+const NavLinks = styled.p`
+  margin-top: -20px;
+  margin-bottom: 30px;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 17px;
+`
+
+const BlogLink = styled(Link)`
+  text-decoration: none;
+`
+
+const Divider = styled.span`
+  padding-left: 7px;
+  padding-right: 7px;
+`
 
 export default ({ data }) => {
   return (
     <Layout>
       <SEO description="Hi, I'm Ebru. Founder at Noe Crafts, backpacker and lover of nature. This is my personal website. I'm adding new sections along the way of the journey of growing both professionally and personally." />
       <div>
+        <NavLinks>
+          <BlogLink to='/journey'>
+            journey
+          </BlogLink>
+          <Divider>·</Divider>
+          <BlogLink to='/stack'>
+            tech stack
+          </BlogLink>
+          <Divider>·</Divider>
+          <BlogLink to='/projects'>
+            projects
+          </BlogLink>
+          <Divider>·</Divider>
+          <BlogLink to='/personal'>
+            personal
+          </BlogLink>
+        </NavLinks>
         <SnippetCard />
         {/* <JourneyCard />
         <SkillsCard />
         <SideProjectsCard />
         <PersonalCard /> */}
-        <BlogCard data={data}/>
+        <BlogCard data={data} />
         <Footer />
       </div>
     </Layout>

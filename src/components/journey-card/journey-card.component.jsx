@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
+import React from 'react'
 import {
-	SectionTitle,
 	SubTitle,
 	ItemList,
 	Item,
@@ -12,15 +10,6 @@ import CustomEmoji from './../custom-emoji/custom-emoji.component'
 import CustomLink from '../custom-link/custom-link.component'
 import NoeImg from '../../images/noe.jpg'
 import useStyles from './journey-card.styles'
-
-const SeeMoreLink = styled.div`
-	text-decoration: underline;
-	cursor: pointer;
-	&:hover {
-    color: #555;
-  	outline-width: 0;
-  }
-`
 
 const JourneyCard = () => {
 	const classes = useStyles()
