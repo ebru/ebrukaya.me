@@ -94,6 +94,7 @@ const PersonalCard = () => {
 					width="100%"
 					hideMapLegend={true}
 					datafulRegionColor="#878BFA"
+					tooltipBackgroundColor="#F2F2F2"
 				/>
 			</div>
 		</>
