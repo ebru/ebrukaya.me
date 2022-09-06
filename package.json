@@ -27,6 +27,7 @@
     "react-helmet": "6.1.0",
     "react-jss": "10.9.2",
     "react-tooltip": "4.2.21",
+    "regeo-map-chart": "1.5.1",
     "styled-components": "5.3.5"
   },
   "devDependencies": {

@@ -29,7 +29,7 @@ const Divider = styled.span`
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO description="Hi, I'm Ebru. Founder at Noe Crafts, backpacker and lover of nature. This is my personal website. I'm adding new sections along the way of the journey of growing both professionally and personally." />
+      <SEO />
       <div>
         <NavLinks>
           <BlogLink to='/journey'>

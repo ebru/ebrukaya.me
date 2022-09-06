@@ -1,8 +1,8 @@
 import React from 'react'
+import { ReGeoMapChart } from 'regeo-map-chart';
 import { Link } from 'gatsby';
 import styled from 'styled-components'
 import {
-	SectionTitle,
 	Quote,
 	ItalicText,
 	BoldText,
@@ -10,7 +10,6 @@ import {
 	Item
 } from './../section-card/section-card.styles'
 import CustomIcon from './../custom-icon/custom-icon.component'
-import CustomEmoji from './../custom-emoji/custom-emoji.component'
 import CustomLink from './../custom-link/custom-link.component'
 import SpotifyLogo from './../../images/social/spotify.png'
 import GoodreadsLogo from './../../images/social/goodreads.png'
@@ -19,6 +18,35 @@ import GoodreadsLogo from './../../images/social/goodreads.png'
 const BlogLink = styled(Link)`
 	text-decoration: underline;
 `
+
+const countriesVisited = [
+	['Country', 'First visit'],
+	['tr', 1994],
+	['dk', 2015],
+	['at', 2015],
+	['cz', 2015],
+	['de', 2015],
+	['nl', 2015],
+	['ee', 2015],
+	['ru', 2015],
+	['fi', 2015],
+	['lv', 2015],
+	['lt', 2015],
+	['se', 2015],
+	['no', 2015],
+	['fr', 2016],
+	['be', 2016],
+	['lk', 2017],
+	['ge', 2017],
+	['hu', 2017],
+	['gr', 2018],
+	['it', 2018],
+	['va', 2018],
+	['is', 2018],
+	['rs', 2019],
+	['pt', 2019],
+	['ch', 2021],
+];
 
 const PersonalCard = () => {
 	return (
@@ -29,7 +57,7 @@ const PersonalCard = () => {
 			</Quote>
 			<PersonalList>
 				<Item><BoldText>Personality type:</BoldText> <CustomLink targetUrl='https://www.16personalities.com/enfp-personality'>ENFP-T</CustomLink></Item>
-				<Item><BoldText>Collections:</BoldText> postcard, flag patch and paper money from visited countries</Item>
+				<Item><BoldText>Collections:</BoldText> postcard, flag patch and paper money</Item>
 				<Item>
 					<BoldText>Music:</BoldText> fleetwood mac, dire straits, jungle, paradis, sohn... // me on
 					<CustomIcon
@@ -54,12 +82,20 @@ const PersonalCard = () => {
 						altDescription='goodreads'
 						style={{ width: '23px', verticalAlign: 'middle', marginLeft: '5px' }}
 					/>
-
 				</Item>
 
 				<Item><BoldText>Movies:</BoldText> <BlogLink to='/movies'>the ones</BlogLink> that made me feel somehow different than others</Item>
-				<Item><BoldText>Games:</BoldText> I love especially story-driven games a lot! here are <BlogLink to='/games'>some</BlogLink> that I enjoyed playing so far</Item>
+				<Item><BoldText>Games:</BoldText> I especially love story-driven games a lot! here are <BlogLink to='/games'>some</BlogLink> that I enjoyed playing so far</Item>
 			</PersonalList>
+			<div style={{ marginTop: 20 }}>
+				<BoldText>Countries visited:</BoldText>
+				<ReGeoMapChart
+					data={countriesVisited}
+					width="100%"
+					hideMapLegend={true}
+					datafulRegionColor="#878BFA"
+				/>
+			</div>
 		</>
 	)
 }

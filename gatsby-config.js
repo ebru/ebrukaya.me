@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ebru Kaya - Software, design, life and travels`,
     shortTitle: `Ebru Kaya`,
-    description: `A personal space to share my thoughts and ideas about software, design, life and travels.`,
+    description: `Hi, I'm Ebru. This is a personal space to share my thoughts, ideas and experiences about software, design, life and travels.`,
     author: `@ebru`,
     siteUrl: `https://ebrukaya.me`,
   },
