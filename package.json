@@ -1,7 +1,7 @@
 {
   "name": "ebrukaya.me",
   "private": true,
-  "description": "A personal space to share my thoughts and ideas about software, design, life and travels.",
+  "description": "A personal space to share thoughts, ideas, experiences about software development, indie making, design concepts, travels and enjoying life along the way.",
   "version": "1.0.0",
   "author": "@ebru",
   "dependencies": {
