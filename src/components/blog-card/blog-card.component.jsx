@@ -12,7 +12,7 @@ const BlogLink = styled(Link)`
 const PostTitle = styled.h2`
   margin-bottom: 5px;
   color: #333;
-  font-size: 27px;
+  font-size: 25px;
   background-color: #f8f8f8;
   display: table;
 `

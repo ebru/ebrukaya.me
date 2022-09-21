@@ -11,7 +11,7 @@ const BlogLink = styled(Link)`
 
 const BackToHomepageText = styled.p`
   margin-top: -20px;
-  margin-bottom: 2px;
+  margin-bottom: 30px;
   text-align: right;
 `
 
