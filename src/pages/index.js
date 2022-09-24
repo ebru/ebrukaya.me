@@ -1,11 +1,10 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
-import Layout from './../components/layout'
+import Layout from '../layout'
 import Seo from './../components/seo'
 import SnippetCard from './../components/snippet-card/snippet-card.component'
 import BlogCard from './../components/blog-card/blog-card.component'
-import Footer from './../components/footer/footer.component'
 import Pagination from '../components/pagination'
 
 const NavLinks = styled.p`
@@ -57,7 +56,6 @@ const Home = ({ data }) => {
         <SnippetCard />
         <BlogCard data={data} />
         <Pagination numPages={numPages} currentPage={currentPage} />
-        <Footer />
       </div>
     </Layout>
   )
