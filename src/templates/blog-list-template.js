@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from './../components/layout'
 import Seo from './../components/seo'
+import Pagination from './../components/pagination'
 
 const BlogLink = styled(Link)`
   text-decoration: none;
@@ -44,17 +45,20 @@ const PostSnippet = styled.p`
 `
 
 const BlogList = ({ location, data }) => {
-  const page = location.pathname.split(`/`)[2];
+  const currentPage = location.pathname.split(`/`)[2] || '1';
+  const postsPerPage = 6;
+  const totalCount = data.allMarkdownRemark.totalCount;
+  const numPages = Math.ceil(totalCount / postsPerPage);
 
   return (
     <Layout>
-      <Seo title={page ? `Journal: Page ${page}` : 'Journal'} description='I write sometimes about software, design, life and travels.' />
+      <Seo title={currentPage !== '1' ? `Journal: Page ${currentPage}` : 'Journal'} description='I write sometimes about software, design, life and travels.' />
       <div>
         <BlogLink to='/'>
           <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>
         </BlogLink>
         <BlogTitle>the journal</BlogTitle>
-        <PostCount>page {page || '1'}</PostCount>
+        <PostCount>page {currentPage}</PostCount>
         {
           data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
@@ -66,6 +70,7 @@ const BlogList = ({ location, data }) => {
             </div>
           ))
         }
+        <Pagination numPages={numPages} currentPage={currentPage} />
       </div>
     </Layout>
   )

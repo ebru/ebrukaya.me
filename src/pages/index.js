@@ -6,6 +6,7 @@ import Seo from './../components/seo'
 import SnippetCard from './../components/snippet-card/snippet-card.component'
 import BlogCard from './../components/blog-card/blog-card.component'
 import Footer from './../components/footer/footer.component'
+import Pagination from '../components/pagination'
 
 const NavLinks = styled.p`
   margin-top: -20px;
@@ -26,11 +27,8 @@ const Divider = styled.span`
   padding-right: 7px;
 `
 
-const Pagination = styled.div`
-  margin-top: 20px;
-`
-
 const Home = ({ data }) => {
+  const currentPage = '1';
   const postsPerPage = 6;
   const totalCount = data.allMarkdownRemark.totalCount;
   const numPages = Math.ceil(totalCount / postsPerPage);
@@ -58,9 +56,7 @@ const Home = ({ data }) => {
         </NavLinks>
         <SnippetCard />
         <BlogCard data={data} />
-        <Pagination>
-          {Array.from({ length: numPages }).map((page, index) => <div key={index}>{page}</div>)}
-        </Pagination>
+        <Pagination numPages={numPages} currentPage={currentPage} />
         <Footer />
       </div>
     </Layout>
