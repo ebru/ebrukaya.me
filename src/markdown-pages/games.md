@@ -22,6 +22,7 @@ Here are some video and board games that I enjoyed playing a lot, and I will be 
 
 |   |  |   |  |
 |-------|--------------|------------|-----------|
+| **<a href='https://www.metacritic.com/game/pc/backbone' target='_blank'>Backbone</a>** | 2019 | 72% | `Xbox` |
 | **<a href='https://www.metacritic.com/game/playstation-4/red-dead-redemption-2' target='_blank'>Red Dead Redemption 2</a>** | 2018 | 97% | `PS4` |
 
 <span style='font-style: italic'>"We can’t change what's done, we can only move on."</span>
