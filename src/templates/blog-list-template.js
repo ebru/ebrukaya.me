@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Layout from './../layout'
 import Seo from './../components/seo'
 import Pagination from './../components/pagination'
+import { config } from './../config'
 
 const BlogLink = styled(Link)`
   text-decoration: none;
@@ -45,10 +46,10 @@ const PostSnippet = styled.p`
 `
 
 const BlogList = ({ location, data }) => {
-  const currentPage = location.pathname.split(`/`)[2] || '1';
-  const postsPerPage = 6;
-  const totalCount = data.allMarkdownRemark.totalCount;
-  const numPages = Math.ceil(totalCount / postsPerPage);
+  const currentPage = location.pathname.split(`/`)[2] || '1'
+  const totalCount = data.allMarkdownRemark.totalCount
+  const postsPerPage = config.postsPerPage
+  const numPages = Math.ceil(totalCount / postsPerPage)
 
   return (
     <Layout>

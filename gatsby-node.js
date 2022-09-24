@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const { config } = require (`./src/config`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
 	const { createNodeField } = actions
@@ -29,9 +30,9 @@ exports.createPages = ({ graphql, actions }) => {
         }
     }
     `).then(result => {
-		const posts = result.data.allMarkdownRemark.edges;
-		const postsPerPage = 6;
-		const numPages = Math.ceil(posts.length / postsPerPage);
+		const posts = result.data.allMarkdownRemark.edges
+		const postsPerPage = config.postsPerPage
+		const numPages = Math.ceil(posts.length / postsPerPage)
 
 		Array.from({ length: numPages }).forEach((_, i) => {
 			createPage({
