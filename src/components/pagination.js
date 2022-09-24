@@ -18,9 +18,11 @@ const Pagination = ({ numPages, currentPage }) => {
             marginRight: 10,
             fontWeight: page.toString() === currentPage ? 'bold' : 'normal',
           }}>
-          <BlogLink to={`/journal/${page !== 1 ? page : ''}`}>
-            {page}
-          </BlogLink>
+            {page.toString() !== currentPage ? (
+              <BlogLink to={`/journal/${page !== 1 ? page : ''}`}>
+                {page}
+              </BlogLink>
+            ) : <span>{page}</span>}
           <span style={{ marginLeft: 10 }}>/</span>
         </div>
       ))}
