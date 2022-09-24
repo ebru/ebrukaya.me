@@ -23,7 +23,7 @@ const BlogTitle = styled.h1`
 export default () => {
   return (
     <Layout>
-      <SEO title='The Journey' description='My educational and professional experience so far.' />
+      <SEO title='Journey' description='My educational and professional experience so far.' />
       <BlogLink to='/'>
         <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>
       </BlogLink>

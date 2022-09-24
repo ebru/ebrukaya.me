@@ -43,16 +43,18 @@ const PostSnippet = styled.p`
   margin-bottom: 30px;
 `
 
-export default ({ data }) => {
+export default ({ location, data }) => {
+  const page = location.pathname.split(`/`)[2];
+
   return (
     <Layout>
-      <SEO title='The Journal' description='I write sometimes about software, design, life and travels.' />
+      <SEO title={page ? `Journal: Page ${page}` : 'Journal'} description='I write sometimes about software, design, life and travels.' />
       <div>
         <BlogLink to='/'>
           <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>
         </BlogLink>
         <BlogTitle>the journal</BlogTitle>
-        <PostCount>{data.allMarkdownRemark.totalCount} posts</PostCount>
+        <PostCount>page {page || '1'}</PostCount>
         {
           data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
@@ -67,11 +69,15 @@ export default ({ data }) => {
       </div>
     </Layout>
   )
-}
+};
 
-export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+export const blogListQuery = graphql`
+  query blogListQuery($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
       totalCount
       edges {
         node {
