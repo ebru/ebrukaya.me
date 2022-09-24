@@ -25,7 +25,7 @@ const PostDate = styled.p`
 	margin-bottom: 15px;
 `
 
-export default ({ data }) => {
+const BlogPost = ({ data }) => {
 	const post = data.markdownRemark
 
 	return (
@@ -42,6 +42,8 @@ export default ({ data }) => {
 		</Layout>
 	)
 }
+
+export default BlogPost
 
 export const query = graphql`
     query($slug: String!) {

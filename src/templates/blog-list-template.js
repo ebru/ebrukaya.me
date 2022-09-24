@@ -43,7 +43,7 @@ const PostSnippet = styled.p`
   margin-bottom: 30px;
 `
 
-export default ({ location, data }) => {
+const BlogList = ({ location, data }) => {
   const page = location.pathname.split(`/`)[2];
 
   return (
@@ -70,6 +70,8 @@ export default ({ location, data }) => {
     </Layout>
   )
 };
+
+export default BlogList
 
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {

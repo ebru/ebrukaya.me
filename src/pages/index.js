@@ -30,7 +30,7 @@ const Pagination = styled.div`
   margin-top: 20px;
 `
 
-export default ({ data }) => {
+const Home = ({ data }) => {
   const postsPerPage = 6;
   const totalCount = data.allMarkdownRemark.totalCount;
   const numPages = Math.ceil(totalCount / postsPerPage);
@@ -66,6 +66,8 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+export default Home
 
 export const query = graphql`
   query {

@@ -20,7 +20,7 @@ const BlogTitle = styled.h1`
   color: #333;
 `
 
-export default () => {
+const TechStack = () => {
   return (
     <Layout>
       <Seo title='Tech Stack' description='Tech stack that I have been adapted to along the years.' />
@@ -32,3 +32,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default TechStack

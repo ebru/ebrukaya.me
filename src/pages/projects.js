@@ -20,7 +20,7 @@ const BlogTitle = styled.h1`
   color: #333;
 `
 
-export default () => {
+const Projects = () => {
   return (
     <Layout>
       <Seo title='Side Projects' description='Side projects that I completed/am currently working on.' />
@@ -32,3 +32,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default Projects
