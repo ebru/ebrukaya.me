@@ -34,6 +34,14 @@ exports.createPages = ({ graphql, actions }) => {
 		const postsPerPage = config.postsPerPage
 		const numPages = Math.ceil(posts.length / postsPerPage)
 
+		createPage({
+			path: `/`,
+			component: path.resolve("./src/templates/home-template.js"),
+			context: {
+				limit: postsPerPage,
+			},
+		})
+
 		Array.from({ length: numPages }).forEach((_, i) => {
 			createPage({
 				path: i === 0 ? `/journal` : `/journal/${i + 1}`,
@@ -50,7 +58,7 @@ exports.createPages = ({ graphql, actions }) => {
 		posts.forEach(({ node }) => {
 			createPage({
 				path: node.fields.slug,
-				component: path.resolve(`./src/templates/blog-post.js`),
+				component: path.resolve(`./src/templates/blog-post-template.js`),
 				context: {
 					slug: node.fields.slug
 				}

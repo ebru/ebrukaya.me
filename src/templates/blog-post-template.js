@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from 'styled-components'
 import Layout from '../layout';
-import Seo from './../components/seo'
+import Seo from '../components/seo'
 
 const BlogLink = styled(Link)`
   text-decoration: none;

@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../layout'
-import Seo from './../components/seo'
-import SnippetCard from './../components/snippet-card/snippet-card.component'
-import BlogCard from './../components/blog-card/blog-card.component'
+import Seo from '../components/seo'
+import SnippetCard from '../components/snippet-card/snippet-card.component'
+import BlogCard from '../components/blog-card/blog-card.component'
 import Pagination from '../components/pagination'
 
 const NavLinks = styled.p`
@@ -64,8 +64,11 @@ const Home = ({ data }) => {
 export default Home
 
 export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 7) {
+  query homeQuery($limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+    ) {
       totalCount
       edges {
         node {
