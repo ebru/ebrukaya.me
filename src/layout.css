@@ -661,9 +661,9 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 
 ::selection {
   color: unset;
-  background-color: #f4f4f4; /* WebKit/Blink Browsers */
+  background-color: #ececff; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
   color: unset;
-  background-color: #f4f4f4; /* Gecko Browsers */
+  background-color: #ececff; /* Gecko Browsers */
 }
