@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import PersonalCard from '../components/personal-card/personal-card.component'
 
 const BlogLink = styled(Link)`
@@ -23,7 +23,7 @@ const BlogTitle = styled.h1`
 export default () => {
   return (
     <Layout>
-      <SEO title='Personal' description='Some personal facts that you can get to know me.' />
+      <Seo title='Personal' description='Some personal facts that you can get to know me.' />
       <BlogLink to='/'>
         <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>
       </BlogLink>

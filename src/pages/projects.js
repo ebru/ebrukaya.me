@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import SideProjectsCard from '../components/side-projects-card/side-projects-card.component'
 
 const BlogLink = styled(Link)`
@@ -23,7 +23,7 @@ const BlogTitle = styled.h1`
 export default () => {
   return (
     <Layout>
-      <SEO title='Side Projects' description='Side projects that I completed/am currently working on.' />
+      <Seo title='Side Projects' description='Side projects that I completed/am currently working on.' />
       <BlogLink to='/'>
         <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>
       </BlogLink>

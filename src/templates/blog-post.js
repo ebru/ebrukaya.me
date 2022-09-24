@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from 'styled-components'
 import Layout from './../components/layout';
-import SEO from './../components/seo'
+import Seo from './../components/seo'
 
 const BlogLink = styled(Link)`
   text-decoration: none;
@@ -27,10 +27,10 @@ const PostDate = styled.p`
 
 export default ({ data }) => {
 	const post = data.markdownRemark
-	console.log(data)
+
 	return (
 		<Layout>
-			<SEO title={post.frontmatter.title} />
+			<Seo title={post.frontmatter.title} />
 			<div>
 				<BlogLink to='/'>
 					<BackToBlogText>{'← back to homepage'}</BackToBlogText>

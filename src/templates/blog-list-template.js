@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from './../components/layout'
-import SEO from './../components/seo'
+import Seo from './../components/seo'
 
 const BlogLink = styled(Link)`
   text-decoration: none;
@@ -48,7 +48,7 @@ export default ({ location, data }) => {
 
   return (
     <Layout>
-      <SEO title={page ? `Journal: Page ${page}` : 'Journal'} description='I write sometimes about software, design, life and travels.' />
+      <Seo title={page ? `Journal: Page ${page}` : 'Journal'} description='I write sometimes about software, design, life and travels.' />
       <div>
         <BlogLink to='/'>
           <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>

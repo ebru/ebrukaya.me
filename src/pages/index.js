@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from './../components/layout'
-import SEO from './../components/seo'
+import Seo from './../components/seo'
 import SnippetCard from './../components/snippet-card/snippet-card.component'
 import BlogCard from './../components/blog-card/blog-card.component'
 import Footer from './../components/footer/footer.component'
@@ -26,10 +26,18 @@ const Divider = styled.span`
   padding-right: 7px;
 `
 
+const Pagination = styled.div`
+  margin-top: 20px;
+`
+
 export default ({ data }) => {
+  const postsPerPage = 6;
+  const totalCount = data.allMarkdownRemark.totalCount;
+  const numPages = Math.ceil(totalCount / postsPerPage);
+
   return (
     <Layout>
-      <SEO />
+      <Seo />
       <div>
         <NavLinks>
           <BlogLink to='/journey'>
@@ -50,6 +58,9 @@ export default ({ data }) => {
         </NavLinks>
         <SnippetCard />
         <BlogCard data={data} />
+        <Pagination>
+          {Array.from({ length: numPages }).map((page, index) => <div key={index}>{page}</div>)}
+        </Pagination>
         <Footer />
       </div>
     </Layout>
@@ -58,7 +69,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 6) {
       totalCount
       edges {
         node {
