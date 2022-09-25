@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import MarkdownIt from 'markdown-it'
 import MdEditor from 'react-markdown-editor-lite'
 
 import Layout from '../layout'
@@ -18,28 +19,36 @@ const BackToHomepageText = styled.p`
 `
 
 const BlogTitle = styled.h1`
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   color: #333;
 `
 const mdParser = new MarkdownIt();
 
-const handleEditorChange = ({ html, text }) => {
-  console.log('handleEditorChange', html, text)
-}
-
 const Panel = () => {
+  const [text, setText] = useState();
+
+  const handleEditorChange = ({ text }) => {
+    setText(text)
+  }
+
+  const handleSend = () => {
+    if (!text) return
+    console.log('text', text);
+  }
+
   return (
-    <Layout>
+    <Layout disablePanelLink disableFooter>
       <Seo title={'Panel'} description='A very simple content management system.' />
       <div>
         <BlogLink to='/'>
           <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>
         </BlogLink>
-        <BlogTitle>panel</BlogTitle>
+        <BlogTitle>new post</BlogTitle>
         <MdEditor style={{ height: '500px' }}
           renderHTML={text => mdParser.render(text)}
           onChange={handleEditorChange}
         />
+        <button style={{ marginTop: 20 }} onClick={handleSend} disabled={!text}>send</button>
       </div>
     </Layout>
   )

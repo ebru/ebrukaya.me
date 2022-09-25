@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import Footer from './components/footer/footer.component'
 
 import './layout.css'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, disablePanelLink = false, disableFooter = false }) => {
   return (
     <>
       <div
@@ -16,8 +17,21 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Footer />
+        {!disableFooter && <Footer />}
       </div>
+      {process.env.NODE_ENV === 'development' && !disablePanelLink && (
+        <div
+         style={{
+          position: 'fixed',
+          bottom: 0,
+          right: 0,
+          marginRight: 30,
+          marginBottom: 20,
+         }}
+        >
+          <Link to='/panel'>panel</Link>
+        </div>
+      )}
     </>
   )
 }
