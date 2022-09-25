@@ -2,14 +2,18 @@ import React, { useState } from 'react'
 import MarkdownIt from 'markdown-it'
 import MdEditor from 'react-markdown-editor-lite'
 import styled from 'styled-components'
-import { TextField, Button } from '@mui/material';
+import { TextField, Button } from '@mui/material'
 
 import 'react-markdown-editor-lite/lib/index.css'
 import Layout from '../layout'
 import Seo from '../components/seo'
 import { downloadTxtFile } from '../utils'
 
-const mdParser = new MarkdownIt();
+const mdParser = new MarkdownIt({
+  html: true,
+  linkify: true,
+  typographer: true,
+})
 
 const BlogTitle = styled.h1`
   margin-bottom: 40px;
