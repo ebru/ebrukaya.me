@@ -5,6 +5,9 @@
   "version": "1.0.0",
   "author": "@ebru",
   "dependencies": {
+    "@emotion/react": "11.10.4",
+    "@emotion/styled": "11.10.4",
+    "@mui/material": "5.10.6",
     "babel-plugin-styled-components": "2.0.7",
     "gatsby": "4.21.0",
     "gatsby-image": "3.11.0",

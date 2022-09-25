@@ -1,54 +1,78 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
 import MarkdownIt from 'markdown-it'
 import MdEditor from 'react-markdown-editor-lite'
+import styled from 'styled-components'
+import { TextField, Button } from '@mui/material';
 
+import 'react-markdown-editor-lite/lib/index.css'
 import Layout from '../layout'
 import Seo from '../components/seo'
-import 'react-markdown-editor-lite/lib/index.css'
+import { downloadTxtFile } from '../utils'
 
-const BlogLink = styled(Link)`
-  text-decoration: none;
-`
-
-const BackToHomepageText = styled.p`
-  margin-top: -20px;
-  margin-bottom: 30px;
-  text-align: right;
-`
+const mdParser = new MarkdownIt();
 
 const BlogTitle = styled.h1`
   margin-bottom: 40px;
   color: #333;
 `
-const mdParser = new MarkdownIt();
+const Container = styled.div`
+`
 
 const Panel = () => {
-  const [text, setText] = useState();
+  const [title, setTitle] = useState();
+  const [text, setText] = useState('# hello');
+  const [description, setDescription] = useState();
+
+  const validData = title && text && description;
 
   const handleEditorChange = ({ text }) => {
     setText(text)
   }
 
-  const handleSend = () => {
-    if (!text) return
-    console.log('text', text);
+  const createPost = () => {
+    if (!validData) return
+
+    downloadTxtFile({ text, title })
   }
 
   return (
-    <Layout disablePanelLink disableFooter>
+    <Layout
+      panelLink={false}
+      footer={false}
+      maxWidth={1000}
+    >
       <Seo title={'Panel'} description='A very simple content management system.' />
       <div>
-        <BlogLink to='/'>
-          <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>
-        </BlogLink>
         <BlogTitle>new post</BlogTitle>
-        <MdEditor style={{ height: '500px' }}
-          renderHTML={text => mdParser.render(text)}
-          onChange={handleEditorChange}
-        />
-        <button style={{ marginTop: 20 }} onClick={handleSend} disabled={!text}>send</button>
+        <Container>
+          <TextField
+            style={{ width: '100%', marginBottom: 30 }}
+            label="title"
+            onChange={(event) => setTitle(event.target.value)}
+            size='small'
+          />
+          <MdEditor style={{ height: '500px' }}
+            value={text}
+            renderHTML={text => mdParser.render(text)}
+            onChange={handleEditorChange}
+          />
+          <TextField
+            style={{ width: '100%', marginTop: 30 }}
+            label="meta description"
+            multiline
+            rows={2}
+            onChange={(event) => setDescription(event.target.value)}
+            size='small'
+          />
+          <Button
+            style={{ marginTop: 30, textTransform: 'lowercase' }}
+            onClick={createPost}
+            disabled={!validData}
+            variant="contained"
+          >
+            create
+          </Button>
+        </Container>
       </div>
     </Layout>
   )

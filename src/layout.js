@@ -5,21 +5,26 @@ import Footer from './components/footer/footer.component'
 
 import './layout.css'
 
-const Layout = ({ children, disablePanelLink = false, disableFooter = false }) => {
+const Layout = ({
+    children,
+    panelLink = true,
+    footer = true,
+    maxWidth = 770,
+  }) => {
   return (
     <>
       <div
         style={{
           margin: `60px auto`,
-          maxWidth: 770,
+          maxWidth,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
       >
         <main>{children}</main>
-        {!disableFooter && <Footer />}
+        {footer && <Footer />}
       </div>
-      {process.env.NODE_ENV === 'development' && !disablePanelLink && (
+      {process.env.NODE_ENV === 'development' && (
         <div
          style={{
           position: 'fixed',
@@ -29,7 +34,7 @@ const Layout = ({ children, disablePanelLink = false, disableFooter = false }) =
           marginBottom: 20,
          }}
         >
-          <Link to='/panel'>panel</Link>
+          <Link to={panelLink ? '/panel' : '/'}>{panelLink ? 'panel' : 'home'}</Link>
         </div>
       )}
     </>
