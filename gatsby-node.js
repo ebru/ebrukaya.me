@@ -42,6 +42,13 @@ exports.createPages = ({ graphql, actions }) => {
 			},
 		})
 
+		if (process.env.NODE_ENV === 'development') {
+			createPage({
+				path: `/panel`,
+				component: path.resolve("./src/templates/panel-template.js"),
+			})
+		}
+
 		Array.from({ length: numPages }).forEach((_, i) => {
 			createPage({
 				path: i === 0 ? `/journal` : `/journal/${i + 1}`,
