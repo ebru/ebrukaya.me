@@ -46,6 +46,7 @@ Here are some video and board games that I enjoyed playing a lot, and I will be 
 | **<a href='https://boardgamegeek.com/boardgame/215842/exit-game-polar-station' target='_blank'>EXIT: The Game Series</a>** <br>  The Polar Station, The Catacombs of Horror | 2016 | 6.9 | 1-4 | `playable once` |
 | **<a href='https://boardgamegeek.com/boardgame/39856/dixit' target='_blank'>Dixit</a>** | 2008 | 7.2 | 3-6 | |
 | **<a href='https://boardgamegeek.com/boardgame/822/carcassonne' target='_blank'>Carcassonne</a>** | 2000 | 7.4 | 2-5 | |
+| **<a href='https://boardgamegeek.com/boardgame/13/catan' target='_blank'>Catan</a>** | 1995 | 7.1 | 3-4 | |
 
 <div style='text-align: right'>// Ordered by release date descending.</div>
 
