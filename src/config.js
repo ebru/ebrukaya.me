@@ -1,5 +1,5 @@
 const config = {
-  postsPerPage: 7,
+  postsPerPage: 5,
 }
 
 module.exports.config = config
