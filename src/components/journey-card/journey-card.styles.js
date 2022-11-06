@@ -48,6 +48,7 @@ const useStyles = createUseStyles({
     [`@media screen and (max-width: 600px)`]: {
       marginTop: 0,
     },
+    maxWidth: '85%'
   }
 })
 

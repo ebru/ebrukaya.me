@@ -24,7 +24,11 @@ const SnippetCard = () => {
 		<MainContainer>
 			<div>
 				<Title>Hi, I'm Ebru.</Title>
-				<Snippet>Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink> <br /> Founder at <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> <CustomEmoji label='leaf' emoji='🍃' /></Snippet>
+				<Snippet>
+					Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink> <br />
+					Founder at <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> <CustomEmoji label='leaf' emoji='🍃' /> <br />
+					Co-Founder at <CustomLink targetUrl='https://assistivecards.com'>Assistive Cards</CustomLink> <CustomEmoji label='card' emoji='🐥' /> <br />
+				</Snippet>
 				<Description>
 					I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life.
 					Therefore I enjoy spending my time improving myself in full stack development while mostly focusing on the frontend.

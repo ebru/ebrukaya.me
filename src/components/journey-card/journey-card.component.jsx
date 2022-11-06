@@ -21,6 +21,7 @@ const JourneyCard = () => {
 				<Item>
 					<span className={classes.presentText}>Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink>. <Date>(Nov 2021 – )</Date></span>
 				</Item>
+
 				<Item>
 					<div className={classes.flexSecondItem}>
 						<div>
@@ -35,8 +36,15 @@ const JourneyCard = () => {
 						</CustomLink>
 					</div>
 				</Item>
+
 				<Item>
 					<div className={classes.item}>
+						<span className={classes.presentText}>Joined as Co-Founder at <CustomLink targetUrl='https://assistivecards.com'>Assistive Cards</CustomLink>. Helping the growth of the mission for kids' special education. <Date>(Oct 2022 – )</Date></span>
+					</div>
+				</Item>
+
+				<Item>
+					<div>
 						<span className={classes.presentText}>Investing in stocks and startups.</span>
 					</div>
 				</Item>

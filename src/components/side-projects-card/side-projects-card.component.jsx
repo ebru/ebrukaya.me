@@ -19,7 +19,7 @@ const SideProjectsCard = () => {
 			<ItemList>
 				<Item>
 					<CustomEmoji label='bird' emoji='🦊' /> Building <CustomLink targetUrl='https://gogiftem.com'>Go Gift'em</CustomLink>,
-					a website that lets you explore curated gift ideas. <Date>(2022)</Date>
+					explore curated gift ideas. <Date>(2022)</Date>
 				</Item>
 				<Item>
 					<CustomEmoji label='investment' emoji='🪙' /> Building <CustomLink targetUrl='https://infie.app'>Infie</CustomLink>,
