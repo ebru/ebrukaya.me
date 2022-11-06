@@ -10,12 +10,6 @@ const BlogLink = styled(Link)`
   text-decoration: none;
 `
 
-const BackToHomepageText = styled.p`
-  margin-top: -20px;
-  margin-bottom: 30px;
-  text-align: right;
-`
-
 const BlogTitle = styled.h1`
   margin-bottom: 10px;
   color: #333;
@@ -55,9 +49,6 @@ const BlogList = ({ location, data }) => {
     <Layout>
       <Seo title={currentPage !== '1' ? `Journal: Page ${currentPage}` : 'Journal'} description='I write sometimes about software, design, life and travels.' />
       <div>
-        <BlogLink to='/'>
-          <BackToHomepageText>{'← back to homepage'}</BackToHomepageText>
-        </BlogLink>
         <BlogTitle>the journal</BlogTitle>
         <PostCount>page {currentPage}</PostCount>
         {

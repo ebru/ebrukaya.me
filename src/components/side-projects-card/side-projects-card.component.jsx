@@ -16,18 +16,22 @@ const SideProjectsCard = () => {
 	return (
 		<>
 			<SubTitle>Present</SubTitle>
-				<ItemList>
-					<Item>
-						<CustomEmoji label='investment' emoji='🪙' /> Building <CustomLink targetUrl='https://infie.app'>Infie</CustomLink>,
-						a mobile app for tracking all kinds of investments in one place. <Date>(2022)</Date>
-					</Item>
-					<Item>
-						<CustomEmoji label='bird' emoji='🐦' /> Co-Building <CustomLink targetUrl='https://assistivecards.com/wingo'>Wingo</CustomLink>,
-						a daily planner for kids. <Date>(2022)</Date>
-					</Item>
-				</ItemList>
+			<ItemList>
+				<Item>
+					<CustomEmoji label='bird' emoji='🦊' /> Building <CustomLink targetUrl='https://gogiftem.com'>Go Gift'em</CustomLink>,
+					a website that lets you explore curated gift ideas. <Date>(2022)</Date>
+				</Item>
+				<Item>
+					<CustomEmoji label='investment' emoji='🪙' /> Building <CustomLink targetUrl='https://infie.app'>Infie</CustomLink>,
+					a mobile app for tracking all kinds of investments in one place. <Date>(2022)</Date>
+				</Item>
+			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
+				<Item>
+					<CustomEmoji label='bird' emoji='🐦' /> Co-Built <CustomLink targetUrl='https://assistivecards.com/wingo'>Wingo</CustomLink>,
+					a daily planner for kids. <Date>(2022)</Date>
+				</Item>
 				<Item>
 					<CustomEmoji label='stocks' emoji='💹' /> Built <CustomLink targetUrl='https://temettu.app'>Temettü</CustomLink>,
 					a mobile app that helps you to follow the dividend calendar and track the dividend payments of your stock investments. <Date>(2020)</Date>

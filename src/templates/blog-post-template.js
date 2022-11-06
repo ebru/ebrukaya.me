@@ -8,12 +8,6 @@ const BlogLink = styled(Link)`
   text-decoration: none;
 `
 
-const BackToBlogText = styled.p`
-	margin-top: -20px;
-	margin-bottom: 30px;
-	text-align: right;
-`
-
 const PostTitle = styled.h1`
   margin-bottom: 5px;
   color: #333;
@@ -32,9 +26,6 @@ const BlogPost = ({ data }) => {
 		<Layout>
 			<Seo title={post.frontmatter.title} />
 			<div>
-				<BlogLink to='/'>
-					<BackToBlogText>{'← back to homepage'}</BackToBlogText>
-				</BlogLink>
 				<PostTitle>{post.frontmatter.title}</PostTitle>
 				<PostDate>{post.frontmatter.date}, by <BlogLink to='/'>ebru</BlogLink></PostDate>
 				<div dangerouslySetInnerHTML={{ __html: post.html }} />

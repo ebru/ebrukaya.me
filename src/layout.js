@@ -4,13 +4,17 @@ import { Link } from 'gatsby'
 import Footer from './components/footer/footer.component'
 
 import './layout.css'
+import Header from './components/header'
 
 const Layout = ({
-    children,
-    panelLink = true,
-    footer = true,
-    maxWidth = 770,
-  }) => {
+  children,
+  panelLink = true,
+  header = true,
+  footer = true,
+  showLogo,
+  maxWidth = 770,
+  pageKey,
+}) => {
   return (
     <>
       <div
@@ -21,18 +25,19 @@ const Layout = ({
           paddingTop: 0,
         }}
       >
+        {header && <Header showLogo={showLogo} pageKey={pageKey} />}
         <main>{children}</main>
         {footer && <Footer />}
       </div>
       {process.env.NODE_ENV === 'development' && (
         <div
-         style={{
-          position: 'fixed',
-          bottom: 0,
-          right: 0,
-          marginRight: 30,
-          marginBottom: 20,
-         }}
+          style={{
+            position: 'fixed',
+            bottom: 0,
+            right: 0,
+            marginRight: 30,
+            marginBottom: 20,
+          }}
         >
           <Link to={panelLink ? '/panel' : '/'}>{panelLink ? 'panel' : 'home'}</Link>
         </div>

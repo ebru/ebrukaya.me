@@ -2,7 +2,7 @@
   "name": "ebrukaya.me",
   "private": true,
   "description": "A personal space to share thoughts, ideas, experiences about software development, indie making, design concepts, travels and enjoying life along the way.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "@ebru",
   "dependencies": {
     "@emotion/react": "11.10.4",

@@ -43,6 +43,7 @@ const Panel = () => {
     <Layout
       panelLink={false}
       footer={false}
+      header={false}
       maxWidth={1000}
     >
       <Seo title={'Panel'} description='A very simple content management system.' />
