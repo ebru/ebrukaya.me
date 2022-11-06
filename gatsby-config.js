@@ -52,7 +52,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-        "G-78CL8N7RQ5",
+          "G-78CL8N7RQ5",
         ],
         pluginConfig: {
           head: true
@@ -64,8 +64,9 @@ module.exports = {
       options: {
         host: 'https://ebrukaya.me',
         sitemap: 'https://ebrukaya.me/sitemap/sitemap-index.xml',
-        policy: [{userAgent: '*', allow: '/'}]
+        policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    `gatsby-plugin-offline`
   ],
 }
