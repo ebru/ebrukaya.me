@@ -5,6 +5,7 @@ import Seo from '../components/seo'
 import SnippetCard from '../components/snippet-card/snippet-card.component'
 import BlogCard from '../components/blog-card/blog-card.component'
 import Pagination from '../components/pagination'
+import { pages } from '../consts'
 
 const Home = ({ data }) => {
   const currentPage = '1';
@@ -13,7 +14,7 @@ const Home = ({ data }) => {
   const numPages = Math.ceil(totalCount / postsPerPage);
 
   return (
-    <Layout showLogo={false}>
+    <Layout showLogo={false} pageKey={pages.home}>
       <Seo />
       <div>
         <SnippetCard />
