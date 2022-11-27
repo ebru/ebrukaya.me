@@ -23,7 +23,11 @@ const SideProjectsCard = () => {
 				</Item>
 				<Item>
 					<CustomEmoji label='investment' emoji='🪙' /> Building <CustomLink targetUrl='https://infie.app'>Infie</CustomLink>,
-					a mobile app for tracking all kinds of investments in one place. <Date>(2022)</Date>
+					a mobile app for tracking all kinds of investments in one place. <Date>(2023)</Date>
+				</Item>
+				<Item>
+					<CustomEmoji label='stocks' emoji='💹' /> Co-Building <CustomLink targetUrl='https://temettu.app'>Temettü 2.0</CustomLink>,
+					a new version is on the way that will make the following dividends experience better. <Date>(2023)</Date>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
