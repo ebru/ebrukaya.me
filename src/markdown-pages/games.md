@@ -22,6 +22,7 @@ Here are some video and board games that I enjoyed playing a lot, and I will be 
 
 |   |  |   |  |
 |-------|--------------|------------|-----------|
+| **<a href='https://www.metacritic.com/game/pc/disco-elysium-the-final-cut' target='_blank'>Disco Elysium: The Final Cut</a>** | 2019 | 97% | `Switch` |
 | **<a href='https://www.metacritic.com/game/pc/backbone' target='_blank'>Backbone</a>** | 2019 | 72% | `Xbox` |
 | **<a href='https://www.metacritic.com/game/playstation-4/red-dead-redemption-2' target='_blank'>Red Dead Redemption 2</a>** | 2018 | 97% | `PS4` |
 
@@ -37,16 +38,20 @@ Here are some video and board games that I enjoyed playing a lot, and I will be 
 | **<a href='https://www.metacritic.com/game/playstation-4/the-last-of-us-remastered' target='_blank'>The Last of Us</a>** | 2013 | 95% | `PS4` |
 | **<a href='https://www.metacritic.com/game/switch/limbo' target='_blank'>Limbo</a>** | 2010 | 83% | `PS4` |
 
+<br>
+
 ## board games 🀄️
 
 | Game |  Release Year | BGG Rating | Players | |
 |-------|-------|-------------| ---- | --- |
-| **<a href='https://boardgamegeek.com/boardgame/331267/die-firmenfeier-das-letzte-fest-des-oliver-borgman' target='_blank'>The Corporate Anniversary</a>** <br> Oliver Borgmann’s Last Celebration | 2021 | 8.4 | 1-6 | `playable once` |
+| **<a href='https://boardgamegeek.com/boardgame/331267/die-firmenfeier-das-letzte-fest-des-oliver-borgman' target='_blank'>The Corporate Anniversary</a>** <br> Oliver Borgmann’s Last Celebration | 2021 | 8.5 | 1-6 | `playable once` |
 | **<a href='https://boardgamegeek.com/boardgame/231327/grizzled-armistice-edition' target='_blank'>The Grizzled</a>** <br> Armistice Edition | 2018 | 7.8 | 1-4 | |
 | **<a href='https://boardgamegeek.com/boardgame/215842/exit-game-polar-station' target='_blank'>EXIT: The Game Series</a>** <br>  The Polar Station, The Catacombs of Horror | 2016 | 6.9 | 1-4 | `playable once` |
 | **<a href='https://boardgamegeek.com/boardgame/39856/dixit' target='_blank'>Dixit</a>** | 2008 | 7.2 | 3-6 | |
 | **<a href='https://boardgamegeek.com/boardgame/822/carcassonne' target='_blank'>Carcassonne</a>** | 2000 | 7.4 | 2-5 | |
 | **<a href='https://boardgamegeek.com/boardgame/13/catan' target='_blank'>Catan</a>** | 1995 | 7.1 | 3-4 | |
+| **<a href='https://boardgamegeek.com/boardgame/483/diplomacy' target='_blank'>Diplomacy</a>** | 1959 | 7.0 | 2-7 | |
+| **<a href='https://boardgamegeek.com/boardgame/1406/monopoly' target='_blank'>Monopoly</a>** | 1935 | 4.4 | 2-8 | |
 
 <div style='text-align: right'>// Ordered by release date descending.</div>
 
