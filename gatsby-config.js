@@ -30,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Ebru Kaya – Software, design, life and travels`,
+        short_name: `Ebru Kaya`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -67,6 +67,6 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
-    `gatsby-plugin-remove-serviceworker`,
+    `gatsby-plugin-offline`,
   ],
 }
