@@ -18,10 +18,6 @@ const SideProjectsCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='bird' emoji='🦊' /> Building <CustomLink targetUrl='https://gogiftem.com'>Go Gift'em</CustomLink>,
-					explore curated gift ideas. <Date>(2022)</Date>
-				</Item>
-				<Item>
 					<CustomEmoji label='investment' emoji='🪙' /> Building <CustomLink targetUrl='https://infie.app'>Infie</CustomLink>,
 					a mobile app for tracking all kinds of investments in one place. <Date>(2023)</Date>
 				</Item>
@@ -32,6 +28,10 @@ const SideProjectsCard = () => {
 			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
+				<Item>
+					<CustomEmoji label='bird' emoji='🦊' /> Built <CustomLink targetUrl='https://gogiftem.com'>Go Gift'em</CustomLink>,
+					explore hand-picked curated gift ideas for many interests. <Date>(2022)</Date>
+				</Item>
 				<Item>
 					<CustomEmoji label='bird' emoji='🐦' /> Co-Built <CustomLink targetUrl='https://assistivecards.com/wingo'>Wingo</CustomLink>,
 					a daily planner for kids. <Date>(2022)</Date>
