@@ -46,8 +46,10 @@ Here are some video and board games that I enjoyed playing a lot, and I will be 
 |-------|-------|-------------| ---- | --- |
 | **<a href='https://boardgamegeek.com/boardgame/331267/die-firmenfeier-das-letzte-fest-des-oliver-borgman' target='_blank'>The Corporate Anniversary</a>** <br> Oliver Borgmann’s Last Celebration | 2021 | 8.5 | 1-6 | `playable once` |
 | **<a href='https://boardgamegeek.com/boardgame/231327/grizzled-armistice-edition' target='_blank'>The Grizzled</a>** <br> Armistice Edition | 2018 | 7.8 | 1-4 | |
+| **<a href='https://boardgamegeek.com/boardgame/188834/secret-hitler' target='_blank'>Secret Hitler</a>** | 2016 | 7.5 | 5-10 | |
 | **<a href='https://boardgamegeek.com/boardgame/215842/exit-game-polar-station' target='_blank'>EXIT: The Game Series</a>** <br>  The Polar Station, The Catacombs of Horror | 2016 | 6.9 | 1-4 | `playable once` |
-| **<a href='https://boardgamegeek.com/boardgame/39856/dixit' target='_blank'>Dixit</a>** | 2008 | 7.2 | 3-6 | |
+| **<a href='https://boardgamegeek.com/boardgame/39856/dixit' target='_blank'>Dixit</a>** <br> Dixit: Odyssey | 2008 | 7.2 | 3-6 | |
+| **<a href='https://boardgamegeek.com/boardgame/1927/munchkin' target='_blank'>Munchkin</a>** | 2001 | 5.9 | 3-6 | |
 | **<a href='https://boardgamegeek.com/boardgame/822/carcassonne' target='_blank'>Carcassonne</a>** | 2000 | 7.4 | 2-5 | |
 | **<a href='https://boardgamegeek.com/boardgame/13/catan' target='_blank'>Catan</a>** | 1995 | 7.1 | 3-4 | |
 | **<a href='https://boardgamegeek.com/boardgame/483/diplomacy' target='_blank'>Diplomacy</a>** | 1959 | 7.0 | 2-7 | |
