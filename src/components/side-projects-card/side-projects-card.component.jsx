@@ -22,12 +22,8 @@ const SideProjectsCard = () => {
 					a mobile app for tracking all kinds of investments in one place. <Date>(2023)</Date>
 				</Item>
 				<Item>
-					<CustomEmoji label='printable' emoji='🏞️' /> Co-Building <CustomLink targetUrl='https://makeprintable.ai'>Make Printable</CustomLink>,
-					a web app powered by AI for creating high-resolution printable assets. <Date>(2023)</Date>
-				</Item>
-				<Item>
 					<CustomEmoji label='love' emoji='💟' /> Building <CustomLink targetUrl='https://dateideas.ai'>Date Ideas</CustomLink>,
-					a web app powered by AI for generating customized date ideas. <Date>(2023)</Date>
+					a web app powered by AI for generating customized date ideas for any occasion. <Date>(2023)</Date>
 				</Item>
 				<Item>
 					<CustomEmoji label='peanut' emoji='🥜' /> Co-Building <CustomLink targetUrl='https://runwildpeanut.com'>Run Wild Peanut</CustomLink>,
@@ -40,6 +36,10 @@ const SideProjectsCard = () => {
 			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
+				<Item>
+					<CustomEmoji label='printable' emoji='🏞️' /> Co-Built <CustomLink targetUrl='https://makeprintable.ai'>Make Printable</CustomLink>,
+					a web app powered by AI for creating high-resolution printable assets. <Date>(2023)</Date>
+				</Item>
 				<Item>
 					<CustomEmoji label='bird' emoji='🦊' /> Built <CustomLink targetUrl='https://gogiftem.com'>Go Gift'em</CustomLink>,
 					a web app to explore curated gift ideas for many interests. <Date>(2022)</Date>
