@@ -37,7 +37,7 @@ const SideProjectsCard = () => {
 			<SubTitle>Past</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='printable' emoji='🏞️' /> Co-Built <CustomLink targetUrl='https://makeprintable.ai'>Make Printable</CustomLink>,
+					<CustomEmoji label='printable' emoji='🖼️' /> Co-Built <CustomLink targetUrl='https://makeprintable.ai'>Make Printable</CustomLink>,
 					a web app powered by AI for creating high-resolution printable assets. <Date>(2023)</Date>
 				</Item>
 				<Item>
