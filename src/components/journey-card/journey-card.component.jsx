@@ -19,10 +19,6 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<span className={classes.presentText}>Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink>. <Date>(Nov 2021 – )</Date></span>
-				</Item>
-
-				<Item>
 					<div className={classes.flexSecondItem}>
 						<div>
 							<span className={classes.presentText}>Running a design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since June of 2020.</span>
@@ -51,6 +47,9 @@ const JourneyCard = () => {
 			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
+				<Item>
+					<CustomEmoji label='health' emoji='🥦' /> Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink>. <Date>(Nov 2021 – Apr 2023)</Date>
+				</Item>
 				<Item>
 					<CustomEmoji label='motobike' emoji='🛵' /> Frontend Engineer at <CustomLink targetUrl='https://getir.com/en/'>Getir</CustomLink>. <Date>(Dec 2019 – Jun 2020)</Date>
 				</Item>
