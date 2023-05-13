@@ -37,7 +37,11 @@ const SideProjectsCard = () => {
 			<SubTitle>Past</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='printable' emoji='🖼️' /> Co-Built <CustomLink targetUrl='https://makeprintable.ai'>Make Printable</CustomLink>,
+					<CustomEmoji label='mockup' emoji='🏗️' /> Co-Built <CustomLink targetUrl='https://mockupgenerator.co'>Mockup Generator</CustomLink>,
+					an online tool that helps you to create free mockups in seconds and saves a lot of time for bulk mockup generations. <Date>(2023)</Date>
+				</Item>
+				<Item>
+					<CustomEmoji label='printable' emoji='🖼️' /> Co-Built <CustomLink targetUrl='https://makeprintable.ai'>MakePrintable.AI</CustomLink>,
 					a web app powered by AI for creating high-resolution printable assets. <Date>(2023)</Date>
 				</Item>
 				<Item>
