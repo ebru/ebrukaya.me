@@ -13,7 +13,7 @@ import CustomIcon from './../custom-icon/custom-icon.component'
 import CustomLink from './../custom-link/custom-link.component'
 import SpotifyLogo from './../../images/social/spotify.png'
 import GoodreadsLogo from './../../images/social/goodreads.png'
-
+import SevenWonders from '../seven-wonders';
 
 const BlogLink = styled(Link)`
 	text-decoration: underline;
@@ -91,6 +91,9 @@ const PersonalCard = () => {
 				<Item><BoldText>Movies:</BoldText> <BlogLink to='/movies'>the ones</BlogLink> that made me feel somehow different than others</Item>
 				<Item><BoldText>Games:</BoldText> I especially love story-driven games a lot! here are <BlogLink to='/games'>some</BlogLink> that I enjoyed playing so far</Item>
 			</PersonalList>
+
+			<SevenWonders />
+
 			<div style={{ marginTop: 20 }}>
 				<BoldText>Countries visited:</BoldText>
 				<ReGeoMapChart
@@ -101,6 +104,7 @@ const PersonalCard = () => {
 					tooltipBackgroundColor="#F2F2F2"
 				/>
 			</div>
+
 		</>
 	)
 }
