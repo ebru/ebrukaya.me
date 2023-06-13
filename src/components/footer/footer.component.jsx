@@ -16,7 +16,7 @@ const Footer = () => {
         }}>
             <FooterLeftDiv>
                 Currently in
-                <br /><CustomEmoji label='pin' emoji='🇵🇪' /> Cusco, Peru
+                <br /><CustomEmoji label='pin' emoji='🇧🇷' /> Rio de Janeiro, Brazil
             </FooterLeftDiv>
             <FooterDiv>
                 © {new Date().getFullYear() + " "}
