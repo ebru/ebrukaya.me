@@ -16,7 +16,7 @@ import Petra from './../images/seven-wonders/petra.png';
 const wonders = [
   { src: Colosseum, title: "Colosseum", country: '🇮🇹', visited: 2018 },
   { src: MachuPicchu, title: "Machu Picchu", country: '🇵🇪', visited: 2023 },
-  { src: Christ, title: "Christ the Redeemer", country: '🇧🇷', visited: null },
+  { src: Christ, title: "Christ the Redeemer", country: '🇧🇷', visited: 2023 },
   { src: TajMahal, title: "Taj Mahal", country: '🇮🇳', visited: null },
   { src: ChichenItza, title: "Chichen Itza", country: '🇲🇽', visited: null },
   { src: Petra, title: "Petra", country: '🇯🇴', visited: null },
