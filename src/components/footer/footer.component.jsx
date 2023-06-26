@@ -16,7 +16,7 @@ const Footer = () => {
         }}>
             <FooterLeftDiv>
                 Currently in
-                <br /><CustomEmoji label='pin' emoji='🇮🇹' /> Dolomites, Italy
+                <br /><CustomEmoji label='pin' emoji='🇩🇪' /> Berlin, Germany
             </FooterLeftDiv>
             <FooterDiv>
                 © {new Date().getFullYear() + " "}
