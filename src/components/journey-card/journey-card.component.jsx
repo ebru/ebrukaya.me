@@ -19,6 +19,10 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
+					Senior Frontend Engineer at <CustomLink targetUrl='https://roompricegenie.com/'>RoomPriceGenie</CustomLink> <CustomEmoji label='genie' emoji='🧞' /> <Date>(Aug 2023 – )</Date>
+				</Item>
+
+				<Item>
 					<div className={classes.flexSecondItem}>
 						<div>
 							<span className={classes.presentText}>Running a design and software studio called <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> since June of 2020.</span>
