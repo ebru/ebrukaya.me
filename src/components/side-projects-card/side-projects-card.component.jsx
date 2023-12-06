@@ -25,6 +25,10 @@ const SideProjectsCard = () => {
 			<SubTitle>Past</SubTitle>
 			<ItemList>
 				<Item>
+					<CustomEmoji label='language' emoji='🌐' /> Built <CustomLink targetUrl='https://langlearngames.com'>Language Learning Games</CustomLink>,
+					text-based educational games by AI for learning languages. <Date>(2023)</Date>
+				</Item>
+				<Item>
 					<CustomEmoji label='printable' emoji='🖼️' /> Co-Built <CustomLink targetUrl='https://makeprintable.ai'>MakePrintable.AI</CustomLink>,
 					a web app powered by AI for creating high-resolution printable assets. <Date>(2023)</Date>
 				</Item>
