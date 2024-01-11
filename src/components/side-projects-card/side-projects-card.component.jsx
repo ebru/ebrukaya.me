@@ -26,7 +26,7 @@ const SideProjectsCard = () => {
 			<ItemList>
 				<Item>
 					<CustomEmoji label='language' emoji='🌐' /> Built <CustomLink targetUrl='https://langlearngames.com'>Lang Learn Games</CustomLink>,
-					text-based educational games by AI for learning languages. <Date>(2023)</Date>
+					a dictionary for educational games for learning languages through gamified journeys. <Date>(2023)</Date>
 				</Item>
 				<Item>
 					<CustomEmoji label='printable' emoji='🖼️' /> Co-Built <CustomLink targetUrl='https://makeprintable.ai'>MakePrintable.AI</CustomLink>,
