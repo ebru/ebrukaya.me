@@ -38,12 +38,6 @@ const JourneyCard = () => {
 				</Item>
 
 				<Item>
-					<div className={classes.item}>
-						<span className={classes.presentText}>Joined as Co-Founder at <CustomLink targetUrl='https://assistivecards.com'>Assistive Cards</CustomLink>. Helping the growth of the mission for kids' special education. <Date>(Oct 2022 – )</Date></span>
-					</div>
-				</Item>
-
-				<Item>
 					<div>
 						<span className={classes.presentText}>Investing in stocks and startups.</span>
 					</div>
@@ -51,6 +45,9 @@ const JourneyCard = () => {
 			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
+				<Item>
+					<CustomEmoji label='health' emoji='🐥' /> Co-Founder at <CustomLink targetUrl='https://assistivecards.com'>Assistive Cards</CustomLink>. <Date>(Oct 2022 – Jan 2024)</Date>
+				</Item>
 				<Item>
 					<CustomEmoji label='health' emoji='🥦' /> Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink>. <Date>(Nov 2021 – Apr 2023)</Date>
 				</Item>
