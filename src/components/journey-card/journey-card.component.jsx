@@ -38,7 +38,7 @@ const JourneyCard = () => {
 				</Item>
 
 				<Item>
-					<div>
+					<div className={classes.item}>
 						<span className={classes.presentText}>Investing in stocks and startups.</span>
 					</div>
 				</Item>
