@@ -27,7 +27,6 @@ const SnippetCard = () => {
 				<Snippet>
 					Sr. Frontend Engineer at <CustomLink targetUrl='https://roompricegenie.com/'>RoomPriceGenie</CustomLink> <CustomEmoji label='genie' emoji='🧞' /> <br />
 					Founder at <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> <CustomEmoji label='leaf' emoji='🍃' /> <br />
-					Co-Founder at <CustomLink targetUrl='https://assistivecards.com'>Assistive Cards</CustomLink> <CustomEmoji label='card' emoji='🐥' /> <br />
 				</Snippet>
 				<Description>
 					I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life.
