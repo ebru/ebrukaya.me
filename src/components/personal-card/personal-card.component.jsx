@@ -51,6 +51,7 @@ const countriesVisited = [
 	['es', 2023], // 27
 	['pe', 2023], // 28
 	['br', 2023], // 29
+	['us', 2024], // 30
 ];
 
 const PersonalCard = () => {
