@@ -11,6 +11,7 @@ I have made it so far, even better than I guessed at that time. Nobody would ima
 
 | Movie |  Year | IMDB Rating |   |
 |-------|-------|-------------|---|
+| **<a href='https://www.imdb.com/title/tt12758060/' target='_blank'>Tetris/a>** | 2023 | 7.4 |  |
 | **<a href='https://www.imdb.com/title/tt6710474/' target='_blank'>Everything Everywhere All at Once</a>** | 2022 | 8.2 |  |
 | **<a href='https://www.imdb.com/title/tt10366460/' target='_blank'>CODA</a>** | 2021 | 8.0 |  |
 | **<a href='https://www.imdb.com/title/tt14544192/' target='_blank'>Bo Burnham: Inside</a>** | 2021 | 8.6 | `Stand-up comedy`  |
