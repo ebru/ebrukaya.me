@@ -25,18 +25,6 @@ const SideProjectsCard = () => {
 			<SubTitle>Past</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='language' emoji='🌐' /> Built <CustomLink targetUrl='https://langlearngames.com'>Lang Learn Games</CustomLink>,
-					a dictionary for educational games for learning languages through gamified journeys. <Date>(2023)</Date>
-				</Item>
-				<Item>
-					<CustomEmoji label='printable' emoji='🖼️' /> Co-Built <CustomLink targetUrl='https://makeprintable.ai'>MakePrintable.AI</CustomLink>,
-					a web app powered by AI for creating high-resolution printable assets. <Date>(2023)</Date>
-				</Item>
-				<Item>
-					<CustomEmoji label='bird' emoji='🦊' /> Built <CustomLink targetUrl='https://gogiftem.com'>Go Gift'em</CustomLink>,
-					a web app to explore curated gift ideas for many interests. <Date>(2022)</Date>
-				</Item>
-				<Item>
 					<CustomEmoji label='bird' emoji='🐦' /> Co-Built <CustomLink targetUrl='https://assistivecards.com/wingo'>Wingo</CustomLink>,
 					a daily planner mobile app for kids. <Date>(2022)</Date>
 				</Item>
