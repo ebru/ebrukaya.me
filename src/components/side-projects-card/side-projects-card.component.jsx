@@ -18,12 +18,12 @@ const SideProjectsCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='mockup' emoji='🏗️' /> Co-Building <CustomLink targetUrl='https://mockupgenerator.co'>Mockup Generator</CustomLink>,
-					an online tool that helps you to create product mockups in seconds and saves a lot of time for bulk mockup generations. <Date>(2023)</Date>
-				</Item>
-				<Item>
 					<CustomEmoji label='temettu2' emoji='💹' /> Co-Building <CustomLink targetUrl='https://temettu.app'>Temettü 2.0</CustomLink>,
 					an improved version of the mobile app that helps you to follow dividend investments. <Date>(2024)</Date>
+				</Item>
+				<Item>
+					<CustomEmoji label='mockup' emoji='🏗️' /> Co-Building <CustomLink targetUrl='https://mockupgenerator.co'>Mockup Generator</CustomLink>,
+					an online tool that helps you to create product mockups in seconds and saves a lot of time for bulk mockup generations. <Date>(2023)</Date>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
