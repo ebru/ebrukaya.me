@@ -23,7 +23,7 @@ const SideProjectsCard = () => {
 				</Item>
 				<Item>
 					<CustomEmoji label='mockup' emoji='🏗️' /> Co-Building <CustomLink targetUrl='https://mockupgenerator.co'>Mockup Generator</CustomLink>,
-					an online tool that helps you to create product mockups in seconds and saves a lot of time for bulk mockup generations. <Date>(2023)</Date>
+					an online tool that helps you to create product mockups in seconds and saves a lot of time with bulk mockup generations. <Date>(2023)</Date>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
