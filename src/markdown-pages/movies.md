@@ -29,6 +29,7 @@ That it's okay to get lost, as long as you find your way back."</span>
 | **<a href='https://www.imdb.com/title/tt8613070/' target='_blank'>Portrait of a Lady on Fire</a>** | 2019 | 8.2 | |
 | **<a href='https://www.imdb.com/title/tt4364194/' target='_blank'>The Peanut Butter Falcon</a>** | 2019 | 7.6 | |
 | **<a href='https://www.imdb.com/title/tt4925292/' target='_blank'>Lady Bird</a>** | 2017 | 7.4 | |
+| **<a href='https://www.imdb.com/title/tt4698684/' target='_blank'>Hunt for the Wilderpeople</a>** | 2016 | 7.8 |  |
 | **<a href='https://www.imdb.com/title/tt2543164/' target='_blank'>Arrival</a>** | 2016 | 7.9 | |
 | **<a href='https://www.imdb.com/title/tt3553976/' target='_blank'>Captain Fantastic</a>** | 2016 | 7.9 | |
 | **<a href='https://www.imdb.com/title/tt4911940/' target='_blank'>Goodbye Berlin</a>** | 2016 | 7.0 | |
