@@ -37,6 +37,10 @@ const SideProjectsCard = () => {
 					a mobile app that helps you to follow the dividend calendar and track the dividend payments of your stock investments. <Date>(2020)</Date>
 				</Item>
 				<Item>
+					<CustomEmoji label='noe' emoji='🟣' /> Founded <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink>,
+					a handcrafted design and software studio that focuses on bringing product ideas to life. <Date>(2020)</Date>
+				</Item>
+				<Item>
 					<div className={classes.flexSecondItem}>
 						<div>
 							<span className={classes.presentEmoji}><CustomEmoji label='explore' emoji='🤿' /></span> Built <CustomLink targetUrl='https://ebrukye.medium.com/a-journey-of-making-a-little-side-project-d18088271876'>Bucketmap</CustomLink>, a project to map some bucket list ideas to discover around the world. Here is <a style={{ textDecoration: 'underline' }} href='https://medium.com/@ebrukye/a-journey-of-making-a-little-side-project-d18088271876' target='_blank' rel='noopener noreferrer'>the story</a>. <Date>(2020)</Date>
