@@ -52,6 +52,12 @@ const JourneyCard = () => {
 					<CustomEmoji label='health' emoji='🥦' /> Senior Frontend Engineer at <CustomLink targetUrl='https://cara.care'>Cara Care</CustomLink>. <Date>(Nov 2021 – Apr 2023)</Date>
 				</Item>
 				<Item>
+					<CustomEmoji label='germany' emoji='🇩🇪' /> Moved to <CustomLink targetUrl='https://ebrukye.medium.com/moving-to-germany-45b6a401a884'>Germany</CustomLink>. <Date>(Jan 2022)</Date>
+				</Item>
+				<Item>
+					<CustomEmoji label='noe' emoji='👩🏻‍💻' /> Took a gap year to focus on personal projects and founded <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink>. <Date>(June 2020)</Date>
+				</Item>
+				<Item>
 					<CustomEmoji label='motobike' emoji='🛵' /> Frontend Engineer at <CustomLink targetUrl='https://getir.com/en/'>Getir</CustomLink>. <Date>(Dec 2019 – Jun 2020)</Date>
 				</Item>
 				<Item>
