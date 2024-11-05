@@ -36,7 +36,7 @@ That it's okay to get lost, as long as you find your way back."</span>
 | **<a href='https://www.imdb.com/title/tt4276820/' target='_blank'>The Founder</a>** | 2016 | 7.2 | |
 | **<a href='https://www.imdb.com/title/tt2948356/' target='_blank'>Zootopia</a>** | 2016 | 8.0 | `Animation` |
 | **<a href='https://www.imdb.com/title/tt3470600/' target='_blank'>Sing Series</a>** | 2016 | 7.1 | `Animation` |
-| **<a href='https://www.imdb.com/title/tt2096673/' target='_blank'>Inside Out</a>** | 2015 | 8.2 | `Animation` |
+| **<a href='https://www.imdb.com/title/tt2096673/' target='_blank'>Inside Out Series</a>** | 2015 | 8.2 | `Animation` |
 | **<a href='https://www.imdb.com/title/tt1798684/' target='_blank'>Southpaw</a>** | 2015 | 7.4 | |
 
 — <a href='https://www.youtube.com/watch?v=amwNrMFseAc' style='font-style: italic' target='_blank'>wiseman by frank ocean</a>
