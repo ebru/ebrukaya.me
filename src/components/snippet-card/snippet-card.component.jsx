@@ -45,7 +45,7 @@ const SnippetCard = () => {
 						targetUrl='https://www.medium.com/@ebrukye'
 						imageSource={MediumLogo}
 						altDescription='medium' />
-					<a href="https://x.com/ebrukye" target="_blank">
+					<a href="https://x.com/ebrukye" target="_blank" rel="noreferrer">
 						<BsTwitterX style={{ fontSize: 24, marginTop: 2.5, color: '#000' }} />
 					</a>
 				</SocialIcons>
