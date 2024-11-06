@@ -4,6 +4,9 @@
   "description": "A personal space to share thoughts, ideas, experiences about software development, indie making, design concepts, travels and enjoying life along the way.",
   "version": "1.0.1",
   "author": "@ebru",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
