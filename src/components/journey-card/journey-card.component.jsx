@@ -67,7 +67,7 @@ const JourneyCard = () => {
 					Senior Software Engineer <Date>(Oct 2019 – Nov 2019)</Date>, Software Engineer <Date>(Nov 2017 – Oct 2019)</Date>
 				</Item>
 				<Item>
-					<CustomEmoji label='train' emoji='🚞' /> Took a gap year after graduation before starting my professional career.
+					<CustomEmoji label='train' emoji='🚞' /> Took a <a style={{ textDecoration: 'underline' }} href='https://youtu.be/CJAKg-wK5Aw?si=VKvmC-U0xsHePJ6R' target='_blank' rel='noopener noreferrer'>gap year</a> after graduation before starting my professional career.
 				</Item>
 				<Item>
 					<CustomEmoji label='graduation' emoji='🎓' /> Graduated from <BoldText>Istanbul University</BoldText> with a degree in Computer Engineering. <Date>(2016)</Date>
