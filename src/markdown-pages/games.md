@@ -15,6 +15,7 @@ Here are some video and board games that I enjoyed playing a lot, and I will be 
 
 | Game  | Release Year | Meta Score  | Played On |
 |-------|--------------|------------|-----------|
+| **<a href='https://www.metacritic.com/game/it-takes-two/' target='_blank'>It Takes Two</a>** | 2021 | 88% | `Xbox` |
 | **<a href='https://www.metacritic.com/game/xbox-series-x/road-96' target='_blank'>Road 96</a>** | 2021 | 78% | `Xbox` |
 | **<a href='https://www.metacritic.com/game/playstation-4/the-last-of-us-part-ii' target='_blank'>The Last of Us Part II</a>** | 2020 | 93% | `PS4` |
 
