@@ -23,7 +23,7 @@ const SideProjectsCard = () => {
 				</Item>
 				<Item>
 					<CustomEmoji label='stampie' emoji='🧳' /> Building <CustomLink targetUrl='https://stampie.app'>Stampie</CustomLink>,
-					a simple travel journal and tracker app for your experiences, passport stamps reimagined. <Date>(2025)</Date>
+					a travel journal app that reimagines passport stamps as collectible experiences. <Date>(2025)</Date>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
