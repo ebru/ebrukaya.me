@@ -18,23 +18,27 @@ const SideProjectsCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='temettu2' emoji='📊' /> Co-Building <CustomLink targetUrl='https://temettu.app'>Temettü 2.0</CustomLink>,
-					an improved version for both mobile and web of the previous mobile app that helps you to follow dividend investments. <Date>(2024)</Date>
+					<CustomEmoji label='langnotes' emoji='🌐' /> Co-Building <CustomLink targetUrl='https://langnotes.app'>Langnotes</CustomLink>,
+					a language learning app to turn any stories, books, magazines into personalized AI flashcards and notes. <Date>(2026)</Date>
 				</Item>
 				<Item>
-					<CustomEmoji label='mockup' emoji='🏗️' /> Co-Building <CustomLink targetUrl='https://mockupgenerator.co'>Mockup Generator</CustomLink>,
-					an online tool that helps you to create product mockups in seconds and saves a lot of time with bulk mockup generations. <Date>(2023)</Date>
+					<CustomEmoji label='stampie' emoji='🧳' /> Building <CustomLink targetUrl='https://stampie.app'>Stampie</CustomLink>,
+					a simple travel journal and tracker app for your experiences, passport stamps reimagined. <Date>(2025)</Date>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='stampie' emoji='🛂' /> Built <CustomLink targetUrl='https://stampie.app'>Stampie</CustomLink>,
-					a simple travel journal and tracker app for your experiences, passport stamps reimagined. <Date>(2025)</Date>
-				</Item>
-				<Item>
 					<CustomEmoji label='infie' emoji='🪙' /> Built <CustomLink targetUrl='https://infie.app'>Infie</CustomLink>,
 					a simple and easy-to-use app to track your wealth. <Date>(2025)</Date>
+				</Item>
+				<Item>
+					<CustomEmoji label='temettu2' emoji='📊' /> Co-Built <CustomLink targetUrl='https://temettu.app'>Temettü 2.0</CustomLink>,
+					an improved version for both mobile and web of the previous mobile app that helps you to follow dividend investments. <Date>(2024)</Date>
+				</Item>
+				<Item>
+					<CustomEmoji label='mockup' emoji='🏗️' /> Co-Built <CustomLink targetUrl='https://mockupgenerator.co'>Mockup Generator</CustomLink>,
+					an online tool that helps you to create product mockups in seconds and saves a lot of time with bulk mockup generations. <Date>(2023)</Date>
 				</Item>
 				<Item>
 					<CustomEmoji label='bird' emoji='🐦' /> Co-Built <CustomLink targetUrl='https://assistivecards.com/wingo'>Wingo</CustomLink>,
