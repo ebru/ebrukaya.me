@@ -18,12 +18,12 @@ const SideProjectsCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='langnotes' emoji='🌐' /> Co-Building <CustomLink targetUrl='https://langnotes.app'>Langnotes</CustomLink>,
-					a language learning app to turn any stories, books, magazines into personalized AI flashcards and notes. <Date>(2026)</Date>
-				</Item>
-				<Item>
 					<CustomEmoji label='stampie' emoji='🧳' /> Building <CustomLink targetUrl='https://stampie.app'>Stampie</CustomLink>,
 					a travel journal app that reimagines passport stamps as collectible experiences. <Date>(2025)</Date>
+				</Item>
+				<Item>
+					<CustomEmoji label='langnotes' emoji='🌐' /> Co-Building <CustomLink targetUrl='https://langnotes.app'>Langnotes</CustomLink>,
+					a language learning app to turn any stories, books, magazines into personalized AI flashcards and notes. <Date>(2026)</Date>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
