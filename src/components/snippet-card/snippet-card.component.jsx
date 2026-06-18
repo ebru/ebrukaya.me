@@ -25,7 +25,7 @@ const SnippetCard = () => {
 			<div>
 				<Title>Hi, I'm Ebru.</Title>
 				<Snippet>
-					Sr. Frontend Engineer at <CustomLink targetUrl='https://roompricegenie.com/'>RoomPriceGenie</CustomLink> <CustomEmoji label='genie' emoji='🧞' /> <br />
+					Software Engineer & AI Enthusiast <CustomEmoji label='genie' emoji='👩🏻‍💻' /> <br />
 					Founder at <CustomLink targetUrl='https://noecrafts.com'>Noe Crafts</CustomLink> <CustomEmoji label='leaf' emoji='🍃' /> <br />
 				</Snippet>
 				<Description>

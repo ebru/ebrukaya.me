@@ -19,7 +19,7 @@ const JourneyCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					Senior Frontend Engineer at <CustomLink targetUrl='https://roompricegenie.com/'>RoomPriceGenie</CustomLink> <CustomEmoji label='genie' emoji='🧞' /> <Date>(Aug 2023 – )</Date>
+					Deep focus on AI learning.
 				</Item>
 
 				<Item>
@@ -45,6 +45,9 @@ const JourneyCard = () => {
 			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
+			<Item>
+			<CustomEmoji label='genie' emoji='🧞' /> Senior Frontend Engineer at <CustomLink targetUrl='https://roompricegenie.com/'>RoomPriceGenie</CustomLink> <Date>(Aug 2023 – Jun 2026)</Date>
+				</Item>
 				<Item>
 					<CustomEmoji label='health' emoji='🐥' /> Co-Founder at <CustomLink targetUrl='https://assistivecards.com'>Assistive Cards</CustomLink>. <Date>(Oct 2022 – Jan 2024)</Date>
 				</Item>
