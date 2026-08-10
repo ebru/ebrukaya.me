@@ -18,12 +18,16 @@ const SideProjectsCard = () => {
 			<SubTitle>Present</SubTitle>
 			<ItemList>
 				<Item>
-					<CustomEmoji label='stampie' emoji='🧳' /> Building <CustomLink targetUrl='https://stampie.app'>Stampie</CustomLink>,
-					a travel journal app that reimagines passport stamps as collectible experiences. <Date>(2025)</Date>
+					<CustomEmoji label='stampie2' emoji='🗺️' /> Co-Building <CustomLink targetUrl='https://stampie.app'>Stampie 2.0</CustomLink>,
+					an improved version of the previous app that turns your travels into collectible digital passport stamps. <Date>(2026)</Date>
 				</Item>
 			</ItemList>
 			<SubTitle>Past</SubTitle>
 			<ItemList>
+				<Item>
+					<CustomEmoji label='stampie' emoji='🧳' /> Built <CustomLink targetUrl='https://stampie.app'>Stampie</CustomLink>,
+					a travel journal app that reimagines passport stamps as collectible experiences. <Date>(2025)</Date>
+				</Item>
 				<Item>
 					<CustomEmoji label='infie' emoji='🪙' /> Built <CustomLink targetUrl='https://infie.app'>Infie</CustomLink>,
 					a simple and easy-to-use app to track your wealth. <Date>(2025)</Date>
