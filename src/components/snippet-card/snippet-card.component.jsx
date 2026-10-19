@@ -30,7 +30,7 @@ const SnippetCard = () => {
 				</Snippet>
 				<Description>
 					I have always been so curious about the whole software development cycle, from just an idea to the journey of bringing it to life.
-					Therefore I enjoy spending my time improving myself in full stack development while mostly focusing on the frontend.
+					Therefore I enjoy spending my time improving myself in full stack development.
 				</Description>
 				<SocialIcons>
 					<CustomIcon
