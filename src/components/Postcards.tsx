@@ -34,7 +34,7 @@ const postcards: Postcard[] = [
     country: "Estonia",
     flag: "estonia",
     year: "2015",
-    note: "Exchange semester. Cold winters, the most fun times.",
+    note: "Exchange semester. Cold winters, warm friends, the most fun times.",
     tilt: 3,
     washAt: [52, 36, 20],
     drawing: (
@@ -74,7 +74,7 @@ const postcards: Postcard[] = [
     country: "Sri Lanka",
     flag: "srilanka",
     year: "2017",
-    note: "Two months volunteering and travelling around the island. One of the best times ever.",
+    note: "Two months volunteering and travelling around the island. A once-in-a-lifetime experience.",
     tilt: 2,
     washAt: [60, 44, 20],
     drawing: (
