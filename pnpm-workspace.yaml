@@ -1,0 +1,8 @@
+# Next.js lists sharp as an optional image tool; this site exports unoptimized
+# images, so it is removed. postcss is pinned to a patched release.
+overrides:
+  sharp: "-"
+  postcss: "8.5.31"
+
+allowBuilds:
+  unrs-resolver: false

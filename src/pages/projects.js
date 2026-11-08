@@ -1,23 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
-import Layout from '../layout'
-import Seo from '../components/seo'
-import SideProjectsCard from '../components/side-projects-card/side-projects-card.component'
-import { pages } from '../consts'
+import Layout from "@/components/Layout"
+import Seo from "@/components/Seo"
+import Projects from "@/sections/Projects"
+import { pages } from "@/config"
+import { PageTitle } from "@/components/ui"
 
-const BlogTitle = styled.h1`
-  margin-bottom: 35px;
-  color: #333;
-`
-
-const Projects = () => {
+const ProjectsPage = () => {
   return (
     <Layout pageKey={pages.projects}>
-      <Seo title='Side Projects' description='Side projects that I completed/am currently working on.' />
-      <BlogTitle>side projects</BlogTitle>
-      <SideProjectsCard />
+      <Seo
+        title="Side Projects"
+        description="Side projects that I completed/am currently working on."
+      />
+      <PageTitle>side projects</PageTitle>
+      <Projects />
     </Layout>
   )
 }
 
-export default Projects
+export default ProjectsPage

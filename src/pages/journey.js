@@ -1,23 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
-import Layout from '../layout'
-import Seo from '../components/seo'
-import JourneyCard from '../components/journey-card/journey-card.component'
-import { pages } from '../consts'
+import Layout from "@/components/Layout"
+import Seo from "@/components/Seo"
+import Journey from "@/sections/Journey"
+import { pages } from "@/config"
+import { PageTitle } from "@/components/ui"
 
-const BlogTitle = styled.h1`
-  margin-bottom: 35px;
-  color: #333;
-`
-
-const Journey = () => {
+const JourneyPage = () => {
   return (
     <Layout pageKey={pages.journey}>
-      <Seo title='Journey' description='My educational and professional experience so far.' />
-      <BlogTitle>the journey</BlogTitle>
-      <JourneyCard />
+      <Seo
+        title="Journey"
+        description="My educational and professional experience so far."
+      />
+      <PageTitle>the journey</PageTitle>
+      <Journey />
     </Layout>
   )
 }
 
-export default Journey
+export default JourneyPage

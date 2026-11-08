@@ -1,14 +1,17 @@
-const config = {
-  postsPerPage: 5,
-  theme: {
-    breakpoints: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1536,
-    },
-  }
+export const config = {
+  siteUrl: "https://ebrukaya.me",
+  title: "Ebru Kaya – Software, design, life and travels",
+  shortTitle: "Ebru Kaya",
+  description:
+    "A personal space to share thoughts, ideas, experiences about software development, indie making, design concepts, travels and enjoying life along the way.",
+  author: "@ebru",
 }
 
-module.exports.config = config
+// Keys for the main pages, used to highlight the current link in the header.
+export const pages = {
+  home: "home",
+  journey: "journey",
+  projects: "projects",
+  blog: "blog",
+  personal: "personal",
+}

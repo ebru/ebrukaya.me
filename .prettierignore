@@ -1,4 +1,7 @@
-.cache
-package.json
-package-lock.json
+.next
+out
+node_modules
+pnpm-lock.yaml
+content
+design
 public

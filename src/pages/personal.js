@@ -1,23 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
-import Layout from '../layout'
-import Seo from '../components/seo'
-import PersonalCard from '../components/personal-card/personal-card.component'
-import { pages } from '../consts'
+import Layout from "@/components/Layout"
+import Seo from "@/components/Seo"
+import Personal from "@/sections/Personal"
+import { pages } from "@/config"
+import { PageTitle } from "@/components/ui"
 
-const BlogTitle = styled.h1`
-  margin-bottom: 35px;
-  color: #333;
-`
-
-const Personal = () => {
+const PersonalPage = () => {
   return (
     <Layout pageKey={pages.personal}>
-      <Seo title='Personal' description='Some personal facts that you can get to know me.' />
-      <BlogTitle>personal</BlogTitle>
-      <PersonalCard />
+      <Seo
+        title="Personal"
+        description="Some personal facts that you can get to know me."
+      />
+      <PageTitle>personal</PageTitle>
+      <Personal />
     </Layout>
   )
 }
 
-export default Personal
+export default PersonalPage
