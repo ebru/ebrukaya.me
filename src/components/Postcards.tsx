@@ -255,6 +255,13 @@ const Postcards = () => {
           />
         ))}
       </Rack>
+      <More
+        href="https://stampie.app/@ebru"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        my passport <span aria-hidden="true">→</span>
+      </More>
     </Section>
   )
 }
@@ -266,6 +273,34 @@ const Section = styled.section`
 const Intro = styled.p`
   margin-bottom: 22px;
   color: var(--muted);
+`
+
+// A quiet link under the cards to the full passport on Stampie.
+const More = styled.a`
+  display: block;
+  width: fit-content;
+  margin: 22px 0 0 auto;
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+
+  span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--ink);
+    text-decoration-color: var(--accent);
+  }
+
+  &:hover span {
+    transform: translateX(3px);
+  }
 `
 
 const Rack = styled.ul`
