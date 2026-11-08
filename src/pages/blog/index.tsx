@@ -1,3 +1,4 @@
+import type { GetStaticProps } from "next"
 import styled from "styled-components"
 
 import Layout from "@/components/Layout"
@@ -5,7 +6,7 @@ import Seo from "@/components/Seo"
 import PostList from "@/components/PostList"
 import { PageTitle } from "@/components/ui"
 import { pages } from "@/config"
-import { getPostSummaries } from "@/lib/posts"
+import { getPostSummaries, type PostSummary } from "@/lib/posts"
 
 const Intro = styled.p`
   margin-top: -20px;
@@ -13,7 +14,9 @@ const Intro = styled.p`
   color: var(--muted);
 `
 
-const BlogPage = ({ posts }) => (
+type Props = { posts: PostSummary[] }
+
+const BlogPage = ({ posts }: Props) => (
   <Layout pageKey={pages.blog}>
     <Seo
       title="Blog"
@@ -27,4 +30,6 @@ const BlogPage = ({ posts }) => (
 
 export default BlogPage
 
-export const getStaticProps = () => ({ props: { posts: getPostSummaries() } })
+export const getStaticProps: GetStaticProps<Props> = () => ({
+  props: { posts: getPostSummaries() },
+})

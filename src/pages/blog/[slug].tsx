@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
+import type { GetStaticPaths, GetStaticProps } from "next"
 import Link from "next/link"
 import styled from "styled-components"
 import Layout from "@/components/Layout"
-import { getAllPosts, getPostBySlug } from "@/lib/posts"
+import { getAllPosts, getPostBySlug, type Post } from "@/lib/posts"
 import Seo from "@/components/Seo"
 import PostIcon from "@/components/PostIcon"
 import { PostDate } from "@/components/PostList"
@@ -97,7 +98,10 @@ const ReadingProgress = () => {
   )
 }
 
-const BlogPost = ({ post }) => {
+type Props = { post: Post }
+type Params = { slug: string }
+
+const BlogPost = ({ post }: Props) => {
   return (
     <Layout>
       <Seo title={post.title} description={post.description || undefined} />
@@ -116,11 +120,11 @@ const BlogPost = ({ post }) => {
 
 export default BlogPost
 
-export const getStaticPaths = () => ({
+export const getStaticPaths: GetStaticPaths<Params> = () => ({
   paths: getAllPosts().map((post) => ({ params: { slug: post.slug } })),
   fallback: false,
 })
 
-export const getStaticProps = ({ params }) => ({
-  props: { post: getPostBySlug(params.slug) },
+export const getStaticProps: GetStaticProps<Props, Params> = ({ params }) => ({
+  props: { post: getPostBySlug(params!.slug) },
 })

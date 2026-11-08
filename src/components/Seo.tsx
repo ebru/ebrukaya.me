@@ -3,7 +3,13 @@ import { useRouter } from "next/router"
 
 import { config } from "@/config"
 
-const Seo = ({ description, title, noIndex = false }) => {
+type Props = {
+  title?: string
+  description?: string
+  noIndex?: boolean
+}
+
+const Seo = ({ description, title, noIndex = false }: Props) => {
   const { asPath } = useRouter()
   const metaDescription = description || config.description
   const metaTitle = title ? `${title} – ${config.shortTitle}` : config.title

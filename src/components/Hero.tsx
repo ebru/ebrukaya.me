@@ -66,8 +66,9 @@ const Hero = () => {
         </SocialIcons>
       </div>
       <ImageContainer>
-        {/* Drawn from --portrait in globals.css: portrait.svg (light) or portrait-dark.svg (dark).
-				    The originals live in design/. */}
+        {/* Drawn from --portrait in globals.css: portrait.svg in light mode,
+            portrait-paper.svg on a paper card in dark mode.
+            The original drawing is design/portrait.svg. */}
         <div
           className="portrait"
           role="img"

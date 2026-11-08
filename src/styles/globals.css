@@ -29,7 +29,8 @@ html[data-theme="dark"] {
   --accent: #a3a5ff;
   --marker: #343275;
   --code-bg: rgba(233, 232, 242, 0.07);
-  --portrait: url(/images/portrait-dark.svg);
+  --portrait: url(/images/portrait-paper.svg);
+  --portrait-paper: #a3a0b5;
   --ill-ink: #d4d1e2;
   --wash: rgba(163, 165, 255, 0.26);
   --card: #1c1b27;

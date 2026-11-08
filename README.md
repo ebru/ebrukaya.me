@@ -9,6 +9,7 @@ My personal site: a few words about me, my journey, side projects and a blog.
 ## Stack
 
 - [Next.js](https://nextjs.org) (pages router, static export)
+- TypeScript
 - [styled-components](https://styled-components.com)
 - Markdown posts with front matter
 - Light and dark mode that follows your system setting
@@ -20,6 +21,7 @@ My personal site: a few words about me, my journey, side projects and a blog.
 pnpm install
 pnpm dev      # http://localhost:3000
 pnpm build    # static site in out/
+pnpm typecheck # check types
 ```
 
 ## Structure
@@ -31,7 +33,7 @@ src/pages/         routes
 src/sections/      page content: journey, projects, personal
 src/components/    shared UI
 src/lib/           reads and renders the posts
-design/            original drawings
+design/            the original drawing
 ```
 
 To write a post, add `content/posts/my-post.md`:

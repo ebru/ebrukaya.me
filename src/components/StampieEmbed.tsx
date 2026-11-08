@@ -1,31 +1,37 @@
 import { useEffect, useRef, useState } from "react"
 import styled, { keyframes } from "styled-components"
 
-import useTheme from "@/hooks/useTheme"
+import useTheme, { type Theme } from "@/hooks/useTheme"
 
 const SCRIPT_SRC = "https://stampie.app/embed.js"
 const STAMPIE_ORIGIN = "https://stampie.app"
 
 // Colour for visited countries: a lighter tint of the site accent, so the map isn't too heavy.
-const ACCENT = { light: "#6e72ec", dark: "#a3a5ff" }
+const ACCENT: Record<Theme, string> = { light: "#6e72ec", dark: "#a3a5ff" }
+
+type Props = {
+  user?: string
+  /** which Stampie widget to show */
+  show: "map" | "wonders"
+}
 
 // Stampie's embed script scans the page once when it loads. Next.js switches
 // pages without a reload, so the script is added again each time an embed
 // appears (or the theme changes). Embeds already mounted are skipped by the script.
 // A skeleton in the same shape shows until the embed has loaded and sized itself.
-const StampieEmbed = ({ user = "ebru", show }) => {
+const StampieEmbed = ({ user = "ebru", show }: Props) => {
   const { theme } = useTheme()
-  const holderRef = useRef(null)
+  const holderRef = useRef<HTMLDivElement>(null)
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
     setReady(false)
     const holder = holderRef.current
-    let frame = null
-    let fallback = null
+    let frame: HTMLIFrameElement | null = null
+    let fallback: ReturnType<typeof setTimeout> | undefined
 
     const markReady = () => setReady(true)
-    const onMessage = (event) => {
+    const onMessage = (event: MessageEvent) => {
       if (
         frame &&
         event.origin === STAMPIE_ORIGIN &&
@@ -112,7 +118,7 @@ const pulse = keyframes`
   50% { opacity: 0.45; }
 `
 
-const Frame = styled.div`
+const Frame = styled.div<{ $ready: boolean }>`
   position: relative;
 
   /* While loading, the embed sits invisibly on top of the skeleton (it has to be

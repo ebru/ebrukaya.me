@@ -14,4 +14,6 @@ export const pages = {
   projects: "projects",
   blog: "blog",
   personal: "personal",
-}
+} as const
+
+export type PageKey = (typeof pages)[keyof typeof pages]

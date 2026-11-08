@@ -5,7 +5,7 @@ import {
   FooterLeftDiv,
   FooterDiv,
   LocalTime,
-  PostcardButton,
+  SayHiButton,
   Revealed,
 } from "@/components/Footer.styles"
 
@@ -24,7 +24,7 @@ const emailAddress = () => atob("ZWJydUBlYnJ1a2F5YS5tZQ==")
 
 const Footer = () => {
   // Rendered only in the browser so the static build never bakes in a stale time.
-  const [berlinTime, setBerlinTime] = useState(null)
+  const [berlinTime, setBerlinTime] = useState<string | null>(null)
 
   useEffect(() => {
     setBerlinTime(formatBerlinTime())
@@ -36,7 +36,7 @@ const Footer = () => {
   }, [])
 
   // "Say hi": copies the address and shows it as a mail link.
-  const [email, setEmail] = useState(null)
+  const [email, setEmail] = useState<string | null>(null)
   const [copied, setCopied] = useState(false)
 
   const revealEmail = async () => {
@@ -46,7 +46,7 @@ const Footer = () => {
       await navigator.clipboard.writeText(address)
       setCopied(true)
       setTimeout(() => setCopied(false), 2500)
-    } catch (e) {
+    } catch {
       // clipboard not available: the address is still shown as a link
     }
   }
@@ -71,9 +71,9 @@ const Footer = () => {
             <span aria-live="polite">{copied ? "copied" : ""}</span>
           </Revealed>
         ) : (
-          <PostcardButton type="button" onClick={revealEmail}>
+          <SayHiButton type="button" onClick={revealEmail}>
             Say hi <InlineIcon name="envelope" />
-          </PostcardButton>
+          </SayHiButton>
         )}
       </FooterDiv>
     </FooterBar>

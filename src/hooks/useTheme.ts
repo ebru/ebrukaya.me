@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useState } from "react"
 
-const getTheme = () =>
+export type Theme = "light" | "dark"
+
+const getTheme = (): Theme =>
   typeof document !== "undefined" &&
   document.documentElement.getAttribute("data-theme") === "dark"
     ? "dark"
@@ -10,7 +12,7 @@ const getTheme = () =>
 // Every component using this hook stays in sync, and the site keeps
 // following the system setting until the visitor picks a theme themselves.
 const useTheme = () => {
-  const [theme, setThemeState] = useState("light")
+  const [theme, setThemeState] = useState<Theme>("light")
 
   useEffect(() => {
     setThemeState(getTheme())
@@ -22,8 +24,8 @@ const useTheme = () => {
     })
 
     const media = window.matchMedia("(prefers-color-scheme: dark)")
-    const onSystemChange = (event) => {
-      let saved = null
+    const onSystemChange = (event: MediaQueryListEvent) => {
+      let saved: string | null = null
       try {
         saved = localStorage.getItem("theme")
       } catch (e) {}

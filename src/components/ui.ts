@@ -7,7 +7,7 @@ export const PageTitle = styled.h1`
   margin-bottom: 36px;
 `
 
-export const SubTitle = styled.span`
+export const SubTitle = styled.span<{ $past?: boolean }>`
   display: inline-block;
   font-weight: 800;
   font-size: 15px;
@@ -20,7 +20,7 @@ export const SubTitle = styled.span`
 
 // Present / past lists read as a timeline: a hairline with a marker per entry.
 // An entry that starts with an icon uses that icon as its marker; others get a dot.
-export const ItemList = styled.ul`
+export const ItemList = styled.ul<{ $past?: boolean }>`
   position: relative;
   margin: 5px 0 2.2rem 14px;
   padding-left: 30px;

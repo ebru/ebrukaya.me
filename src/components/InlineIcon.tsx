@@ -1,4 +1,4 @@
-import { useId } from "react"
+import { useId, type ReactElement } from "react"
 import styled from "styled-components"
 
 // Small line icons that sit inside a line of text, drawn in the same sketchy
@@ -110,13 +110,6 @@ const icons = {
     <>
       <rect x="3.5" y="6" width="17" height="12" rx="1.5" />
       <path d="M4.2 7l7.8 6 7.8-6" />
-    </>
-  ),
-  // the Noe Crafts mark: an "N" with a small square dot, drawn as an outline
-  noe: (
-    <>
-      <path d="M4.5 18.5v-13h3.2l5.8 8v-8h3v13h-3.2l-5.8-8v8z" />
-      <rect x="17.8" y="15.2" width="3.3" height="3.3" rx=".6" />
     </>
   ),
   // a small flat German flag in black, red and gold
@@ -279,9 +272,17 @@ const icons = {
       <path d="M9.5 14.5l-.3-3.4M12.5 11.5l-.2-3M10 15.2l3.4.2M13 12.2l3 .2" />
     </>
   ),
+} satisfies Record<string, ReactElement>
+
+export type IconName = keyof typeof icons
+
+type Props = {
+  name: IconName
+  /** Read out by screen readers; leave empty for decorative icons. */
+  label?: string
 }
 
-const InlineIcon = ({ name, label }) => {
+const InlineIcon = ({ name, label }: Props) => {
   const id = useId().replace(/:/g, "")
 
   return (

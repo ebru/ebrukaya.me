@@ -1,4 +1,12 @@
-const ExternalLink = ({ targetUrl, children, newTab = true }) => (
+import type { ReactNode } from "react"
+
+type Props = {
+  targetUrl: string
+  children: ReactNode
+  newTab?: boolean
+}
+
+const ExternalLink = ({ targetUrl, children, newTab = true }: Props) => (
   <strong>
     <a
       href={targetUrl}

@@ -9,16 +9,30 @@ const postsDirectory = path.join(process.cwd(), "content/posts")
 
 const md = new MarkdownIt({ html: true })
 
+export type Post = {
+  slug: string
+  title: string
+  date: string
+  description: string
+  icon: string
+  excerpt: string
+  html: string
+}
+
+export type PostSummary = Omit<Post, "html">
+
 // Links that open in a new tab get rel="noopener noreferrer", so the opened page
 // can't reach back into this one.
-const safeNewTabLinks = (html) =>
-  html.replace(/<a\b([^>]*\btarget=["']_blank["'][^>]*)>/g, (tag, attrs) =>
-    /\brel=/.test(attrs) ? tag : `<a${attrs} rel="noopener noreferrer">`
+const safeNewTabLinks = (html: string) =>
+  html.replace(
+    /<a\b([^>]*\btarget=["']_blank["'][^>]*)>/g,
+    (tag, attrs: string) =>
+      /\brel=/.test(attrs) ? tag : `<a${attrs} rel="noopener noreferrer">`
   )
 
 const EXCERPT_LENGTH = 140
 
-const toPlainText = (html) =>
+const toPlainText = (html: string) =>
   html
     .replace(/<!--[\s\S]*?-->/g, " ")
     // block-level tags separate words; inline tags (a, strong, em...) do not
@@ -36,10 +50,11 @@ const toPlainText = (html) =>
     .trim()
 
 // Excerpt: the first ~140 characters, cut at a word.
-const makeExcerpt = (html) => {
+const makeExcerpt = (html: string) => {
   const text = toPlainText(html)
   if (text.length <= EXCERPT_LENGTH) return text
-  const letter = (c) => (c.toUpperCase() !== c.toLowerCase() ? "A" : " ")
+  const letter = (c: string) =>
+    c.toUpperCase() !== c.toLowerCase() ? "A" : " "
   let template = text
     .slice(0, EXCERPT_LENGTH + 1)
     .replace(/.(?=\W*\w*$)/g, letter)
@@ -49,7 +64,7 @@ const makeExcerpt = (html) => {
   return `${text.slice(0, template.length)}…`
 }
 
-const readPost = (fileName) => {
+const readPost = (fileName: string): Post => {
   const slug = fileName.replace(/\.md$/, "")
   const raw = fs.readFileSync(path.join(postsDirectory, fileName), "utf8")
   const { data, content } = matter(raw)
@@ -69,7 +84,7 @@ const readPost = (fileName) => {
   }
 }
 
-export const getAllPosts = () =>
+export const getAllPosts = (): Post[] =>
   fs
     .readdirSync(postsDirectory)
     .filter((fileName) => fileName.endsWith(".md"))
@@ -77,7 +92,7 @@ export const getAllPosts = () =>
     .sort((a, b) => (a.date < b.date ? 1 : -1))
 
 // Lighter version for lists: no full html.
-export const getPostSummaries = () =>
+export const getPostSummaries = (): PostSummary[] =>
   getAllPosts().map(({ html, ...summary }) => summary)
 
-export const getPostBySlug = (slug) => readPost(`${slug}.md`)
+export const getPostBySlug = (slug: string): Post => readPost(`${slug}.md`)

@@ -1,3 +1,4 @@
+import type { AppProps } from "next/app"
 import Script from "next/script"
 
 import "@fontsource/mulish/400.css"
@@ -9,7 +10,7 @@ import "@/styles/globals.css"
 
 const GA_ID = "G-78CL8N7RQ5"
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Script

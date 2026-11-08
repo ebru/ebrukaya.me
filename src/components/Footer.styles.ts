@@ -32,7 +32,7 @@ export const LocalTime = styled.span`
 `
 
 // Looks like a text link; the envelope tilts as if being sent.
-export const PostcardButton = styled.button`
+export const SayHiButton = styled.button`
   padding: 0;
   border: 0;
   background: none;

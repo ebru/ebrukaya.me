@@ -2,10 +2,11 @@ import Link from "next/link"
 import styled from "styled-components"
 
 import PostIcon from "@/components/PostIcon"
+import type { PostSummary } from "@/lib/posts"
 
 // A post in the list. At rest it's plain; on hover a marker sweeps behind
 // the title and the drawing's colour wash fades in.
-const PostList = ({ posts }) => (
+const PostList = ({ posts }: { posts: PostSummary[] }) => (
   <List>
     {posts.map((post) => (
       <li key={post.slug}>

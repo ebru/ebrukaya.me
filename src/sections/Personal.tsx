@@ -17,7 +17,7 @@ const BlogLink = styled(Link)`
   text-underline-offset: 3px;
 `
 
-const ProfileLink = styled.a`
+const ProfileLink = styled.a<{ $brand: string }>`
   display: inline-flex;
   vertical-align: middle;
   margin-left: 6px;

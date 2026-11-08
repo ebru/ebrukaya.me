@@ -3,34 +3,46 @@ import Link from "next/link"
 import styled from "styled-components"
 import { HiOutlineMenuAlt4, HiX } from "react-icons/hi"
 
-import { pages } from "@/config"
+import { pages, type PageKey } from "@/config"
 import ThemeToggle from "@/components/ThemeToggle"
 
+// Every page is in the mobile menu; "Home" is left out of the top bar.
 const navLinks = [
-  { title: "Home", path: "/", pageKey: pages.home, isWeb: false },
-  { title: "Blog", path: "/blog/", pageKey: pages.blog, isWeb: true },
-  { title: "Journey", path: "/journey/", pageKey: pages.journey, isWeb: true },
+  { title: "Home", path: "/", pageKey: pages.home, inTopNav: false },
+  { title: "Blog", path: "/blog/", pageKey: pages.blog, inTopNav: true },
+  {
+    title: "Journey",
+    path: "/journey/",
+    pageKey: pages.journey,
+    inTopNav: true,
+  },
   {
     title: "Projects",
     path: "/projects/",
     pageKey: pages.projects,
-    isWeb: true,
+    inTopNav: true,
   },
   {
     title: "Personal",
     path: "/personal/",
     pageKey: pages.personal,
-    isWeb: true,
+    inTopNav: true,
   },
 ]
 
-const Header = ({ showLogo = true, pageKey }) => {
+type Props = {
+  showLogo?: boolean
+  pageKey?: PageKey
+}
+
+const Header = ({ showLogo = true, pageKey }: Props) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   // While the mobile menu is open: lock page scroll and close on Escape.
   useEffect(() => {
     if (!mobileMenuOpen) return undefined
-    const onKey = (event) => event.key === "Escape" && setMobileMenuOpen(false)
+    const onKey = (event: KeyboardEvent) =>
+      event.key === "Escape" && setMobileMenuOpen(false)
     document.addEventListener("keydown", onKey)
     document.body.style.overflow = "hidden"
     return () => {
@@ -52,7 +64,7 @@ const Header = ({ showLogo = true, pageKey }) => {
       <Actions>
         <NavLinks aria-label="Main">
           {navLinks
-            .filter((link) => link.isWeb)
+            .filter((link) => link.inTopNav)
             .map((link) => (
               <NavLink
                 key={link.path}

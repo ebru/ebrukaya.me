@@ -1,14 +1,34 @@
-import { useEffect, useId, useRef, useState } from "react"
+import {
+  useEffect,
+  useId,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactElement,
+} from "react"
 import styled from "styled-components"
 
-import InlineIcon from "@/components/InlineIcon"
+import InlineIcon, { type IconName } from "@/components/InlineIcon"
+
+type Postcard = {
+  place: string
+  country: string
+  flag: IconName
+  year: string
+  note: string
+  /** resting angle in degrees */
+  tilt: number
+  /** centre x, centre y and radius of the colour wash behind the drawing */
+  washAt: [number, number, number]
+  drawing: ReactElement
+}
 
 // A small rack of hand-drawn postcards from places on the journey, in the same
 // loose line style as the blog drawings. Hover straightens a card and brings in
 // its colour; click (or tap, Enter, Space) flips it over to read the back.
 
 // Oldest first. `tilt` is the resting angle in degrees.
-const postcards = [
+const postcards: Postcard[] = [
   {
     place: "Tallinn",
     country: "Estonia",
@@ -74,7 +94,7 @@ const postcards = [
     country: "Iceland",
     flag: "iceland",
     year: "2018",
-    note: "Waterfalls everywhere, and the sun barely set.",
+    note: "The best road trip ever. Waterfalls everywhere, and the sun barely set.",
     tilt: -4,
     washAt: [60, 34, 18],
     drawing: (
@@ -108,12 +128,18 @@ const postcards = [
   },
 ]
 
-const Card = ({ card, flipped, onToggle }) => {
+type CardProps = {
+  card: Postcard
+  flipped: boolean
+  onToggle: () => void
+}
+
+const Card = ({ card, flipped, onToggle }: CardProps) => {
   const id = useId().replace(/:/g, "")
   const [wx, wy, wr] = card.washAt
 
   return (
-    <Item style={{ "--tilt": `${card.tilt}deg` }}>
+    <Item style={{ "--tilt": `${card.tilt}deg` } as CSSProperties}>
       <Flip
         type="button"
         className={flipped ? "flipped" : undefined}
@@ -195,16 +221,17 @@ const Card = ({ card, flipped, onToggle }) => {
 // Only one card is turned over at a time. Opening another one closes the
 // previous card; clicking outside the rack or pressing Escape closes it too.
 const Postcards = () => {
-  const [open, setOpen] = useState(null)
-  const rackRef = useRef(null)
+  const [open, setOpen] = useState<string | null>(null)
+  const rackRef = useRef<HTMLUListElement>(null)
 
   useEffect(() => {
     if (open === null) return undefined
-    const onPointerDown = (event) => {
-      if (rackRef.current && !rackRef.current.contains(event.target))
+    const onPointerDown = (event: PointerEvent) => {
+      if (rackRef.current && !rackRef.current.contains(event.target as Node))
         setOpen(null)
     }
-    const onKeyDown = (event) => event.key === "Escape" && setOpen(null)
+    const onKeyDown = (event: KeyboardEvent) =>
+      event.key === "Escape" && setOpen(null)
     document.addEventListener("pointerdown", onPointerDown)
     document.addEventListener("keydown", onKeyDown)
     return () => {
@@ -366,10 +393,14 @@ const Face = styled.div`
   }
 
   /* text and spacing follow the card's own width (cqw = 1% of it) */
+  /* the back can grow taller than the card for longer notes; it hangs down over
+     the space below, so nothing else on the page moves */
   &.back {
     transform: rotateY(180deg);
     display: block;
-    padding: 7cqw 7.5cqw 1cqw;
+    inset: 0 0 auto;
+    min-height: 100%;
+    padding: 7cqw 7.5cqw 7cqw;
   }
 `
 

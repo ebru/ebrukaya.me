@@ -101,8 +101,22 @@ export const ImageContainer = styled.div`
     background: var(--portrait) center / contain no-repeat;
   }
 
+  /* The drawing sits slightly tilted inside a sheet of paper. In light mode the
+     paper is invisible; in dark mode it shows, so the original ink drawing can be
+     used instead of an inverted one (inverted, the face reads as an empty hole).
+     Same box in both modes, so nothing jumps when the theme changes. */
+  padding: 14px 14px 20px;
+  border-radius: 6px;
+  transform: rotate(2deg);
+
+  html[data-theme="dark"] & {
+    background: var(--portrait-paper);
+    box-shadow: 0 14px 30px -18px rgba(0, 0, 0, 0.8);
+  }
+
   @media (max-width: 640px) {
     width: 180px;
-    margin: -10px 0 18px;
+    padding: 10px 10px 14px;
+    margin: 4px 0 28px 4px;
   }
 `

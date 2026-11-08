@@ -1,4 +1,4 @@
-import { useId } from "react"
+import { useId, type ReactElement } from "react"
 import styled from "styled-components"
 
 // Loose line drawings for posts, like quick pen sketches over a watercolour wash:
@@ -8,7 +8,7 @@ import styled from "styled-components"
 // A post picks one with `icon: <name>` in its front matter; unknown names get "pen".
 
 // Irregular watercolour blob around (cx, cy).
-const Wash = ({ cx, cy, r }) => {
+const Wash = ({ cx, cy, r }: { cx: number; cy: number; r: number }) => {
   const k = r / 20
   const d = `M${cx - 18 * k} ${cy - 4 * k}c${2 * k} ${-12 * k} ${18 * k} ${
     -18 * k
@@ -141,11 +141,22 @@ const icons = {
       </>
     ),
   },
+} satisfies Record<string, { wash: ReactElement; ink: ReactElement }>
+
+type PostIconName = keyof typeof icons
+
+const isIconName = (name: string): name is PostIconName => name in icons
+
+type Props = {
+  /** From the post's front matter; unknown names fall back to "pen". */
+  name: string
+  size?: number
+  className?: string
 }
 
-const PostIcon = ({ name, size = 72, className }) => {
+const PostIcon = ({ name, size = 72, className }: Props) => {
   const id = useId().replace(/:/g, "")
-  const icon = icons[name] || icons.pen
+  const icon = isIconName(name) ? icons[name] : icons.pen
 
   return (
     <Wrap style={{ width: size, height: size }} className={className}>
