@@ -28,7 +28,7 @@ const Hero = () => (
         Hi, I'm Ebru.
       </h1>
       <h3 className="text-[21px] leading-[1.5em] font-semibold text-ink-soft max-[480px]:text-[20px]">
-        Sr. Software Engineer, Co-Building{" "}
+        Sr. Software Engineer, co-building{" "}
         <span className="group/brand whitespace-nowrap">
           <ExternalLink targetUrl="https://stampie.app" className={brandLink}>
             Stampie
