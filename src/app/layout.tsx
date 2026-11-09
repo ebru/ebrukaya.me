@@ -34,6 +34,7 @@ const themeScript = `
 
 export const metadata: Metadata = {
   metadataBase: new URL(config.siteUrl),
+  authors: [{ name: "Ebru Kaya", url: config.siteUrl }],
   title: config.title,
   description: config.description,
   icons: { icon: { url: "/favicon.png", type: "image/png" } },

@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 import PostIcon from "@/components/PostIcon"
-import { getPostSummaries } from "@/lib/posts"
+import { formatDate, getPostSummaries } from "@/lib/posts"
 
 // The newest few posts on the home page: one quiet line each, with the post's
 // drawing. Hovering a line brings in the drawing's colour wash and the marker
@@ -31,7 +31,7 @@ const LatestPosts = ({ count = 3 }: { count?: number }) => {
                 </span>
               </span>
               <span className="shrink-0 text-[15px] text-muted tabular-nums max-[480px]:hidden">
-                {post.date}
+                <time dateTime={post.date}>{formatDate(post.date)}</time>
               </span>
             </Link>
           </li>

@@ -29,7 +29,7 @@ const Journey = () => {
           <Item>
             <InlineIcon name="stamp" />
             <span className="text-[19px]">
-              Co-building{" "}
+              Co-Building{" "}
               <ExternalLink targetUrl="https://stampie.app">
                 Stampie
               </ExternalLink>

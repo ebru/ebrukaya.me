@@ -1,9 +1,9 @@
 import Link from "next/link"
 
 import PostIcon from "@/components/PostIcon"
-import type { PostSummary } from "@/lib/posts"
+import { formatDate, type PostSummary } from "@/lib/posts"
 
-// "<date>, by ebru · 5 min read" under a post title, in the list and on the post itself.
+// "<date> · 5 min read" under a post title, in the list and on the post itself.
 // Drafts (only visible locally) get a small label.
 export const PostDate = ({
   date,
@@ -17,10 +17,7 @@ export const PostDate = ({
   className?: string
 }) => (
   <p className={className ?? "mb-1.5 text-[15px] text-muted"}>
-    {date}, by{" "}
-    <Link href="/" className="font-semibold text-ink-soft">
-      ebru
-    </Link>
+    <time dateTime={date}>{formatDate(date)}</time>
     {readingMinutes !== undefined && ` · ${readingMinutes} min read`}
     {draft && (
       <span className="ml-2 rounded-full bg-surface px-2 py-0.5 text-[13px] font-bold text-accent">
