@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 import { SubTitle, ItemList, Item, When, BoldText } from "@/components/ui"
 import InlineIcon from "@/components/InlineIcon"
 import ExternalLink from "@/components/ExternalLink"
@@ -68,28 +70,26 @@ const Projects = () => {
           <div className="flex flex-1 justify-between">
             <div>
               Built{" "}
-              <ExternalLink targetUrl="https://ebrukye.medium.com/a-journey-of-making-a-little-side-project-d18088271876">
-                Bucketmap
-              </ExternalLink>
+              <strong>
+                <Link href="/blog/making-a-side-project/">Bucketmap</Link>
+              </strong>
               , a project to map some bucket list ideas to discover around the
               world. Here is{" "}
-              <a
+              <Link
+                href="/blog/making-a-side-project/"
                 style={{ textDecoration: "underline" }}
-                href="https://medium.com/@ebrukye/a-journey-of-making-a-little-side-project-d18088271876"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 the story
-              </a>
+              </Link>
               . <When>(2020)</When>
             </div>
-            <ExternalLink targetUrl="https://ebrukye.medium.com/a-journey-of-making-a-little-side-project-d18088271876">
+            <Link href="/blog/making-a-side-project/">
               <img
                 src="/images/projects/bucketmap.jpg"
                 alt="bucketmap"
                 className="mt-[5px] ml-[15px] h-[62px] w-[100px] max-w-[100px] min-w-[100px] rounded-[4px] object-cover hover:opacity-90"
               />
-            </ExternalLink>
+            </Link>
           </div>
         </Item>
         <Item>

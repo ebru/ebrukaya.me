@@ -4,11 +4,14 @@ import PostIcon from "@/components/PostIcon"
 import type { PostSummary } from "@/lib/posts"
 
 // "<date>, by ebru" under a post title, in the list and on the post itself.
+// Drafts (only visible locally) get a small label.
 export const PostDate = ({
   date,
+  draft = false,
   className,
 }: {
   date: string
+  draft?: boolean
   className?: string
 }) => (
   <p className={className ?? "mb-1.5 text-[15px] text-muted"}>
@@ -16,6 +19,11 @@ export const PostDate = ({
     <Link href="/" className="font-semibold text-ink-soft">
       ebru
     </Link>
+    {draft && (
+      <span className="ml-2 rounded-full bg-surface px-2 py-0.5 text-[13px] font-bold text-accent">
+        draft
+      </span>
+    )}
   </p>
 )
 
@@ -44,7 +52,7 @@ const PostList = ({ posts }: { posts: PostSummary[] }) => (
               </span>
             </h2>
           </Link>
-          <PostDate date={post.date} />
+          <PostDate date={post.date} draft={post.draft} />
           <p className="mb-0 text-ink-soft">{post.excerpt}</p>
         </div>
       </li>

@@ -30,8 +30,14 @@ const Header = () => {
     }
   }, [mobileMenuOpen])
 
-  const current = (path: string) =>
-    pathname === path.replace(/(.)\/$/, "$1") ? "page" : undefined
+  // the blog's later pages (/blog/page/2/ ...) count as the blog
+  const current = (path: string) => {
+    const target = path.replace(/(.)\/$/, "$1")
+    const onPage =
+      pathname === target ||
+      (target === "/blog" && pathname.startsWith("/blog/page/"))
+    return onPage ? "page" : undefined
+  }
 
   return (
     <header className="-mt-5 mb-11 flex min-h-10 items-center justify-between">

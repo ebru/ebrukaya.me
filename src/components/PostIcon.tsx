@@ -132,13 +132,77 @@ const icons = {
       </>
     ),
   },
-  pen: {
-    wash: <Wash cx={44} cy={50} r={20} />,
+  suitcase: {
+    // moving to germany: a packed suitcase, a paper plane already on its way
+    wash: <Wash cx={46} cy={56} r={22} />,
     ink: (
       <>
-        <path d="M22 68c8-4 10-14 18-18 9-5 16 4 10 10-6 5-14-1-10-9 5-10 18-14 30-10" />
-        <path d="M68 24l8 8-26 26-9 2 2-9z" />
-        <path d="M63 29l8 8" />
+        <path d="M20 42c0-4 3-7 7-7h38c4 0 7 3 7 7v26c0 4-3 7-7 7H27c-4 0-7-3-7-7z" />
+        <path d="M38 35v-5c0-3 2-4 4-4h8c2 0 4 1 4 4v5" />
+        <path d="M32 36c1 13 0 26 0 38M60 36c-1 13 0 26 0 38" />
+        <path d="M46 49a6 6 0 1 0 0.1 0" />
+        <path d="M29 79a2 2 0 1 0 0.1 0M63 79a2 2 0 1 0 0.1 0" />
+        <path d="M70 12l18 3-13 10z" />
+        <path d="M75 25l-1 6 4-4" />
+        <path d="M50 26c6-2 12-6 18-11" strokeDasharray="1.5 5" />
+      </>
+    ),
+  },
+  hammock: {
+    // taking a break from 9–5: a hammock between two trees
+    wash: <Wash cx={48} cy={60} r={18} />,
+    ink: (
+      <>
+        <path d="M18 82c1-16 1-32-1-48M78 82c-1-15 0-30 1-44" />
+        <path d="M17 34c-6-3-11 0-12 5 4-2 8-2 12-1M17 34c1-6 7-9 12-7-4 1-8 3-10 6M17 34c6 0 10 3 11 8-3-3-7-4-11-4" />
+        <path d="M79 38c5-4 11-2 12 2-4-1-8 0-11 2M79 38c-1-6-7-8-11-6 4 1 7 3 9 6M79 38c-5 1-8 5-8 9 2-3 5-5 8-5" />
+        <path d="M19 47c10 20 46 22 59-5" />
+        <path d="M24 50c11 13 38 14 49-4" />
+        <path d="M30 54v6M48 58v7M66 52v6" strokeDasharray="0.5 3" />
+        <path d="M8 84c26-2 54-2 80 0" />
+        <path d="M48 18a5 5 0 1 0 0.1 0" />
+      </>
+    ),
+  },
+  sunrise: {
+    // a new chapter of my life: the sun coming up over layered hills, birds heading out
+    wash: <Wash cx={46} cy={54} r={20} />,
+    ink: (
+      <>
+        <path d="M28 62c0-10 8-18 18-18s18 8 18 18" />
+        <path d="M46 36v-8M32 42l-5-5M60 42l5-5M22 54h-7M70 54h7" />
+        <path d="M6 64c14-5 26-6 40-3 14 3 28 1 44-4" />
+        <path d="M10 76c12-6 24-7 36-4 12 2 22 1 34-5" />
+        <path d="M18 86c18-4 40-4 62-1" />
+        <path d="M64 24c2-2 4-2 5 0 1-2 3-2 5 0M76 32c1-1 3-1 4 0 1-1 2-1 3 0" />
+      </>
+    ),
+  },
+  laptop: {
+    // my first year as a software engineer: a laptop with code, and coffee
+    wash: <Wash cx={44} cy={46} r={22} />,
+    ink: (
+      <>
+        <path d="M23 30h42c2 0 3 1 3 3v26H20V33c0-2 1-3 3-3z" />
+        <path d="M12 59h64l-4 7H16z" />
+        <path d="M36 40l-5 5 5 5M52 40l5 5-5 5M46 38l-4 14" />
+        <path d="M78 50h11l-1 12c0 2-2 3-4 3h-1c-2 0-4-1-4-3z" />
+        <path d="M88 53c4 0 4 5 0 5" />
+        <path d="M81 45c-2-2 2-4 0-6M86 45c-2-2 2-4 0-6" />
+      </>
+    ),
+  },
+  pen: {
+    // the fallback: a fountain pen leaving a loose line of ink
+    wash: <Wash cx={50} cy={46} r={20} />,
+    ink: (
+      <>
+        <path d="M58 22c4-4 10-4 13 0 4 3 4 9 0 13L46 60 36 50z" />
+        <path d="M36 50l-9 19 19-9" />
+        <path d="M31 65l7-7" />
+        <path d="M37.5 56.5a1.5 1.5 0 1 0 0.1 0" />
+        <path d="M54 28l12 12" />
+        <path d="M12 82c7-5 13 3 20-1s12-6 18-1 12 3 18-1 10-3 14 0" />
       </>
     ),
   },

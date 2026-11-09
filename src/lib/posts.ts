@@ -4,7 +4,7 @@ import matter from "gray-matter"
 import MarkdownIt from "markdown-it"
 
 // Posts live as markdown files in content/posts. The file name is the URL:
-// content/posts/the-time.md -> /the-time/
+// content/posts/the-time.md -> /blog/the-time/
 const postsDirectory = path.join(process.cwd(), "content/posts")
 
 const md = new MarkdownIt({ html: true })
@@ -15,20 +15,27 @@ export type Post = {
   date: string
   description: string
   icon: string
+  /** draft: true in the front matter: shown by `pnpm dev`, left out of the built site */
+  draft: boolean
   excerpt: string
   html: string
 }
 
 export type PostSummary = Omit<Post, "html">
 
-// Links that open in a new tab get rel="noopener noreferrer", so the opened page
-// can't reach back into this one.
-const safeNewTabLinks = (html: string) =>
-  html.replace(
-    /<a\b([^>]*\btarget=["']_blank["'][^>]*)>/g,
-    (tag, attrs: string) =>
-      /\brel=/.test(attrs) ? tag : `<a${attrs} rel="noopener noreferrer">`
-  )
+// Links to other sites open in a new tab, with rel="noopener noreferrer" so the
+// opened page can't reach back into this one. Links within the site stay as they are.
+const externalLinksInNewTab = (html: string) =>
+  html.replace(/<a\b([^>]*)>/g, (tag, attrs: string) => {
+    const href = attrs.match(/\bhref=["']([^"']*)["']/)?.[1] ?? ""
+    const external =
+      /^https?:\/\//.test(href) && !href.startsWith("https://ebrukaya.me")
+    if (!external) return tag
+    let out = attrs
+    if (!/\btarget=/.test(out)) out += ' target="_blank"'
+    if (!/\brel=/.test(out)) out += ' rel="noopener noreferrer"'
+    return `<a${out}>`
+  })
 
 const EXCERPT_LENGTH = 140
 
@@ -68,7 +75,7 @@ const readPost = (fileName: string): Post => {
   const slug = fileName.replace(/\.md$/, "")
   const raw = fs.readFileSync(path.join(postsDirectory, fileName), "utf8")
   const { data, content } = matter(raw)
-  const html = safeNewTabLinks(md.render(content))
+  const html = externalLinksInNewTab(md.render(content))
 
   return {
     slug,
@@ -79,16 +86,21 @@ const readPost = (fileName: string): Post => {
         : String(data.date || ""),
     description: data.description || "",
     icon: data.icon || "pen",
+    draft: data.draft === true,
     excerpt: makeExcerpt(html),
     html,
   }
 }
+
+// Drafts show while writing locally (`pnpm dev`) and never make it into the build.
+const showDrafts = process.env.NODE_ENV !== "production"
 
 export const getAllPosts = (): Post[] =>
   fs
     .readdirSync(postsDirectory)
     .filter((fileName) => fileName.endsWith(".md"))
     .map(readPost)
+    .filter((post) => showDrafts || !post.draft)
     .sort((a, b) => (a.date < b.date ? 1 : -1))
 
 // Lighter version for lists: no full html.
@@ -96,3 +108,15 @@ export const getPostSummaries = (): PostSummary[] =>
   getAllPosts().map(({ html, ...summary }) => summary)
 
 export const getPostBySlug = (slug: string): Post => readPost(`${slug}.md`)
+
+// The blog list is split into pages: /blog/ is page 1, then /blog/page/2/ ...
+export const POSTS_PER_PAGE = 6
+
+export const getPageCount = () =>
+  Math.max(1, Math.ceil(getPostSummaries().length / POSTS_PER_PAGE))
+
+export const getPostPage = (page: number): PostSummary[] =>
+  getPostSummaries().slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE)
+
+export const blogPagePath = (page: number) =>
+  page === 1 ? "/blog/" : `/blog/page/${page}/`

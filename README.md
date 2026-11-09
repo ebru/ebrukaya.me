@@ -43,7 +43,8 @@ To write a post, add `content/posts/my-post.md`:
 title: "my post"
 date: "2026-11-08"
 description: "One line for search engines and link previews."
-icon: pen # controller, dice, book, clapper, map, mountains, hourglass, sailboat, kite
+draft: true # optional: only shows with pnpm dev, until you remove it
+icon: pen # controller, dice, book, clapper, map, mountains, hourglass, sailboat, kite, suitcase, hammock, sunrise, laptop
 ---
 
 Hello.

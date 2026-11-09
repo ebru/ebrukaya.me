@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero"
+import LatestPosts from "@/components/LatestPosts"
 import Postcards from "@/components/Postcards"
 import { pageMetadata } from "@/lib/metadata"
 
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <Postcards />
+      <LatestPosts />
     </>
   )
 }

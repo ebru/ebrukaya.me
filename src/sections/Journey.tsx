@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 import { SubTitle, ItemList, Item, When, BoldText } from "@/components/ui"
 import InlineIcon from "@/components/InlineIcon"
 import ExternalLink from "@/components/ExternalLink"
@@ -55,9 +57,9 @@ const Journey = () => {
         </Item>
         <Item>
           <InlineIcon name="germany" /> Moved to{" "}
-          <ExternalLink targetUrl="https://ebrukye.medium.com/moving-to-germany-45b6a401a884">
-            Germany
-          </ExternalLink>
+          <strong>
+            <Link href="/blog/moving-to-germany/">Germany</Link>
+          </strong>
           . <When>(Jan 2022)</When>
         </Item>
         <Item>
