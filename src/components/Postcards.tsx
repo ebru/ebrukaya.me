@@ -97,7 +97,7 @@ const postcards: Postcard[] = [
     country: "Iceland",
     flag: "iceland",
     year: "2018",
-    note: "The best road trip ever. Waterfalls everywhere, and the sun barely set.",
+    note: "The best road trip ever. Waterfalls everywhere, and short November days that got dark early.",
     tilt: -4,
     washAt: [60, 34, 18],
     drawing: (
