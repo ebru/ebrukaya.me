@@ -15,7 +15,8 @@ const formatBerlinTime = () =>
 // the page's HTML for spam bots to collect.
 const emailAddress = () => atob("ZWJydUBlYnJ1a2F5YS5tZQ==")
 
-const Footer = () => {
+// buildYear comes from the server, so the first render matches the built HTML.
+const Footer = ({ buildYear }: { buildYear: number }) => {
   // Rendered only in the browser so the static build never bakes in a stale time.
   const [berlinTime, setBerlinTime] = useState<string | null>(null)
 
@@ -27,6 +28,11 @@ const Footer = () => {
     )
     return () => clearInterval(timer)
   }, [])
+
+  // The year is baked in at build time; the browser corrects it if a new
+  // year has started since the last deploy.
+  const [year, setYear] = useState(buildYear)
+  useEffect(() => setYear(new Date().getFullYear()), [])
 
   // "Say hi": copies the address and shows it as a mail link.
   const [email, setEmail] = useState<string | null>(null)
@@ -60,8 +66,7 @@ const Footer = () => {
         )}
       </div>
       <div className="text-right text-[15px]">
-        © {new Date().getFullYear() + " "}
-        Ebru Kaya
+        © {year} Ebru Kaya
         <br />
         {email ? (
           <span className="inline-flex items-baseline gap-2">

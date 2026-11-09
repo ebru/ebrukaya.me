@@ -3,7 +3,7 @@
   publish = "out"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "24"
   # This is a static export (plain files in out/), so Netlify's Next.js runtime isn't needed.
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
 

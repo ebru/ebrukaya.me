@@ -34,6 +34,10 @@ const body = [
   "[&_img]:rounded-[8px]",
   "[&_td_code]:inline-block [&_td_code]:rounded-full [&_td_code]:bg-surface [&_td_code]:px-2 [&_td_code]:py-0.5 [&_td_code]:font-[inherit] [&_td_code]:text-[0.8rem] [&_td_code]:leading-[1.6] [&_td_code]:text-ink-soft",
   "[&_td_code]:before:content-none [&_td_code]:after:content-none",
+  // A list split into several tables (with quotes in between) keeps its
+  // columns lined up on wider screens: the small columns get a fixed width
+  // and the first column takes the rest.
+  "min-[641px]:[&_table]:table-fixed min-[641px]:[&_:is(th,td):not(:first-child)]:w-[6rem]",
   // wide tables scroll sideways on small screens
   "max-[640px]:[&_table]:block max-[640px]:[&_table]:overflow-x-auto",
 ].join(" ")

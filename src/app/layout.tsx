@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div className="mx-auto my-[60px] max-w-[840px] px-[1.0875rem] pb-[1.45rem]">
           <Header />
           <main>{children}</main>
-          <Footer />
+          <Footer buildYear={new Date().getFullYear()} />
         </div>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}

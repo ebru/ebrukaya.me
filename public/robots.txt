@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ebrukaya.me/sitemap/sitemap-index.xml
-Host: https://ebrukaya.me

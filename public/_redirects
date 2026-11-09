@@ -1,0 +1,31 @@
+# Old addresses -> new ones (Netlify reads this file from the published folder).
+
+# The sitemap used to live here.
+/sitemap/sitemap-index.xml /sitemap.xml 301
+/sitemap/sitemap-0.xml /sitemap.xml 301
+
+# The post list was /journal, and the tech stack page became the journey.
+/journal /blog/ 301
+/journal/* /blog/ 301
+/tech-stack /journey/ 301
+/tech-stack/ /journey/ 301
+
+# Posts used to live at /<slug>/.
+/a-way-of-life /blog/a-way-of-life/ 301
+/a-way-of-life/ /blog/a-way-of-life/ 301
+/dreamers-and-realists /blog/dreamers-and-realists/ 301
+/dreamers-and-realists/ /blog/dreamers-and-realists/ 301
+/facing-this-meaninglessness-courageously /blog/facing-this-meaninglessness-courageously/ 301
+/facing-this-meaninglessness-courageously/ /blog/facing-this-meaninglessness-courageously/ 301
+/games /blog/games/ 301
+/games/ /blog/games/ 301
+/making-a-side-project /blog/making-a-side-project/ 301
+/making-a-side-project/ /blog/making-a-side-project/ 301
+/movies /blog/movies/ 301
+/movies/ /blog/movies/ 301
+/my-gaming-setup /blog/my-gaming-setup/ 301
+/my-gaming-setup/ /blog/my-gaming-setup/ 301
+/optimistic-nihilism /blog/optimistic-nihilism/ 301
+/optimistic-nihilism/ /blog/optimistic-nihilism/ 301
+/the-time /blog/the-time/ 301
+/the-time/ /blog/the-time/ 301

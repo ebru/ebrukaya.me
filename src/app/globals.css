@@ -90,7 +90,9 @@ html[data-theme="dark"] {
 /* ---------- base typography ---------- */
 @layer base {
   html {
-    font: 112.5%/1.45em georgia, serif;
+    font:
+      112.5%/1.45em georgia,
+      serif;
     font-family: "Mulish", sans-serif;
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
@@ -107,7 +109,9 @@ html[data-theme="dark"] {
     margin: 0;
     color: var(--ink);
     background-color: var(--bg);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
     font-family: "Mulish", sans-serif;
     font-weight: normal;
     word-wrap: break-word;
@@ -287,7 +291,8 @@ html[data-theme="dark"] {
   }
 
   code {
-    font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+    font-family:
+      "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
       "Liberation Mono", Menlo, Courier, monospace;
   }
 

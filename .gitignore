@@ -6,6 +6,8 @@ node_modules/
 out/
 next-env.d.ts
 *.tsbuildinfo
+# written by `next dev` for AI coding tools
+AGENTS.md
 
 # local env files
 .env*

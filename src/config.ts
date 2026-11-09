@@ -4,7 +4,7 @@ export const config = {
   shortTitle: "Ebru Kaya",
   description:
     "A personal space to share thoughts, ideas, experiences about software development, indie making, design concepts, travels and enjoying life along the way.",
-  author: "@ebru",
+  author: "@ebrukye",
 }
 
 // Every page is in the mobile menu; "Home" is left out of the top bar.
