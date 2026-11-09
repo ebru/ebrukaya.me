@@ -3,6 +3,7 @@ title: "my gaming setup and what i'm playing lately"
 date: '2025-02-11'
 description: 'Talking about my love for story-driven games, my current setup, and my journey into retro gaming and emulation.'
 icon: controller
+topics: [play]
 ---
 
 <!-- <img src="/images/posts/gaming-setup.png" /> -->

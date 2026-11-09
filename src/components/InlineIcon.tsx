@@ -112,6 +112,41 @@ const icons = {
       <path d="M4.2 7l7.8 6 7.8-6" />
     </>
   ),
+  // a broom, sweeping
+  broom: (
+    <>
+      <path d="M19.5 3.5l-7 8" />
+      <path d="M12.5 11.5c1.8.4 3 1.6 3.4 3.4l-5.6 5.6c-2.2-.6-4.4-1.6-6.3-3.3 1.6-.6 2.9-1.5 3.6-2.6l4.9-3.1z" />
+      <path d="M8.2 16.3l-2 2M10.5 17.2l-1.8 2.1M12.6 17.8l-1.3 1.7" />
+      <path d="M3 9.5h.1M5 7h.1M2.5 13h.1" />
+    </>
+  ),
+  // a little house with a heart inside: my own small space
+  home: (
+    <>
+      <path d="M3.5 11.2L12 4l8.5 7.2" />
+      <path d="M5.8 9.4v10.1h12.4V9.4" />
+      <path d="M15.6 6.4V4.6h1.8v3.3" />
+      <path d="M12 17.2c-1.9-1.2-2.9-2.3-2.9-3.4 0-.9.7-1.5 1.5-1.5.6 0 1.1.3 1.4.8.3-.5.8-.8 1.4-.8.8 0 1.5.6 1.5 1.5 0 1.1-1 2.2-2.9 3.4z" />
+    </>
+  ),
+  // an open book
+  book: (
+    <>
+      <path d="M12 7.5c-2.5-1.8-5.5-2-8.5-1v11.5c3-1 6-.8 8.5 1" />
+      <path d="M12 7.5c2.5-1.8 5.5-2 8.5-1v11.5c-3-1-6-.8-8.5 1V7.5" />
+      <path d="M6 10c1.5-.3 2.8-.2 4 .3M14 10.3c1.2-.5 2.5-.6 4-.3" />
+    </>
+  ),
+  // an old TV with rabbit-ear antennas
+  tv: (
+    <>
+      <rect x="3.5" y="8" width="17" height="11.5" rx="2" />
+      <path d="M9 4l3 4 3.5-4.5" />
+      <path d="M6.5 11c2-.4 5-.5 8 0M17.5 12.5h.1M17.5 15.5h.1" />
+      <path d="M7 19.5l-1 1.5M17 19.5l1 1.5" />
+    </>
+  ),
   // a small flat German flag in black, red and gold
   germany: (
     <>

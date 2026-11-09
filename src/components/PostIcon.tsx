@@ -212,6 +212,10 @@ type PostIconName = keyof typeof icons
 
 const isIconName = (name: string): name is PostIconName => name in icons
 
+// The drawing's parts on their own (also used for link-preview images).
+export const postIconArt = (name: string) =>
+  isIconName(name) ? icons[name] : icons.pen
+
 type Props = {
   /** From the post's front matter; unknown names fall back to "pen". */
   name: string
@@ -223,7 +227,7 @@ type Props = {
 
 const PostIcon = ({ name, className, standalone = false }: Props) => {
   const id = useId().replace(/:/g, "")
-  const icon = isIconName(name) ? icons[name] : icons.pen
+  const icon = postIconArt(name)
 
   return (
     <span

@@ -3,6 +3,7 @@ title: 'the games'
 date: '2022-08-17'
 description: 'I have recently been playing a lot of games.'
 icon: dice
+topics: [play]
 ---
 
 This week I have been on sick leave and not productive at all since I somehow managed to catch a cold after a lake trip, but there is no reason to not have anything good that can come out of this. What I enjoy the most without spending that much energy... making lists!

@@ -3,6 +3,7 @@ title: 'the time'
 date: '2019-12-02'
 description: '2019 nearly comes to an end. This year I have read 25 books, and I think the one I loved the most is Momo by Michael Ende.'
 icon: hourglass
+topics: [read, life]
 ---
 
 2019 nearly comes to an end. This year I have read 25 books so far according to Goodreads, and I think the one I loved the most is **Momo by Michael Ende**. I always adore the beautiful quotes that I read in a book, they likely to tell me more than book itself. Momo in this way has really nice points to reach your soul, especially about time.

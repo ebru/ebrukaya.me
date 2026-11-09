@@ -3,6 +3,7 @@ title: 'moving to germany'
 date: '2022-09-04'
 description: 'These are the notes that I have taken along the way and they might be helpful for the ones who consider relocation to Germany/Berlin specifically.'
 icon: suitcase
+topics: [travel, life]
 ---
 
 The pandemic has changed a lot of things in our life. I was lucky enough to not get affected physically during that time but it was not easy to stay strong mentally with all the news from your close circle and the whole world. Life seemed too short to try all the things you want to do and I [quit my full-time job](/blog/taking-a-break-from-9-5/) to focus on myself and my personal projects for a while.

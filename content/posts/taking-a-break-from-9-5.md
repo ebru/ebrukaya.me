@@ -3,6 +3,7 @@ title: 'taking a break from 9–5'
 date: '2020-06-30'
 description: 'Sometimes I feel like I just need a break before something new starts or to start something new.'
 icon: hammock
+topics: [life, building]
 ---
 
 Sometimes I feel like I just need a break before something new starts or to start something new. The first break that I have taken was after university before my professional life starts. The second one is now, after 2 and a half years, a break from 9–5 to focus on personal projects for a while.

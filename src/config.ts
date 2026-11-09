@@ -14,4 +14,5 @@ export const navLinks = [
   { title: "journey", path: "/journey/", inTopNav: true },
   { title: "projects", path: "/projects/", inTopNav: true },
   { title: "personal", path: "/personal/", inTopNav: true },
+  { title: "now", path: "/now/", inTopNav: true },
 ]

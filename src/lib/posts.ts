@@ -9,6 +9,22 @@ const postsDirectory = path.join(process.cwd(), "content/posts")
 
 const md = new MarkdownIt({ html: true })
 
+// A post can have one or more topics: `topics: [software]` in its front matter.
+// "building" is about starting and running things: side projects, a studio, a business;
+// watch, read, listen and play are for movies, books, music and games.
+export const TOPICS = [
+  "software",
+  "design",
+  "building",
+  "life",
+  "travel",
+  "watch",
+  "read",
+  "listen",
+  "play",
+] as const
+export type Topic = (typeof TOPICS)[number]
+
 export type Post = {
   slug: string
   title: string
@@ -17,6 +33,9 @@ export type Post = {
   icon: string
   /** draft: true in the front matter: shown by `pnpm dev`, left out of the built site */
   draft: boolean
+  topics: Topic[]
+  /** about how long the post takes to read, in minutes */
+  readingMinutes: number
   excerpt: string
   html: string
 }
@@ -71,6 +90,21 @@ const makeExcerpt = (html: string) => {
   return `${text.slice(0, template.length)}…`
 }
 
+const WORDS_PER_MINUTE = 220
+
+// Unknown topics stop the build, so a typo never quietly hides a post.
+const readTopics = (slug: string, value: unknown): Topic[] => {
+  const list = Array.isArray(value) ? value : value ? [value] : []
+  for (const topic of list) {
+    if (!TOPICS.includes(topic)) {
+      throw new Error(
+        `${slug}.md: unknown topic "${topic}" (use ${TOPICS.join(", ")})`
+      )
+    }
+  }
+  return list as Topic[]
+}
+
 const readPost = (fileName: string): Post => {
   const slug = fileName.replace(/\.md$/, "")
   const raw = fs.readFileSync(path.join(postsDirectory, fileName), "utf8")
@@ -87,6 +121,11 @@ const readPost = (fileName: string): Post => {
     description: data.description || "",
     icon: data.icon || "pen",
     draft: data.draft === true,
+    topics: readTopics(slug, data.topics),
+    readingMinutes: Math.max(
+      1,
+      Math.round(toPlainText(html).split(" ").length / WORDS_PER_MINUTE)
+    ),
     excerpt: makeExcerpt(html),
     html,
   }
@@ -120,3 +159,12 @@ export const getPostPage = (page: number): PostSummary[] =>
 
 export const blogPagePath = (page: number) =>
   page === 1 ? "/blog/" : `/blog/page/${page}/`
+
+export const getTopicPosts = (topic: Topic): PostSummary[] =>
+  getPostSummaries().filter((post) => post.topics.includes(topic))
+
+// Topics with at least one post; the others stay hidden until they have one.
+export const getUsedTopics = (): Topic[] =>
+  TOPICS.filter((topic) => getTopicPosts(topic).length > 0)
+
+export const topicPath = (topic: Topic) => `/blog/topic/${topic}/`

@@ -13,6 +13,7 @@ My personal site: a few words about me, my journey, side projects and a blog.
 - [Tailwind CSS](https://tailwindcss.com)
 - Markdown posts with front matter
 - Light and dark mode that follows your system setting
+- RSS feed (`/feed.xml`), link-preview images and `/llms.txt`, all generated at build time
 - Hosted on [Netlify](https://netlify.com)
 
 ## Run it
@@ -45,6 +46,7 @@ date: "2026-11-08"
 description: "One line for search engines and link previews."
 draft: true # optional: only shows with pnpm dev, until you remove it
 icon: pen # controller, dice, book, clapper, map, mountains, hourglass, sailboat, kite, suitcase, hammock, sunrise, laptop
+topics: [software] # software, design, building, life, travel, watch, read, listen, play
 ---
 
 Hello.

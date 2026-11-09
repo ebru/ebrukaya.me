@@ -3,6 +3,7 @@ title: 'dreamers and realists'
 date: '2020-08-03'
 description: 'There are dreamers and there are realists in this world. You would think the dreamers would find the dreamers and the realists would find the realists, but more often than not, the opposite is true.'
 icon: kite
+topics: [watch, life]
 ---
 
 "There are dreamers and there are realists in this world. You'd think the dreamers would find the dreamers and the realists would find the realists, but more often than not, the opposite is true. You see, the dreamers need the realists to keep the dreamers from soaring too close to the sun. And the realists? Well, without the dreamers, they might not ever get off the ground."

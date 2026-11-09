@@ -1,7 +1,13 @@
 import type { MetadataRoute } from "next"
 
 import { config, navLinks } from "@/config"
-import { blogPagePath, getPageCount, getPostSummaries } from "@/lib/posts"
+import {
+  blogPagePath,
+  getPageCount,
+  getPostSummaries,
+  getUsedTopics,
+  topicPath,
+} from "@/lib/posts"
 
 // Written to out/sitemap.xml at build time.
 export const dynamic = "force-static"
@@ -13,7 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     blogPagePath(i + 2)
   )
 
-  return [...pages, ...blogPages, ...posts].map((path) => ({
+  return [
+    ...pages,
+    ...blogPages,
+    ...getUsedTopics().map(topicPath),
+    ...posts,
+  ].map((path) => ({
     url: `${config.siteUrl}${path}`,
   }))
 }

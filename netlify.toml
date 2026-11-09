@@ -30,3 +30,14 @@
   for = "/sw.js"
   [headers.values]
     Cache-Control = "no-cache"
+
+# Link-preview images are written without a file extension; say they are PNGs.
+[[headers]]
+  for = "/opengraph-image"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "/blog/*/opengraph-image"
+  [headers.values]
+    Content-Type = "image/png"

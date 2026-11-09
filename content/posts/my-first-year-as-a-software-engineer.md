@@ -3,6 +3,7 @@ title: 'what I have learned in my first year as a software engineer'
 date: '2019-04-21'
 description: 'Almost one and half years have passed as a newbie in the professional software development world.'
 icon: laptop
+topics: [software]
 ---
 
 Almost one and half years have passed as a newbie in the professional software development world. Full of laughs, regrets, achievements, failures, the technical words that I have heard for the first time… Here are some notes that I have taken along the way to remind myself how the journey itself was.

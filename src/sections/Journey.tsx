@@ -27,6 +27,22 @@ const Journey = () => {
             </span>
           </Item>
           <Item>
+            <InlineIcon name="stamp" />
+            <span className="text-[19px]">
+              Co-building{" "}
+              <ExternalLink targetUrl="https://stampie.app">
+                Stampie
+              </ExternalLink>
+              , a travel app that turns trips into passport stamps.
+            </span>
+          </Item>
+          <Item>
+            <InlineIcon name="germany" />
+            <span className="text-[19px]">
+              Living in Berlin, still home. Learning German.
+            </span>
+          </Item>
+          <Item>
             <InlineIcon name="trend" />
             <span className="text-[19px]">
               Investing in stocks and startups.

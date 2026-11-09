@@ -24,6 +24,7 @@ export const generateMetadata = async ({
     title: post.title,
     description: post.description || undefined,
     path: `/blog/${slug}/`,
+    image: `/blog/${slug}/opengraph-image`,
   })
 }
 
@@ -33,8 +34,9 @@ const body = [
   "text-[1.05rem] leading-[1.8]",
   "[&_:is(h2,h3,h4)]:mt-[2.4rem] [&_:is(h2,h3,h4)]:tracking-[-0.02em]",
   "[&_img]:rounded-[8px]",
-  // plain links read as links (links in bold text are already set apart)
-  "[&_a:not(strong_a)]:underline [&_a:not(strong_a)]:decoration-accent [&_a:not(strong_a)]:underline-offset-[3px]",
+  // links are underlined in the accent colour (except in the long movie and
+  // game tables, where every title is a link)
+  "[&_a:not(td_a)]:underline [&_a:not(td_a)]:decoration-accent [&_a:not(td_a)]:decoration-[1.5px] [&_a:not(td_a)]:underline-offset-[3px]",
   // tall photos don't take over the screen
   "[&_figure_img]:mx-auto [&_figure_img]:block [&_figure_img]:max-h-[620px] [&_figure_img]:w-auto",
   // image captions, e.g. in the posts that came from Medium
@@ -66,6 +68,7 @@ export default async function BlogPost({ params }: Props) {
         </h1>
         <PostDate
           date={post.date}
+          readingMinutes={post.readingMinutes}
           draft={post.draft}
           className="mb-9 text-[16px] text-muted"
         />

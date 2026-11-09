@@ -3,6 +3,7 @@ title: 'a new chapter of my life'
 date: '2019-05-19'
 description: 'This will be a story of my past few years and you will know me a little bit better than only me being a software engineer in the end, I promise.'
 icon: sunrise
+topics: [life, travel]
 ---
 
 > “It doesn’t interest me what you do for a living. I want to know what you ache for — and if you dare to dream of meeting your heart’s longing. It doesn’t interest me how old you are. I want to know if you will risk looking like a fool — for love — for your dream — for the adventure of being alive.”

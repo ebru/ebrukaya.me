@@ -3,6 +3,7 @@ title: 'a journey of making a little side project'
 date: '2020-03-29'
 description: 'I have been looking for new ways to adapt to the technologies that I want to learn and speed up the building process of my side projects which I go mostly full-stack.'
 icon: map
+topics: [software, building]
 ---
 
 I have been looking for new ways to adapt to the technologies that I want to learn and speed up the building process of my side projects which I go mostly full-stack. One evening I have come up with this little idea to bring to life, meet **Bucketmap.**

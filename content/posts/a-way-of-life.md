@@ -3,6 +3,7 @@ title: 'a way of life'
 date: '2019-12-01'
 description: 'There is some comfort in the emptiness of the sea, no past, no future. – the last samurai'
 icon: sailboat
+topics: [watch]
 ---
 
 > "There is some comfort in the emptiness of the sea, no past, no future."

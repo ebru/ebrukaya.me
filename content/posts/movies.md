@@ -3,6 +3,7 @@ title: 'the movies'
 date: '2020-04-26'
 description: 'How the quarantine is going? I have recently been watching a lot of movies.'
 icon: clapper
+topics: [watch]
 ---
 
 How the quarantine is going? I have recently been watching a lot of movies. I started a list at the beginning of this year, I was going to watch at least one movie each week...

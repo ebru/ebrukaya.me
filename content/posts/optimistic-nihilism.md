@@ -3,6 +3,7 @@ title: 'optimistic nihilism'
 date: '2022-08-28'
 description: 'Today I was feeling a little bit overwhelmed mentally and investigating the idea of nothing matters but actually anything can matter for you, aka. optimistic nihilism.'
 icon: mountains
+topics: [watch, life]
 ---
 
 <img src="/images/posts/optimistic-nihilism-2.png" />

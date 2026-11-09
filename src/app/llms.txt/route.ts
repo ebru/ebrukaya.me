@@ -27,6 +27,7 @@ The site has a short introduction, her professional journey, side projects, a fe
 - [Journey](${url("/journey/")}): education and work experience so far
 - [Side projects](${url("/projects/")}): apps and projects she has built, from Stampie and Noe Crafts to earlier side projects
 - [Personal](${url("/personal/")}): personal facts, favourite music, books, movies and games, and her travel stamps from Stampie
+- [Now](${url("/now/")}): what she is up to these days
 - [Blog](${url("/blog/")}): all posts
 
 ## Blog posts

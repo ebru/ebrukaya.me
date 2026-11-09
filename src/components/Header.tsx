@@ -30,12 +30,12 @@ const Header = () => {
     }
   }, [mobileMenuOpen])
 
-  // the blog's later pages (/blog/page/2/ ...) count as the blog
+  // the blog's later pages and topic pages count as the blog
   const current = (path: string) => {
     const target = path.replace(/(.)\/$/, "$1")
     const onPage =
       pathname === target ||
-      (target === "/blog" && pathname.startsWith("/blog/page/"))
+      (target === "/blog" && /^\/blog\/(page|topic)\//.test(pathname))
     return onPage ? "page" : undefined
   }
 
