@@ -1,0 +1,384 @@
+/* Tailwind without its preflight reset: the base styles below set the site's
+   own typography, and layers keep utilities above them. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* dark: variant follows the theme picked by the script in app/layout.tsx */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  /* 1 spacing step = 4px, so p-4 is 16px whatever the root font size */
+  --spacing: 4px;
+
+  /* the theme toggle's icon pops in */
+  --animate-pop: pop 0.35s ease;
+  @keyframes pop {
+    from {
+      transform: rotate(-30deg) scale(0.7);
+      opacity: 0;
+    }
+  }
+
+  /* loading placeholders breathe gently */
+  --animate-pulse-soft: pulse-soft 1.4s ease-in-out infinite;
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.45;
+    }
+  }
+}
+
+/* colours follow the light/dark tokens below: bg-surface, text-ink, ... */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --color-marker: var(--marker);
+  --color-ill-ink: var(--ill-ink);
+  --color-card: var(--card);
+  --color-card-lifted: var(--card-lifted);
+}
+
+/* ---------- theme tokens ---------- */
+:root {
+  --bg: #fbfbfc;
+  --ink: #1f1d2b;
+  --ink-soft: #3a3848;
+  --muted: #6c697d;
+  --line: #e7e6ee;
+  --surface: #f2f2f6;
+  --accent: #5458d8;
+  --marker: #dedfff;
+  --code-bg: rgba(31, 29, 43, 0.05);
+  --portrait: url(/images/portrait.svg);
+  /* post drawings */
+  --ill-ink: #2a2838;
+  --wash: rgba(84, 88, 216, 0.22);
+  --card: #f4f3f8;
+  --card-lifted: #ffffff;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --bg: #16151f;
+  --ink: #e9e8f2;
+  --ink-soft: #c9c7d6;
+  --muted: #9a98ae;
+  --line: #2b2a3b;
+  --surface: #201f2c;
+  --accent: #a3a5ff;
+  --marker: #343275;
+  --code-bg: rgba(233, 232, 242, 0.07);
+  --portrait: url(/images/portrait-paper.svg);
+  --portrait-paper: #a3a0b5;
+  --ill-ink: #d4d1e2;
+  --wash: rgba(163, 165, 255, 0.26);
+  --card: #1c1b27;
+  --card-lifted: #222130;
+  color-scheme: dark;
+}
+
+/* ---------- base typography ---------- */
+@layer base {
+  html {
+    font: 112.5%/1.45em georgia, serif;
+    font-family: "Mulish", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    color: var(--ink);
+    background-color: var(--bg);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Mulish", sans-serif;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    line-height: 1.7;
+    letter-spacing: -0.03rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  main,
+  nav,
+  header,
+  footer,
+  section,
+  article {
+    display: block;
+  }
+
+  [hidden] {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  a:hover {
+    color: var(--accent);
+    outline-width: 0;
+  }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  img {
+    border-style: none;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  button {
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+  }
+
+  button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 1.45rem;
+    padding: 0;
+    color: inherit;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    line-height: 1.1;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    letter-spacing: -0.03rem;
+  }
+
+  h2 {
+    font-size: 1.62671rem;
+  }
+
+  h3 {
+    font-size: 1.38316rem;
+    letter-spacing: -0.03rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.85028rem;
+  }
+
+  h6 {
+    font-size: 0.78405rem;
+  }
+
+  p,
+  figure,
+  iframe {
+    margin: 0 0 1.45rem;
+    padding: 0;
+  }
+
+  ul,
+  ol {
+    margin: 0 0 1.45rem 1.45rem;
+    padding: 0;
+    list-style-position: outside;
+    list-style-image: none;
+  }
+
+  ul {
+    margin-bottom: 1.15rem;
+  }
+
+  li {
+    margin-bottom: calc(1.25rem / 2);
+    padding-left: 0;
+  }
+
+  li > ol,
+  li > ul {
+    margin-left: 1.45rem;
+    margin-bottom: calc(1.45rem / 2);
+    margin-top: calc(1.45rem / 2);
+  }
+
+  li > p {
+    margin-bottom: calc(1.45rem / 2);
+  }
+
+  blockquote *:last-child,
+  li *:last-child,
+  p *:last-child {
+    margin-bottom: 0;
+  }
+
+  blockquote {
+    margin: 0 1.45rem 1.45rem 0;
+    padding: 0 0 0 1.1rem;
+    border-left: 3px solid var(--accent);
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  hr {
+    box-sizing: content-box;
+    overflow: visible;
+    margin: 0 0 calc(1.45rem - 1px);
+    padding: 0;
+    background: var(--line);
+    border: none;
+    height: 1px;
+  }
+
+  pre {
+    margin: 0 0 1.45rem;
+    font-size: 0.85rem;
+    line-height: 1.42;
+    background: var(--code-bg);
+    border-radius: 6px;
+    overflow: auto;
+    word-wrap: normal;
+    padding: 1.45rem;
+  }
+
+  pre {
+    font-family: monospace, monospace;
+  }
+
+  code {
+    font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+      "Liberation Mono", Menlo, Courier, monospace;
+  }
+
+  code {
+    font-size: 0.85rem;
+    line-height: 1.45rem;
+    background-color: var(--code-bg);
+    border-radius: 3px;
+    padding: 0.2em 0;
+  }
+
+  pre code {
+    background: none;
+    line-height: 1.42;
+  }
+
+  code::before,
+  code::after {
+    letter-spacing: -0.2em;
+    content: " ";
+  }
+
+  pre code::before,
+  pre code::after {
+    content: "";
+  }
+
+  table {
+    margin: 0 0 1.45rem;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.45rem;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  thead {
+    text-align: left;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  td,
+  th {
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+    font-feature-settings: "tnum";
+    padding: 0.725rem 0.96667rem calc(0.725rem - 1px);
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+
+  @media only screen and (max-width: 480px) {
+    html {
+      font-size: 100%;
+    }
+  }
+
+  ::selection {
+    color: unset;
+    background-color: var(--marker);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  main a:not([class]) {
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-delay: 0ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

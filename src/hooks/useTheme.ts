@@ -8,7 +8,7 @@ const getTheme = (): Theme =>
     ? "dark"
     : "light"
 
-// Reads and toggles the theme set by the script in src/pages/_document.js.
+// Reads and toggles the theme set by the script in src/app/layout.tsx.
 // Every component using this hook stays in sync, and the site keeps
 // following the system setting until the visitor picks a theme themselves.
 const useTheme = () => {

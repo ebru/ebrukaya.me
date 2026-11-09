@@ -8,9 +8,9 @@ My personal site: a few words about me, my journey, side projects and a blog.
 
 ## Stack
 
-- [Next.js](https://nextjs.org) (pages router, static export)
+- [Next.js](https://nextjs.org) (App Router, static export)
 - TypeScript
-- [styled-components](https://styled-components.com)
+- [Tailwind CSS](https://tailwindcss.com)
 - Markdown posts with front matter
 - Light and dark mode that follows your system setting
 - Hosted on [Netlify](https://netlify.com)
@@ -29,7 +29,7 @@ pnpm typecheck # check types
 ```
 content/posts/     blog posts (markdown); the file name is the URL: /blog/<name>/
 public/            static files, served as-is
-src/pages/         routes
+src/app/           routes, layout and global styles
 src/sections/      page content: journey, projects, personal
 src/components/    shared UI
 src/lib/           reads and renders the posts

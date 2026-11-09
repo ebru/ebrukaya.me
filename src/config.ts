@@ -7,13 +7,11 @@ export const config = {
   author: "@ebru",
 }
 
-// Keys for the main pages, used to highlight the current link in the header.
-export const pages = {
-  home: "home",
-  journey: "journey",
-  projects: "projects",
-  blog: "blog",
-  personal: "personal",
-} as const
-
-export type PageKey = (typeof pages)[keyof typeof pages]
+// Every page is in the mobile menu; "Home" is left out of the top bar.
+export const navLinks = [
+  { title: "home", path: "/", inTopNav: false },
+  { title: "blog", path: "/blog/", inTopNav: true },
+  { title: "journey", path: "/journey/", inTopNav: true },
+  { title: "projects", path: "/projects/", inTopNav: true },
+  { title: "personal", path: "/personal/", inTopNav: true },
+]

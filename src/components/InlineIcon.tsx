@@ -1,5 +1,5 @@
 import { useId, type ReactElement } from "react"
-import styled from "styled-components"
+import { cn } from "@/lib/cn"
 
 // Small line icons that sit inside a line of text, drawn in the same sketchy
 // style as the post drawings and postcards (a slight wobble and a second,
@@ -280,13 +280,16 @@ type Props = {
   name: IconName
   /** Read out by screen readers; leave empty for decorative icons. */
   label?: string
+  className?: string
 }
 
-const InlineIcon = ({ name, label }: Props) => {
+// A small hand-drawn line icon that sits in a line of text, in the text colour
+// unless a class says otherwise.
+const InlineIcon = ({ name, label, className }: Props) => {
   const id = useId().replace(/:/g, "")
 
   return (
-    <Icon
+    <svg
       viewBox="0 0 24 24"
       role={label ? "img" : undefined}
       aria-label={label}
@@ -296,6 +299,10 @@ const InlineIcon = ({ name, label }: Props) => {
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
+      className={cn(
+        "inline-block h-[1.3em] w-[1.3em] overflow-visible align-[-0.28em] text-ink",
+        className
+      )}
     >
       <defs>
         <filter id={`ii-${id}`} x="-10%" y="-10%" width="120%" height="120%">
@@ -314,17 +321,8 @@ const InlineIcon = ({ name, label }: Props) => {
           {icons[name]}
         </g>
       </g>
-    </Icon>
+    </svg>
   )
 }
-
-const Icon = styled.svg`
-  display: inline-block;
-  width: 1.3em;
-  height: 1.3em;
-  vertical-align: -0.28em;
-  color: var(--ink);
-  overflow: visible;
-`
 
 export default InlineIcon

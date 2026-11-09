@@ -1,5 +1,5 @@
 import Link from "next/link"
-import styled from "styled-components"
+import type { ComponentProps } from "react"
 import {
   Quote,
   ItalicText,
@@ -11,53 +11,26 @@ import { FaSpotify, FaGoodreadsG } from "react-icons/fa"
 import ExternalLink from "@/components/ExternalLink"
 import StampieEmbed from "@/components/StampieEmbed"
 
-const BlogLink = styled(Link)`
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-underline-offset: 3px;
-`
+const BlogLink = (props: ComponentProps<typeof Link>) => (
+  <Link
+    {...props}
+    className="underline decoration-accent underline-offset-[3px]"
+  />
+)
 
-const ProfileLink = styled.a<{ $brand: string }>`
-  display: inline-flex;
-  vertical-align: middle;
-  margin-left: 6px;
-  font-size: 22px;
-  color: ${(props) => props.$brand};
-  transition: transform 0.2s ease;
-
-  &:hover {
-    color: ${(props) => props.$brand};
-    transform: rotate(-8deg) scale(1.1);
-  }
-`
-
-// The embeds carry their own titles and inner padding, so they sit edge to
-// edge with the text column (offset by that padding) and stack closely.
-const EmbedSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin: 24px -21px 0;
-
-  @media (max-width: 600px) {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-`
-
-const StampieNote = styled.p`
-  margin-top: 18px;
-  font-size: 15px;
-  color: var(--muted);
-
-  a {
-    color: var(--ink);
-    font-weight: 700;
-    text-decoration: underline;
-    text-decoration-color: var(--accent);
-    text-underline-offset: 3px;
-  }
-`
+// Spotify / Goodreads icon in the brand's own colour; it tilts on hover.
+const ProfileLink = ({
+  brand,
+  ...props
+}: ComponentProps<"a"> & { brand: string }) => (
+  <a
+    {...props}
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: brand }}
+    className="ml-1.5 inline-flex align-middle text-[22px] transition-transform duration-200 ease-[ease] hover:-rotate-8 hover:scale-110"
+  />
+)
 
 const Personal = () => {
   return (
@@ -68,15 +41,7 @@ const Personal = () => {
         It doesn’t interest me how old you are. I want to know if you will risk
         looking like a fool – for love – for your dream – for the adventure of
         being alive."{" "}
-        <ItalicText
-          style={{
-            display: "block",
-            marginTop: 10,
-            fontSize: "17px",
-            fontStyle: "normal",
-            color: "var(--muted)",
-          }}
-        >
+        <ItalicText className="mt-2.5 block text-[17px] text-muted not-italic">
           – Oriah Mountain Dreamer
         </ItalicText>
       </Quote>
@@ -95,10 +60,8 @@ const Personal = () => {
           paradis, sohn... // me on
           <ProfileLink
             href="https://open.spotify.com/user/st943c9lgd92wk98aw3bfxcvb?si=UtRzXiaST-uX2-VJagH6Fw"
-            target="_blank"
-            rel="noopener noreferrer"
             aria-label="Spotify"
-            $brand="#1db954"
+            brand="#1db954"
           >
             <FaSpotify />
           </ProfileLink>
@@ -120,10 +83,8 @@ const Personal = () => {
           me on
           <ProfileLink
             href="https://goodreads.com/ebrukaya"
-            target="_blank"
-            rel="noopener noreferrer"
             aria-label="Goodreads"
-            $brand="#b0855a"
+            brand="#b0855a"
           >
             <FaGoodreadsG />
           </ProfileLink>
@@ -141,19 +102,21 @@ const Personal = () => {
         </Item>
       </PersonalList>
 
-      <EmbedSection>
+      {/* The embeds carry their own titles and inner padding, so they sit edge to
+          edge with the text column (offset by that padding) and stack closely. */}
+      <section className="mx-[-21px] mt-6 mb-0 flex flex-col gap-1 max-[600px]:mx-[-12px]">
         <StampieEmbed show="wonders" />
         <StampieEmbed show="map" />
-      </EmbedSection>
+      </section>
 
-      <StampieNote>
+      <p className="mt-[18px] text-[15px] text-muted [&_a]:font-bold [&_a]:text-ink [&_a]:underline [&_a]:decoration-accent [&_a]:underline-offset-[3px]">
         My travels are collected as stamps in{" "}
         <a href="https://stampie.app" target="_blank" rel="noopener noreferrer">
           Stampie
         </a>
         , an app I'm building to keep the passport-stamp feeling alive now that
         many countries have stopped stamping passports.
-      </StampieNote>
+      </p>
     </>
   )
 }

@@ -1,7 +1,9 @@
+"use client"
+
 import { useEffect, useRef, useState } from "react"
-import styled, { keyframes } from "styled-components"
 
 import useTheme, { type Theme } from "@/hooks/useTheme"
+import { cn } from "@/lib/cn"
 
 const SCRIPT_SRC = "https://stampie.app/embed.js"
 const STAMPIE_ORIGIN = "https://stampie.app"
@@ -70,9 +72,19 @@ const StampieEmbed = ({ user = "ebru", show }: Props) => {
   }, [theme])
 
   return (
-    <Frame $ready={ready}>
+    <div className="relative [&_iframe]:block [&_iframe]:w-full [&_iframe]:border-0">
       {!ready && (show === "map" ? <MapSkeleton /> : <WondersSkeleton />)}
-      <div className="holder" ref={holderRef} aria-busy={!ready}>
+      {/* While loading, the embed sits invisibly on top of the skeleton (it has to be
+          on screen, or the lazy-loaded iframe never starts loading). */}
+      <div
+        ref={holderRef}
+        aria-busy={!ready}
+        className={cn(
+          "transition-opacity duration-300 ease-[ease]",
+          !ready &&
+            "pointer-events-none absolute inset-0 overflow-hidden opacity-0"
+        )}
+      >
         {/* key: a new element per theme, so the embed re-mounts in the new colours */}
         <div
           key={theme}
@@ -85,92 +97,38 @@ const StampieEmbed = ({ user = "ebru", show }: Props) => {
           data-paper={theme === "dark" ? "grey" : undefined}
         />
       </div>
-    </Frame>
+    </div>
   )
 }
 
+const Bone = ({ className }: { className?: string }) => (
+  <div
+    className={cn("h-4 animate-pulse-soft rounded-[6px] bg-surface", className)}
+  />
+)
+
 const WondersSkeleton = () => (
-  <Skeleton aria-hidden="true">
-    <div className="head">
-      <Bone style={{ width: 110 }} />
-      <Bone style={{ width: 70 }} />
+  <div aria-hidden="true" className="px-[21px] py-[19px]">
+    <div className="mb-3.5 flex justify-between">
+      <Bone className="w-[110px]" />
+      <Bone className="w-[70px]" />
     </div>
-    <Bone style={{ height: 5, marginBottom: 16 }} />
-    <div className="stamps">
+    <Bone className="mb-4 h-[5px]" />
+    <div className="grid grid-cols-7 gap-2.5">
       {Array.from({ length: 7 }, (_, i) => (
-        <Bone key={i} className="stamp" />
+        <Bone key={i} className="aspect-square h-auto rounded-[10px]" />
       ))}
     </div>
-  </Skeleton>
+  </div>
 )
 
 const MapSkeleton = () => (
-  <Skeleton aria-hidden="true">
-    <div className="head">
-      <Bone style={{ width: 200 }} />
+  <div aria-hidden="true" className="px-[21px] py-[19px]">
+    <div className="mb-3.5 flex justify-between">
+      <Bone className="w-[200px]" />
     </div>
-    <Bone className="map" />
-  </Skeleton>
+    <Bone className="aspect-[1010/666] h-auto rounded-[12px]" />
+  </div>
 )
-
-const pulse = keyframes`
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.45; }
-`
-
-const Frame = styled.div<{ $ready: boolean }>`
-  position: relative;
-
-  /* While loading, the embed sits invisibly on top of the skeleton (it has to be
-     on screen, or the lazy-loaded iframe never starts loading). */
-  .holder {
-    ${(p) =>
-      p.$ready
-        ? ""
-        : "position: absolute; inset: 0; opacity: 0; pointer-events: none; overflow: hidden;"}
-    transition: opacity 0.3s ease;
-  }
-
-  iframe {
-    display: block;
-    width: 100%;
-    border: 0;
-  }
-`
-
-const Skeleton = styled.div`
-  padding: 19px 21px;
-
-  .head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 14px;
-  }
-
-  .stamps {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    gap: 10px;
-  }
-
-  .stamp {
-    aspect-ratio: 1;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .map {
-    aspect-ratio: 1010 / 666;
-    height: auto;
-    border-radius: 12px;
-  }
-`
-
-const Bone = styled.div`
-  height: 16px;
-  border-radius: 6px;
-  background: var(--surface);
-  animation: ${pulse} 1.4s ease-in-out infinite;
-`
 
 export default StampieEmbed

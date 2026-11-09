@@ -1,5 +1,6 @@
 import { useId, type ReactElement } from "react"
-import styled from "styled-components"
+
+import { cn } from "@/lib/cn"
 
 // Loose line drawings for posts, like quick pen sketches over a watercolour wash:
 // - every line is drawn twice with a tiny offset, the way a pen goes over a line again
@@ -150,16 +151,24 @@ const isIconName = (name: string): name is PostIconName => name in icons
 type Props = {
   /** From the post's front matter; unknown names fall back to "pen". */
   name: string
-  size?: number
+  /** Sizing classes, e.g. "size-[72px]". */
   className?: string
+  /** On a post's own page: tilted, like the hovered state in the list, with its colour wash showing. */
+  standalone?: boolean
 }
 
-const PostIcon = ({ name, size = 72, className }: Props) => {
+const PostIcon = ({ name, className, standalone = false }: Props) => {
   const id = useId().replace(/:/g, "")
   const icon = isIconName(name) ? icons[name] : icons.pen
 
   return (
-    <Wrap style={{ width: size, height: size }} className={className}>
+    <span
+      className={cn(
+        "inline-flex size-[72px] shrink-0 text-ill-ink",
+        standalone && "-rotate-6",
+        className
+      )}
+    >
       <svg
         viewBox="0 0 96 96"
         aria-hidden="true"
@@ -168,6 +177,7 @@ const PostIcon = ({ name, size = 72, className }: Props) => {
         strokeWidth="1.7"
         strokeLinecap="round"
         strokeLinejoin="round"
+        className="size-full overflow-visible"
       >
         <defs>
           <filter
@@ -189,7 +199,16 @@ const PostIcon = ({ name, size = 72, className }: Props) => {
             <feDisplacementMap in="SourceGraphic" scale="1.8" />
           </filter>
         </defs>
-        <g className="wash" filter={`url(#wash-${id})`}>
+        {/* the colour wash shows only while its post is hovered or focused in a list */}
+        <g
+          filter={`url(#wash-${id})`}
+          className={cn(
+            "transition-opacity duration-300 ease-[ease]",
+            standalone
+              ? "opacity-100"
+              : "opacity-0 group-hover/post:opacity-100 group-focus-within/post:opacity-100"
+          )}
+        >
           {icon.wash}
         </g>
         <g filter={`url(#ink-${id})`}>
@@ -200,37 +219,8 @@ const PostIcon = ({ name, size = 72, className }: Props) => {
           </g>
         </g>
       </svg>
-    </Wrap>
+    </span>
   )
 }
-
-const Wrap = styled.span`
-  display: inline-flex;
-  flex-shrink: 0;
-  color: var(--ill-ink);
-
-  svg {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-  }
-
-  /* colour wash only shows when the post is hovered or focused */
-  .wash {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  li:hover & .wash,
-  li:focus-within & .wash,
-  &.post-icon .wash {
-    opacity: 1;
-  }
-
-  /* on a post's own page the drawing sits tilted, like the hovered state in the list */
-  &.post-icon {
-    transform: rotate(-6deg);
-  }
-`
 
 export default PostIcon

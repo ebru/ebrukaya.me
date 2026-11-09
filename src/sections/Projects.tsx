@@ -1,7 +1,6 @@
 import { SubTitle, ItemList, Item, When, BoldText } from "@/components/ui"
 import InlineIcon from "@/components/InlineIcon"
 import ExternalLink from "@/components/ExternalLink"
-import { ItemImage, ItemRow } from "@/sections/Projects.styles"
 
 const Projects = () => {
   return (
@@ -17,8 +16,8 @@ const Projects = () => {
           collectible digital passport stamps. <When>(2026)</When>
         </Item>
       </ItemList>
-      <SubTitle $past>Past</SubTitle>
-      <ItemList $past>
+      <SubTitle past>Past</SubTitle>
+      <ItemList past>
         <Item>
           <InlineIcon name="passport" /> Built{" "}
           <ExternalLink targetUrl="https://stampie.app">Stampie</ExternalLink>,
@@ -66,7 +65,7 @@ const Projects = () => {
         </Item>
         <Item>
           <InlineIcon name="pin" />
-          <ItemRow>
+          <div className="flex flex-1 justify-between">
             <div>
               Built{" "}
               <ExternalLink targetUrl="https://ebrukye.medium.com/a-journey-of-making-a-little-side-project-d18088271876">
@@ -85,9 +84,13 @@ const Projects = () => {
               . <When>(2020)</When>
             </div>
             <ExternalLink targetUrl="https://ebrukye.medium.com/a-journey-of-making-a-little-side-project-d18088271876">
-              <ItemImage src="/images/projects/bucketmap.jpg" alt="bucketmap" />
+              <img
+                src="/images/projects/bucketmap.jpg"
+                alt="bucketmap"
+                className="mt-[5px] ml-[15px] h-[62px] w-[100px] max-w-[100px] min-w-[100px] rounded-[4px] object-cover hover:opacity-90"
+              />
             </ExternalLink>
-          </ItemRow>
+          </div>
         </Item>
         <Item>
           <InlineIcon name="yarn" /> Co-Founded <BoldText>MUKAVVA</BoldText>, a

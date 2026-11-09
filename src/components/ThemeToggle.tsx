@@ -1,4 +1,4 @@
-import styled from "styled-components"
+"use client"
 
 import useTheme from "@/hooks/useTheme"
 import InlineIcon from "@/components/InlineIcon"
@@ -8,59 +8,25 @@ const ThemeToggle = () => {
   const label = isDark ? "Switch to light mode" : "Switch to dark mode"
 
   return (
-    <Button
+    <button
       type="button"
       onClick={toggleTheme}
       aria-label={label}
       title={label}
+      className="inline-flex size-[38px] cursor-pointer items-center justify-center rounded-full border border-line bg-transparent p-0 text-ink [transition:border-color_0.2s_ease,color_0.2s_ease,rotate_0.4s_ease] hover:border-accent hover:text-accent active:rotate-[40deg]"
     >
-      <span className={isDark ? "icon moon" : "icon sun"}>
-        <InlineIcon name={isDark ? "moon" : "sun"} />
+      {/* keyed by theme, so the new icon pops in each time it changes */}
+      <span
+        key={isDark ? "moon" : "sun"}
+        className="inline-flex animate-pop text-[19px]"
+      >
+        <InlineIcon
+          name={isDark ? "moon" : "sun"}
+          className="align-[0] text-inherit"
+        />
       </span>
-    </Button>
+    </button>
   )
 }
-
-const Button = styled.button`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  padding: 0;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: transparent;
-  color: var(--ink);
-  cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease, transform 0.4s ease;
-
-  &:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  &:active {
-    transform: rotate(40deg);
-  }
-
-  .icon {
-    display: inline-flex;
-    font-size: 19px;
-    animation: pop 0.35s ease;
-  }
-
-  .icon svg {
-    color: inherit;
-    vertical-align: 0;
-  }
-
-  @keyframes pop {
-    from {
-      transform: rotate(-30deg) scale(0.7);
-      opacity: 0;
-    }
-  }
-`
 
 export default ThemeToggle

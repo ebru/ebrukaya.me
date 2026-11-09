@@ -1,39 +1,46 @@
 import { SubTitle, ItemList, Item, When, BoldText } from "@/components/ui"
 import InlineIcon from "@/components/InlineIcon"
 import ExternalLink from "@/components/ExternalLink"
-import { PresentList, ItemImage, PresentText } from "@/sections/Journey.styles"
 
 const Journey = () => {
   return (
     <>
       <SubTitle>Present</SubTitle>
-      <PresentList>
+      {/* The Noe Crafts logo sits beside the list, outside it, so it never
+          changes the spacing between the lines. */}
+      <div className="flex items-start justify-between gap-6 [&>ul]:flex-1">
         <ItemList>
           <Item>
             <InlineIcon name="sparkles" />
-            <PresentText>Deep focus on AI learning.</PresentText>
+            <span className="text-[19px]">Deep focus on AI learning.</span>
           </Item>
           <Item>
             <InlineIcon name="leaf" />
-            <PresentText>
+            <span className="text-[19px]">
               Running a design and software studio called{" "}
               <ExternalLink targetUrl="https://noecrafts.com">
                 Noe Crafts
               </ExternalLink>{" "}
               since June of 2020.
-            </PresentText>
+            </span>
           </Item>
           <Item>
             <InlineIcon name="trend" />
-            <PresentText>Investing in stocks and startups.</PresentText>
+            <span className="text-[19px]">
+              Investing in stocks and startups.
+            </span>
           </Item>
         </ItemList>
         <ExternalLink targetUrl="https://noecrafts.com">
-          <ItemImage src="/images/projects/noe.jpg" alt="Noe Crafts" />
+          <img
+            src="/images/projects/noe.jpg"
+            alt="Noe Crafts"
+            className="mt-2 block size-[75px] rounded-[6px] object-cover hover:opacity-90"
+          />
         </ExternalLink>
-      </PresentList>
-      <SubTitle $past>Past</SubTitle>
-      <ItemList $past>
+      </div>
+      <SubTitle past>Past</SubTitle>
+      <ItemList past>
         <Item>
           <InlineIcon name="lamp" /> Senior Frontend Engineer at{" "}
           <ExternalLink targetUrl="https://roompricegenie.com/">

@@ -1,3 +1,5 @@
+"use client"
+
 import {
   useEffect,
   useId,
@@ -6,9 +8,9 @@ import {
   type CSSProperties,
   type ReactElement,
 } from "react"
-import styled from "styled-components"
 
 import InlineIcon, { type IconName } from "@/components/InlineIcon"
+import { cn } from "@/lib/cn"
 
 type Postcard = {
   place: string
@@ -27,35 +29,16 @@ type Postcard = {
 // loose line style as the blog drawings. Hover straightens a card and brings in
 // its colour; click (or tap, Enter, Space) flips it over to read the back.
 
-// Oldest first. `tilt` is the resting angle in degrees.
+// Berlin first, as it's home; the rest oldest first.
+// `tilt` is the resting angle in degrees.
 const postcards: Postcard[] = [
-  {
-    place: "Tallinn",
-    country: "Estonia",
-    flag: "estonia",
-    year: "2015",
-    note: "Exchange semester. Cold winters, warm friends, the most fun times.",
-    tilt: 3,
-    washAt: [52, 36, 20],
-    drawing: (
-      <>
-        <path d="M14 66V44l6-12 6 12v22" />
-        <path d="M26 66V50h10v16M36 66V40l8-20 8 20v26" />
-        <path d="M52 66V48h12v18M64 66V38l6-14 6 14v28" />
-        <path d="M76 66V50h14v16M90 66V46l5-10 5 10v20" />
-        <path d="M44 20v-6M70 24v-5M20 32v-4" />
-        <path d="M40 48h8M68 46h4M40 56h8" />
-        <path d="M8 66h104" />
-      </>
-    ),
-  },
   {
     place: "Berlin",
     country: "Germany",
     flag: "germany",
     year: "2015",
     note: "First visit in 2015. Said in a random chat I'd live here one day, forgot about it, then moved here in 2022. Still home.",
-    tilt: -3,
+    tilt: 3,
     washAt: [60, 38, 16],
     drawing: (
       <>
@@ -70,11 +53,31 @@ const postcards: Postcard[] = [
     ),
   },
   {
+    place: "Tallinn",
+    country: "Estonia",
+    flag: "estonia",
+    year: "2015",
+    note: "Exchange semester. Cold winters, warm friends, the most fun times.",
+    tilt: -3,
+    washAt: [52, 36, 20],
+    drawing: (
+      <>
+        <path d="M14 66V44l6-12 6 12v22" />
+        <path d="M26 66V50h10v16M36 66V40l8-20 8 20v26" />
+        <path d="M52 66V48h12v18M64 66V38l6-14 6 14v28" />
+        <path d="M76 66V50h14v16M90 66V46l5-10 5 10v20" />
+        <path d="M44 20v-6M70 24v-5M20 32v-4" />
+        <path d="M40 48h8M68 46h4M40 56h8" />
+        <path d="M8 66h104" />
+      </>
+    ),
+  },
+  {
     place: "Sri Lanka",
     country: "Sri Lanka",
     flag: "srilanka",
     year: "2017",
-    note: "Two months volunteering and travelling around the island. A once-in-a-lifetime experience.",
+    note: "A month and a half volunteering and travelling around the island. A once-in-a-lifetime experience.",
     tilt: 2,
     washAt: [60, 44, 20],
     drawing: (
@@ -139,15 +142,26 @@ const Card = ({ card, flipped, onToggle }: CardProps) => {
   const [wx, wy, wr] = card.washAt
 
   return (
-    <Item style={{ "--tilt": `${card.tilt}deg` } as CSSProperties}>
-      <Flip
+    // The hover area (the li) stays still while the card inside moves, so the
+    // card never slips out from under the mouse.
+    <li
+      style={{ "--tilt": `${card.tilt}deg` } as CSSProperties}
+      className="group/card @container m-0 perspective-[900px] max-[860px]:shrink-0 max-[860px]:grow-0 max-[860px]:basis-[clamp(150px,42%,210px)] max-[860px]:snap-start"
+    >
+      <button
         type="button"
-        className={flipped ? "flipped" : undefined}
         onClick={onToggle}
         aria-pressed={flipped}
         aria-label={`Postcard from ${card.place}, ${card.year}. ${card.note}`}
+        className={cn(
+          "relative block aspect-[4/3] w-full cursor-pointer rounded-[6px] border-0 bg-transparent p-0 text-left text-inherit transform-3d will-change-transform focus-visible:outline-offset-2",
+          "[transform:rotate(var(--tilt))] [transition:transform_0.55s_cubic-bezier(0.25,0.8,0.25,1)] motion-reduce:[transition:none]",
+          flipped
+            ? "z-2 [transform:translateY(-4px)_scale(1.12)_rotateY(180deg)] max-[860px]:[transform:rotateY(180deg)]"
+            : "group-hover/card:[transform:translateY(-4px)] max-[860px]:group-hover/card:[transform:none]"
+        )}
       >
-        <Face className="front" aria-hidden="true">
+        <div className={cn(face, flipped && faceLifted)} aria-hidden="true">
           <svg
             viewBox="0 0 120 80"
             fill="none"
@@ -155,6 +169,7 @@ const Card = ({ card, flipped, onToggle }: CardProps) => {
             strokeWidth="2.3"
             strokeLinecap="round"
             strokeLinejoin="round"
+            className="min-h-0 w-full flex-1 overflow-hidden px-2.5 pt-2.5"
           >
             <defs>
               <filter
@@ -182,14 +197,15 @@ const Card = ({ card, flipped, onToggle }: CardProps) => {
                 <feDisplacementMap in="SourceGraphic" scale="2.4" />
               </filter>
             </defs>
+            {/* the colour wash comes in on hover or keyboard focus */}
             <circle
-              className="wash"
               cx={wx}
               cy={wy}
               r={wr}
               fill="var(--wash)"
               stroke="none"
               filter={`url(#pc-wash-${id})`}
+              className="opacity-0 transition-opacity duration-[350ms] ease-[ease] group-hover/card:opacity-100 group-has-[button:focus-visible]/card:opacity-100"
             />
             <g filter={`url(#pc-ink-${id})`}>
               {card.drawing}
@@ -198,25 +214,47 @@ const Card = ({ card, flipped, onToggle }: CardProps) => {
               </g>
             </g>
           </svg>
-          <Caption>
-            <strong>{card.place}</strong>
-            <span>
+          {/* text and spacing follow the card's own width (cqw = 1% of it) */}
+          <div className="flex flex-col px-[7.5cqw] pb-[6cqw] leading-[1.25]">
+            <strong className="text-[clamp(13px,8.6cqw,17px)] font-bold text-ink-soft">
+              {card.place}
+            </strong>
+            <span className="text-[clamp(11.5px,7.4cqw,14px)] text-muted tabular-nums">
               {card.country !== card.place && `${card.country}, `}
               {card.year}
             </span>
-          </Caption>
-        </Face>
+          </div>
+        </div>
 
-        <Face className="back" aria-hidden="true">
-          <Flag>
-            <InlineIcon name={card.flag} />
-          </Flag>
-          <Note>{card.note}</Note>
-        </Face>
-      </Flip>
-    </Item>
+        {/* The back can grow taller than the card for longer notes; it hangs
+            down over the space below, so nothing else on the page moves. */}
+        <div
+          className={cn(
+            face,
+            flipped && faceLifted,
+            "inset-[0_0_auto] block min-h-full [transform:rotateY(180deg)] px-[7.5cqw] py-[7cqw]"
+          )}
+          aria-hidden="true"
+        >
+          {/* the country's flag in the top right corner; the note wraps around it */}
+          <span className="float-right mt-[-1cqw] mr-[-1cqw] mb-[1cqw] ml-[3cqw] text-[15cqw] leading-0">
+            <InlineIcon name={card.flag} className="size-[1.3em] align-[0]" />
+          </span>
+          <p className="m-0 text-[clamp(11.5px,7.6cqw,15px)] leading-[1.36] text-ink-soft italic">
+            {card.note}
+          </p>
+        </div>
+      </button>
+    </li>
   )
 }
+
+// One side of a card. While the card is hovered or turned over, both sides lift
+// onto a lighter card with a soft shadow.
+const face =
+  "absolute inset-0 flex flex-col overflow-hidden rounded-[6px] border border-transparent bg-card text-ill-ink shadow-[0_0_0_rgba(20,18,40,0)] backface-hidden [transition:box-shadow_0.4s_ease,background-color_0.4s_ease] group-hover/card:bg-card-lifted group-hover/card:shadow-[0_10px_24px_-14px_rgba(20,18,40,0.35)]"
+const faceLifted =
+  "bg-card-lifted shadow-[0_10px_24px_-14px_rgba(20,18,40,0.35)]"
 
 // Only one card is turned over at a time. Opening another one closes the
 // previous card; clicking outside the rack or pressing Escape closes it too.
@@ -241,9 +279,15 @@ const Postcards = () => {
   }, [open])
 
   return (
-    <Section aria-labelledby="postcards-intro">
-      <Intro id="postcards-intro">A few postcards from places I’ve been.</Intro>
-      <Rack ref={rackRef}>
+    <section aria-labelledby="postcards-intro" className="mt-16">
+      <p id="postcards-intro" className="mb-[22px] text-muted">
+        A few postcards from places I’ve been.
+      </p>
+      {/* smaller screens: one row of cards you can swipe through */}
+      <ul
+        ref={rackRef}
+        className="m-0 grid list-none grid-cols-5 gap-[18px] max-[860px]:-mx-3 max-[860px]:-mt-3.5 max-[860px]:mb-0 max-[860px]:flex max-[860px]:snap-x max-[860px]:snap-mandatory max-[860px]:gap-4 max-[860px]:overflow-x-auto max-[860px]:overscroll-x-contain max-[860px]:scroll-px-3 max-[860px]:px-3 max-[860px]:pt-3.5 max-[860px]:pb-5 max-[860px]:[scrollbar-width:none] max-[860px]:[&::-webkit-scrollbar]:hidden"
+      >
         {postcards.map((card) => (
           <Card
             key={card.place}
@@ -254,231 +298,24 @@ const Postcards = () => {
             }
           />
         ))}
-      </Rack>
-      <More
+      </ul>
+      {/* a quiet link under the cards to the full passport on Stampie */}
+      <a
         href="https://stampie.app/@ebru"
         target="_blank"
         rel="noopener noreferrer"
+        className="group/more mt-[22px] mr-0 mb-0 ml-auto block w-fit text-muted underline decoration-transparent decoration-2 underline-offset-4 transition-[text-decoration-color,color] duration-200 ease-[ease] hover:text-ink hover:decoration-accent focus-visible:text-ink focus-visible:decoration-accent"
       >
-        my passport <span aria-hidden="true">→</span>
-      </More>
-    </Section>
+        my passport{" "}
+        <span
+          aria-hidden="true"
+          className="inline-block transition-transform duration-200 ease-[ease] group-hover/more:translate-x-[3px]"
+        >
+          →
+        </span>
+      </a>
+    </section>
   )
 }
-
-const Section = styled.section`
-  margin-top: 64px;
-`
-
-const Intro = styled.p`
-  margin-bottom: 22px;
-  color: var(--muted);
-`
-
-// A quiet link under the cards to the full passport on Stampie.
-const More = styled.a`
-  display: block;
-  width: fit-content;
-  margin: 22px 0 0 auto;
-  color: var(--muted);
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-  transition: text-decoration-color 0.2s ease, color 0.2s ease;
-
-  span {
-    display: inline-block;
-    transition: transform 0.2s ease;
-  }
-
-  &:hover,
-  &:focus-visible {
-    color: var(--ink);
-    text-decoration-color: var(--accent);
-  }
-
-  &:hover span {
-    transform: translateX(3px);
-  }
-`
-
-const Rack = styled.ul`
-  list-style: none;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 18px;
-
-  /* smaller screens: one row of cards you can swipe through */
-  @media (max-width: 860px) {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scroll-padding-inline: 12px;
-    padding: 14px 12px 20px;
-    margin: -14px -12px 0;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
-    > li {
-      flex: 0 0 clamp(150px, 42%, 210px);
-      scroll-snap-align: start;
-    }
-  }
-`
-
-// The hover area stays still while the card inside moves, so the card never
-// slips out from under the mouse.
-const Item = styled.li`
-  margin: 0;
-  perspective: 900px;
-  container-type: inline-size;
-`
-
-const Flip = styled.button`
-  position: relative;
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  padding: 0;
-  border: 0;
-  background: none;
-  font: inherit;
-  text-align: left;
-  color: inherit;
-  cursor: pointer;
-  border-radius: 6px;
-  transform: rotate(var(--tilt));
-  transform-style: preserve-3d;
-  transition: transform 0.55s cubic-bezier(0.25, 0.8, 0.25, 1);
-  will-change: transform;
-
-  li:hover > & {
-    transform: rotate(0deg) translateY(-4px);
-  }
-
-  &.flipped,
-  li:hover > &.flipped {
-    z-index: 2;
-    transform: rotate(0deg) translateY(-4px) scale(1.12) rotateY(180deg);
-  }
-
-  @media (max-width: 860px) {
-    li:hover > & {
-      transform: rotate(0deg);
-    }
-
-    &.flipped,
-    li:hover > &.flipped {
-      transform: rotate(0deg) rotateY(180deg);
-    }
-  }
-
-  .wash {
-    opacity: 0;
-    transition: opacity 0.35s ease;
-  }
-
-  li:hover > & > div,
-  &.flipped > div {
-    background: var(--card-lifted);
-    box-shadow: 0 10px 24px -14px rgba(20, 18, 40, 0.35);
-  }
-
-  li:hover > & .wash,
-  &:focus-visible .wash {
-    opacity: 1;
-  }
-
-  &:focus-visible {
-    outline-offset: 2px;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    transition: none;
-  }
-`
-
-const Face = styled.div`
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  border-radius: 6px;
-  background: var(--card);
-  border: 1px solid var(--card-edge);
-  box-shadow: 0 0 0 rgba(20, 18, 40, 0);
-  transition: box-shadow 0.4s ease, background-color 0.4s ease;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  color: var(--ill-ink);
-  overflow: hidden;
-
-  svg {
-    flex: 1;
-    width: 100%;
-    min-height: 0;
-    padding: 10px 10px 0;
-  }
-
-  /* text and spacing follow the card's own width (cqw = 1% of it) */
-  /* the back can grow taller than the card for longer notes; it hangs down over
-     the space below, so nothing else on the page moves */
-  &.back {
-    transform: rotateY(180deg);
-    display: block;
-    inset: 0 0 auto;
-    min-height: 100%;
-    padding: 7cqw 7.5cqw 7cqw;
-  }
-`
-
-const Caption = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0 7.5cqw 6cqw;
-  line-height: 1.25;
-
-  strong {
-    font-size: clamp(13px, 8.6cqw, 17px);
-    font-weight: 700;
-    color: var(--ink-soft);
-  }
-
-  span {
-    font-size: clamp(11.5px, 7.4cqw, 14px);
-    color: var(--muted);
-    font-variant-numeric: tabular-nums;
-  }
-`
-
-// The country's flag in the top right corner of the back; the note wraps around it.
-const Flag = styled.span`
-  float: right;
-  margin: -1cqw -1cqw 1cqw 3cqw;
-  font-size: 15cqw;
-  line-height: 0;
-
-  svg {
-    width: 1.3em !important;
-    height: 1.3em;
-    padding: 0 !important;
-    vertical-align: 0;
-  }
-`
-
-const Note = styled.p`
-  margin: 0;
-  font-size: clamp(11.5px, 7.6cqw, 15px);
-  line-height: 1.36;
-  font-style: italic;
-  color: var(--ink-soft);
-`
 
 export default Postcards
