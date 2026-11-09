@@ -37,7 +37,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Ebru Kaya", url: config.siteUrl }],
   title: config.title,
   description: config.description,
-  icons: { icon: { url: "/favicon.png", type: "image/png" } },
+  // "e." like the logo: favicon.svg is the source, the PNGs are made from it
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png", sizes: "48x48" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
 }
 
 export const viewport: Viewport = {
